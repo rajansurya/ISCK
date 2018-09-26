@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar);
         toolbar.setTitle(getResources().getString(R.string.app_name));
-        toolbar.setSubtitle(Html.fromHtml("<font color='#FCAA23'>Winter Conference</font>"));
+        toolbar.setSubtitle(Html.fromHtml("<font color='#FCAA23'>WINTER CONFERENCE</font>"));
 //        getSupportActionBar()!!.setDisplayHomeAsUpEnabled(true);
         setupViewPager(viewpager);
         tabs.setupWithViewPager(viewpager);

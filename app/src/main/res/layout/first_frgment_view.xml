@@ -1,8 +1,14 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
+<WebView
+    android:id="@+id/webpagesLinear"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
 
-    <ImageView
+    <!--<ImageView
         android:id="@+id/truiton_image"
         android:layout_width="300dp"
         android:layout_height="300dp"
@@ -15,6 +21,7 @@
         android:layout_below="@id/truiton_image"
         android:layout_centerHorizontal="true"
         android:text="Fragment 3"
-        android:textSize="30sp" />
+        android:textSize="30sp" />-->
 
-</RelativeLayout>
+</WebView>
+</ScrollView>

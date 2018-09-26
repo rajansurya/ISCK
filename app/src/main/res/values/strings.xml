@@ -1,7 +1,53 @@
 <resources>
-    <string name="app_name"> Dos</string>
+    <string name="app_name"> DOS</string>
     <string name="sub_name"></string>
     <string name="item_1">Invitation</string>
     <string name="item_2">Registration</string>
     <string name="item_3">Highlight</string>
+
+    <string name="hello">
+<![CDATA[
+<html>
+ <head></head>
+ <body style="text-align:justify;color:black;font-size:18px;font-family:sans-serif;">
+ On Behalf of the Executive Committee  of Delhi Ophthalmological Society, it is our great pleasure to invite you to  the
+ <strong>Winter Conference of Delhi Ophthalmological&nbsp;Society (DOS) to be held  on 17th and 18th November, 2018 at India Habitat Center, New Delhi, India</strong>
+    <p>The Delhi Ophthalmological Society,  with over 9000 members across India is committed to furthering the cause of  continuing medical education and promoting&nbsp;camaraderie and fellowship  amongst ophthalmologists worldwide. The DOS conference is a much awaited,  time-honored academic fiesta, which attracts faculty, trade exhibitors and  delegates from all over the world.</p>
+    <p>The conference will be a two-day  celebration of ophthalmology featuring the best works in the fields of  Cataract, Refractive Surgery, Cornea, Glaucoma, Strabismus, Neuro-ophthamology  and Occuloplasty. The diverse program will feature plenary lectures, symposia,  instruction course, wet labs and live surgery&nbsp;demonstration,  Eposter, Video and Interesting Cases. A Session for young ophthalmologist will  be a special addition to our diverse program.&nbsp;</p>
+ <p>As you will venture out of the  confines of the state of the art conference hall and the world of  ophthalmology, the vibrant Delhi winters, along with its legendary&nbsp;hospitality  and bustling energy will enthrall you. After the academic extravaganza, will be  the captivating cultural program and fellowship dinner, true to DOS traditions.</p>
+ <p>We would be delighted to have you  present at this conference, and to hear what the experts, gurus and researchers  have to share about technology advancements and their impact on Ophthalmology.  We would also love to hear your thoughts and opinions to this direction.</p>
+ <p>We look forward to greeting you at  the Winter Conference of Delhi Ophthalmological Society, at <strong>India Habitat  Centre Delhi from 17th to 18th November, 2018</strong>.</p>
+<p>&nbsp;</p>
+<p>Respectfully Yours,
+</p>
+<div class="row clearfix">
+
+                      <div class="col-sm-6 col-md-4 contain-img col-md-offset-2">
+                      <div class="inner-box">
+                    	    <div class="image" align="center"> <img src="http://doscon18.org/images/khokhar.jpg" style="width:120px; height:130px;">  </div>
+                        <div class="lower-box pt-5" align="center">
+                        	<h5> <strong>Prof S.K. Khokhar</strong>  </h5>
+                            <div class="designation"> President, DOS</div>
+                        </div>
+                    </div>
+                    </div>
+                           <div class="col-sm-6 col-md-4 contain-img">
+                           <div class="inner-box">
+                    	    <div class="image" align="center"> <img src="http://doscon18.org/images/subhash.jpg" style="width:120px; height:130px;">  </div>
+                        <div class="lower-box pt-5" align="center">
+                        	<h5> <strong>Prof. Subhash C. Dadeya</strong>  </h5>
+                            <div class="designation"> Secretary, DOS </div>
+                        </div>
+                    </div>
+
+
+
+                           </div>
+
+                           </div>
+ </body>
+</html>
+]]>
+</string>
+
 </resources>
