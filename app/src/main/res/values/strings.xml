@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name"> Dos</string>
+    <string name="sub_name"></string>
+    <string name="item_1">Invitation</string>
+    <string name="item_2">Registration</string>
+    <string name="item_3">Highlight</string>
+</resources>
