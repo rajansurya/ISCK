@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
     private fun setupViewPager(viewPager: ViewPager) {
         val adapter = ViewPagerAdapter(supportFragmentManager)
         adapter.addFrag(Invitation.newInstance(), "INVITATION")
-        adapter.addFrag(Invitation.newInstance(), "REGISTRATION")
-        adapter.addFrag(Invitation.newInstance(), "HIGHLIGHTS")
+        adapter.addFrag(Registration.newInstance(), "REGISTRATION")
+        adapter.addFrag(Highlight.newInstance(), "HIGHLIGHTS")
         adapter.addFrag(Invitation.newInstance(), "ABSTRACT")
         adapter.addFrag(Invitation.newInstance(), "COMMITTEE")
         adapter.addFrag(Invitation.newInstance(), "PROGRAM")

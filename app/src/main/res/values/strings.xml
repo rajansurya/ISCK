@@ -5,11 +5,12 @@
     <string name="item_2">Registration</string>
     <string name="item_3">Highlight</string>
 
-    <string name="hello">
+    <string name="invitation">
 <![CDATA[
 <html>
  <head></head>
  <body style="text-align:justify;color:black;font-size:18px;font-family:sans-serif;">
+
  On Behalf of the Executive Committee  of Delhi Ophthalmological Society, it is our great pleasure to invite you to  the
  <strong>Winter Conference of Delhi Ophthalmological&nbsp;Society (DOS) to be held  on 17th and 18th November, 2018 at India Habitat Center, New Delhi, India</strong>
     <p>The Delhi Ophthalmological Society,  with over 9000 members across India is committed to furthering the cause of  continuing medical education and promoting&nbsp;camaraderie and fellowship  amongst ophthalmologists worldwide. The DOS conference is a much awaited,  time-honored academic fiesta, which attracts faculty, trade exhibitors and  delegates from all over the world.</p>
@@ -49,5 +50,26 @@
 </html>
 ]]>
 </string>
+    <string name="highlight">
+<![CDATA[
+<html>
+ <head></head>
+ <body style="text-align:justify;color:black;font-size:17px;font-family:sans-serif;">
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Live Surgery</li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span> Scientific deliberations in Cataract &amp; Refractive Surgery, Retina, Cornea, &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Glaucoma, Squint &amp; Neuro- Ophthalmology and Oculoplasty </li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Wet Labs</li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Young ophthalmologist session</li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Interesting cases</li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Free paper</li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Debates </li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Poster Sessions </li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>E-Videos</li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Early Bird Prizes</li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>An exciting Fellowship Dinner<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>An exciting Fellowship Dinner</li></li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Quiz</li>
 
+</body>
+</html>
+]]>
+</string>
 </resources>
