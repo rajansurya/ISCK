@@ -85,4 +85,5 @@
     <color name="gray_light">#C3C3C3</color>
     <color name="theme_textColor_ticketing">#009EDF</color>
     <color name="theme_border">#DBDBDB</color>
+    <color name="bordorcolor">#FCA723</color>
 </resources>

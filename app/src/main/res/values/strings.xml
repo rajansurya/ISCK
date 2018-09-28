@@ -55,6 +55,7 @@
 <html>
  <head></head>
  <body style="text-align:justify;color:black;font-size:17px;font-family:sans-serif;">
+ <h2>CONFERENCE HIGHLIGHTS </h2>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Live Surgery</li>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span> Scientific deliberations in Cataract &amp; Refractive Surgery, Retina, Cornea, &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Glaucoma, Squint &amp; Neuro- Ophthalmology and Oculoplasty </li>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Wet Labs</li>
@@ -72,4 +73,99 @@
 </html>
 ]]>
 </string>
+
+    <string name="rupy"><![CDATA[ <font color=#FCA723>₹</font> ]]></string>
+
+    <string name="imp_note"><![CDATA[
+<html>
+ <head></head>
+ <body style="text-align:justify;color:black;font-size:17px;font-family:sans-serif;">
+<h3 class="text-white text-left"> Important Notes \n </h3>
+<ul class="font-15 text-left text-white ml-5 pl-15 ulli">
+ <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> *Inclusive Taxes</li>
+ <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> **Proof of residency required from HOD along with the registration form of the conference. </li>
+ <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> ***Registration for Spouse/child must be done separately for each person.</li>
+ <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> Bank charge as applicable on all online transaction.</li>
+ <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> For Spot Registrants: Complete Kit subject to availability.</li>
+ <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span>  Wearing of identity badge is mandatory at all times </li>
+ <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> Entry to Scientific Sessions, Exhibition Area, Felicitation Ceremony will be Restricted to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registered Delegates only.  </li>
+ <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span>  Lost badge will be replaced at the registration counter for a fee of Rs. 300/- </li>
+ <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span>  Pre-Registration closes on 30th October, 2018. Past Presidents of DOS or AIOS and Senior Member &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(&gt;70 years) will be registered complimentary provided their registration form is received <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;till 30th September.</li>
+ <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span>  DOS life members Senior Citizen above &gt;70 years are requested to send the registration form <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;along with a proof of age.</li>
+ <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span>  Cancellation &amp; Refunds: Cancellation is permitted upto 30th October, 2018 only against a written <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request submitted to the conference secretariat and 50% of the registration fee would be <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deducted as processing charges. No Cancellation requests  will beaccepted thereafter.</li>
+ <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> Attendance certificate will not be issued to associate delegates, trade delegates <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and optometrists.</li>
+</ul>
+
+
+</body>
+</html>
+
+]]></string>
+
+<array name="img_arr_commiti">
+    <item >http://doscon18.org/images/khokhar-1.jpg</item>
+    <item >http://doscon18.org/images/rakesh-mahajan.jpg</item>
+    <item >http://doscon18.org/images/subhash-1.jpg</item>
+    <item >http://doscon18.org/images/arun.jpg</item>
+    <item >http://doscon18.org/images/manav.jpg</item>
+    <item >http://doscon18.org/images/bhavana.jpg</item>
+    <item >http://doscon18.org/images/jitendra.jpg</item>
+
+</array>
+    <array name="img_arr_member">
+        <item >http://doscon18.org/images/member-1.jpg</item>
+        <item >http://doscon18.org/images/member-2.jpg</item>
+        <item >http://doscon18.org/images/member-3.jpg</item>
+        <item >http://doscon18.org/images/member-4.jpg</item>
+        <item >http://doscon18.org/images/member-5.jpg</item>
+        <item >http://doscon18.org/images/member-6.jpg</item>
+        <item >http://doscon18.org/images/member-7.jpg</item>
+        <item >http://doscon18.org/images/member-8.jpg</item>
+
+    </array>
+
+    <array name="nameimg">
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Dr. Rakesh Mahajan\nVice President</item>
+        <item>Dr. Subhash Dadeya\nSecretary</item>
+        <item>Dr. Arun Baweja\nTreasurer</item>
+        <item>Dr. Manav Deep Singh\nJoint Secretary</item>
+        <item>Dr. Bhavana Chawala\nEditor</item>
+        <item>Dr. Jatinder Singh Bhalla\nLibrary Officer</item>
+
+
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+
+
+    </array>
+    <array name="namemember">
+        <item>Dr. Radhika Tandon</item>
+        <item>Dr. Hardeep Singh</item>
+        <item>Dr. Alkesh Chaudhary</item>
+        <item>Dr. Naginder Vashisht</item>
+        <item>Dr. Vinod Kumar</item>
+        <item>Dr. Sandhya Makhija</item>
+        <item>Dr. Pawan Goyal</item>
+        <item>Dr. M C Aggarwal</item>
+
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+        <item>Prof S.K. Khokhar\nPresident, DOS</item>
+
+
+    </array>
+
 </resources>
