@@ -17,6 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Abstract"/>
+        <activity android:name=".Commitee"/>
+        <activity android:name=".Highlight"/>
     </application>
 
 </manifest>

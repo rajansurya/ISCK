@@ -50,50 +50,7 @@ class Registration : Fragment(){
             //inner scroll listener
             false
         }
-        /*hScroll.setOnTouchListener(object : View.OnTouchListener { //outer scroll listener
-            private var mx: Float = 0.toFloat()
-            private var my: Float = 0.toFloat()
-            private var curX: Float = 0.toFloat()
-            private var curY: Float = 0.toFloat()
-            private var started = false
 
-            override fun onTouch(v: View, event: MotionEvent): Boolean {
-                curX = event.x
-                curY = event.y
-                val dx = (mx - curX).toInt()
-                val dy = (my - curY).toInt()
-                when (event.action) {
-                    MotionEvent.ACTION_MOVE -> {
-                        if (started) {
-                            vScroll.scrollBy(0, dy)
-                            hScroll.scrollBy(dx, 0)
-                        } else {
-                            started = true
-                        }
-                        mx = curX
-                        my = curY
-                    }
-                    MotionEvent.ACTION_UP -> {
-                        vScroll.scrollBy(0, dy)
-                        hScroll.scrollBy(dx, 0)
-                        started = false
-                    }
-                }
-                return true
-            }
-        })*/
-        /*scrollVertical.setOnTouchListener(object :View.OnTouchListener{
-            override fun onTouch(v: View?, event: MotionEvent?): Boolean {
-                return false;
-            }
-
-        })
-        hsv.setOnTouchListener(object :View.OnTouchListener{
-            override fun onTouch(v: View?, event: MotionEvent?): Boolean {
-                return false;
-            }
-
-        })*/
         r1.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
         r2.text = Html.fromHtml(resources.getString(R.string.rupy) + 1200 + "*")
         r3.text = Html.fromHtml(resources.getString(R.string.rupy) + 1400 + "*")

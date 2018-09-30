@@ -9,7 +9,7 @@
 <![CDATA[
 <html>
  <head></head>
- <body style="text-align:justify;color:black;font-size:18px;font-family:sans-serif;">
+ <body style="text-align:justify;color:black;font-size:18px;font-family:Georgia;">
 
  On Behalf of the Executive Committee  of Delhi Ophthalmological Society, it is our great pleasure to invite you to  the
  <strong>Winter Conference of Delhi Ophthalmological&nbsp;Society (DOS) to be held  on 17th and 18th November, 2018 at India Habitat Center, New Delhi, India</strong>
@@ -54,8 +54,8 @@
 <![CDATA[
 <html>
  <head></head>
- <body style="text-align:justify;color:black;font-size:17px;font-family:sans-serif;">
- <h2>CONFERENCE HIGHLIGHTS </h2>
+ <body style="text-align:justify;color:black;font-size:17px;font-family:Georgia;">
+ <h3>CONFERENCE HIGHLIGHTS </h3>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Live Surgery</li>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span> Scientific deliberations in Cataract &amp; Refractive Surgery, Retina, Cornea, &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Glaucoma, Squint &amp; Neuro- Ophthalmology and Oculoplasty </li>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Wet Labs</li>
@@ -79,7 +79,7 @@
     <string name="imp_note"><![CDATA[
 <html>
  <head></head>
- <body style="text-align:justify;color:black;font-size:17px;font-family:sans-serif;">
+ <body style="text-align:justify;color:black;font-size:17px;font-family:Georgia;">
 <h3 class="text-white text-left"> Important Notes \n </h3>
 <ul class="font-15 text-left text-white ml-5 pl-15 ulli">
  <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> *Inclusive Taxes</li>
@@ -167,5 +167,17 @@
 
 
     </array>
-
+<array name="tabname">
+    <!--<item >INVITATION</item>
+    <item >REGISTRATION</item>-->
+    <item >HIGHLIGHTS</item>
+    <item >ABSTRACT</item>
+    <item >COMMITTEE</item>
+    <item >PROGRAM</item>
+    <item >EXHIBITION</item>
+    <item >VENUE</item>
+    <item >TOURS</item>
+    <item >ACCOMMODATION</item>
+    <item >CONTACT</item>
+</array>
 </resources>

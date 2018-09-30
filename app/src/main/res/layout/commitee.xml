@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<include layout="@layout/header_other" />
+<ScrollView
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:fillViewport="true">
@@ -8,6 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+
 
         <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -26,9 +33,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="5dp"
-                android:textStyle="bold"
-                android:textSize="17sp"
                 android:text="EXECUTIVE MEMBERS"
+                android:textSize="17sp"
+                android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/gridview_cyc" />
 
             <android.support.v7.widget.RecyclerView
@@ -40,3 +47,4 @@
         </android.support.constraint.ConstraintLayout>
     </LinearLayout>
 </ScrollView>
+</LinearLayout>

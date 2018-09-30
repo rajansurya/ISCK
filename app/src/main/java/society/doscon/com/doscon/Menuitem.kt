@@ -7,18 +7,30 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 
 /**
  * Created by RDX on 30-09-2018.
  */
-class Menuitem(var context: Context) : RecyclerView.Adapter<Menuitem.ViewHolder> (){
-    lateinit var ta:Array<String>
-    init {
-        ta = context.getResources().getStringArray(R.array.nameimg);
+class Menuitem(var context: Context,var menuitem: menuckick) : RecyclerView.Adapter<Menuitem.ViewHolder>() {
+    lateinit var ta: Array<String>
+
+    interface menuckick {
+        fun menuClick(position: Int);
     }
+
+    init {
+        ta = context.getResources().getStringArray(R.array.tabname);
+    }
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.grid_item?.text=ta[position]
+        if (position % 2 == 0)
+            holder.home_txt?.setBackgroundColor(context.resources.getColor(R.color.white))
+        else
+            holder.home_txt?.setBackgroundColor(context.resources.getColor(R.color.recycle_back))
+        holder.grid_item?.text = ta[position]
+        holder.itemView.setOnClickListener{menuitem.menuClick(position)}
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -34,12 +46,12 @@ class Menuitem(var context: Context) : RecyclerView.Adapter<Menuitem.ViewHolder>
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var grid_item: TextView? = null
-//        var home_txt: TextView? = null
+        var home_txt: LinearLayout? = null
 //        var home_icon: ImageView? = null
 
         init {
             grid_item = view.findViewById(R.id.grid_item)
-//            home_txt = view.findViewById(R.id.home_txt)
+            home_txt = view.findViewById(R.id.menubackground)
 //            home_icon = view.findViewById(R.id.home_icon)
         }
     }
