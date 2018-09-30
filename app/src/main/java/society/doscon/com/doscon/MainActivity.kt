@@ -6,21 +6,46 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.GridLayoutManager
+import android.support.v7.widget.LinearLayoutManager
 import android.text.Html
+import android.view.Gravity
+import android.view.View
+import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.header_view.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(),View.OnClickListener {
+    override fun onClick(p0: View?) {
+        when(p0?.id){
+            R.id.drawer_click->{
+              if(drawer_layout.isDrawerOpen(Gravity.START)){
+                  drawer_layout.closeDrawer(Gravity.LEFT)
+              }else{
+                  drawer_layout.openDrawer(Gravity.LEFT)
+              }
+            }
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(toolbar);
-        toolbar.setTitle(getResources().getString(R.string.app_name));
-        toolbar.setSubtitle(Html.fromHtml("<font color='#FCAA23'>WINTER CONFERENCE</font>"));
+//        setSupportActionBar(toolbar);
+//        toolbar.setTitle(getResources().getString(R.string.app_name));
+        title_name.text=getResources().getString(R.string.app_name)
+        sub_title_name.text=Html.fromHtml("<font color='#FCAA23'>WINTER CONFERENCE</font>")
+
 //        getSupportActionBar()!!.setDisplayHomeAsUpEnabled(true);
         setupViewPager(viewpager);
         tabs.setupWithViewPager(viewpager);
+        first?.layoutManager = LinearLayoutManager(this)
+        first?.addItemDecoration(SpacesItemDecoration(1))
+        var adapter= Menuitem(this)
+        first?.setAdapter(adapter)
+        drawer_click.setOnClickListener(this)
     }
+
 
     private fun setupViewPager(viewPager: ViewPager) {
         val adapter = ViewPagerAdapter(supportFragmentManager)

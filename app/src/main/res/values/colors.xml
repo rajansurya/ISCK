@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorBackground">#FFFFFF</color>
-    <color name="colorPrimary">#08518F</color>
+    <color name="colorPrimary">#228de7</color>
     <color name="colorPrimaryDark">#08518F</color>
     <color name="header_color">#004d99</color>
     <color name="white">#ffffff</color>
@@ -26,6 +26,7 @@
     <color name="transaction_pending">#F09A06</color>
     <color name="transaction_failed">#F30208</color>
     <color name="transaction_cancel">#F0BA06</color>
+    <color name="recycle_back">#f4d25f</color>
 
     <color name="balance_profile">#73C289</color>
     <color name="agent_details_heading">#939393</color>
