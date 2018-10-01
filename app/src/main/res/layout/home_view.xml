@@ -33,7 +33,19 @@
             android:id="@+id/registration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registration"
+            android:text="REGISTRATION"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTIFICATION"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/program"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROGRAM"
             android:textColor="@color/black" />
     </RelativeLayout>
 </LinearLayout>
