@@ -10,17 +10,30 @@
         android:layout_height="200dp" />
 
     <RelativeLayout
+        android:id="@+id/parent_cube"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <society.doscon.com.doscon.TriangleBackgroundView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/tringle_shape" />
+            android:layout_height="match_parent" />
 
-       <!-- <society.doscon.com.doscon.TriangleBackgroundViewSec
+
+        <society.doscon.com.doscon.TriangleBackgroundViewSec
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/tringle_shape" />-->
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/abstracttx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABSTRACT"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:textColor="@color/black" />
     </RelativeLayout>
 </LinearLayout>

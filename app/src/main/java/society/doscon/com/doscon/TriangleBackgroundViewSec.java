@@ -32,7 +32,7 @@ public class TriangleBackgroundViewSec extends View {
         paint.setAntiAlias(true);
         paint.setStrokeCap(Paint.Cap.SQUARE);
         paint.setStyle(Paint.Style.FILL);
-        paint.setColor(getResources().getColor(R.color.cardview_dark_background));
+        paint.setColor(getResources().getColor(R.color.success_flexi));
 
         bgPaint= new Paint();
         bgPaint.setStyle(Paint.Style.FILL);
@@ -51,14 +51,33 @@ public class TriangleBackgroundViewSec extends View {
         int h = getMeasuredHeight();
         int w = getMeasuredWidth();
 
-        canvas.drawRect(0,0,w,h,bgPaint);
-
         Path path = new Path();
+        path.moveTo(w/2, h/2);
+        path.lineTo(0, h/2);
+        path.lineTo(w/2, 0);
+        path.lineTo(w, h/2);
+        path.lineTo(w/2, h);
+        path.lineTo(0, h/2);
+        path.close();
+        canvas.drawPath(path,paint);
+
+//        canvas.save();
+//        canvas.rotate(45,0,0);
+//        canvas.drawRect(0,0,w/2,h/2,bgPaint);
+//        canvas.restore();
+
+//        canvas.save();
+
+
+//        super.onDraw(canvas);
+//        canvas.restore();
+//        canvas.drawRect(0,0,w,h,bgPaint);
+     /*   Path path = new Path();
         path.moveTo(0, h);
         path.lineTo(w, 0);
         path.lineTo(0, 0);
         path.lineTo(0, h);
         path.close();
-        canvas.drawPath(path,paint);
+        canvas.drawPath(path,paint);*/
     }
 }

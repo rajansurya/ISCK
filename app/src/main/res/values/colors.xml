@@ -31,11 +31,11 @@
     <color name="balance_profile">#73C289</color>
     <color name="agent_details_heading">#939393</color>
     <color name="dark_blue_background">#193F88</color>
-    <color name="success_flexi">#73C289</color>
+    <color name="success_flexi">#4073C289</color>
 
     <color name="webviewbgcolor">#004C88</color>
     <color name="textcolor">#004C88</color>
-    <color name="divider_grey">#d9d9d9</color>
+    <color name="divider_grey">#00d9d9d9</color>
     <color name="kyc_submit">#193F86</color>
     <color name="green_tab">#8BC238</color>
     <color name="light_blue">#89B0FA</color>
