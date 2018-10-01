@@ -39,7 +39,7 @@ public class TriangleBackgroundView extends View {
         paint1.setAntiAlias(true);
         paint1.setStrokeCap(Paint.Cap.SQUARE);
         paint1.setStyle(Paint.Style.FILL);
-        paint1.setColor(getResources().getColor(R.color.yellow_light_color));
+        paint1.setColor(getResources().getColor(R.color.org_color));
 
         paint = new Paint();
         paint.setStrokeWidth(1);
@@ -50,7 +50,7 @@ public class TriangleBackgroundView extends View {
 
         bgPaint= new Paint();
         bgPaint.setStyle(Paint.Style.FILL);
-        bgPaint.setColor(getResources().getColor(R.color.hint_color));
+        bgPaint.setColor(getResources().getColor(R.color.colorPrimary));
     }
 
     @Override

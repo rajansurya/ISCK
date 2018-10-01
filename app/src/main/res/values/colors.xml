@@ -88,4 +88,5 @@
     <color name="theme_textColor_ticketing">#009EDF</color>
     <color name="theme_border">#DBDBDB</color>
     <color name="bordorcolor">#FCA723</color>
+    <color name="org_color">#a5be59</color>
 </resources>
