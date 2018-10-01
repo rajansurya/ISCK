@@ -9,7 +9,7 @@
 <![CDATA[
 <html>
  <head></head>
- <body style="text-align:justify;color:black;font-size:18px;font-family:Georgia;">
+ <body style="text-align:justify;color:black;font-size:17px;font-family:Georgia;">
 
  On Behalf of the Executive Committee  of Delhi Ophthalmological Society, it is our great pleasure to invite you to  the
  <strong>Winter Conference of Delhi Ophthalmological&nbsp;Society (DOS) to be held  on 17th and 18th November, 2018 at India Habitat Center, New Delhi, India</strong>
@@ -55,7 +55,7 @@
 <html>
  <head></head>
  <body style="text-align:justify;color:black;font-size:17px;font-family:Georgia;">
- <h3>CONFERENCE HIGHLIGHTS </h3>
+ <h4>CONFERENCE HIGHLIGHTS </h4>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Live Surgery</li>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span> Scientific deliberations in Cataract &amp; Refractive Surgery, Retina, Cornea, &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Glaucoma, Squint &amp; Neuro- Ophthalmology and Oculoplasty </li>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Wet Labs</li>
@@ -102,25 +102,25 @@
 
 ]]></string>
 
-<array name="img_arr_commiti">
-    <item >http://doscon18.org/images/khokhar-1.jpg</item>
-    <item >http://doscon18.org/images/rakesh-mahajan.jpg</item>
-    <item >http://doscon18.org/images/subhash-1.jpg</item>
-    <item >http://doscon18.org/images/arun.jpg</item>
-    <item >http://doscon18.org/images/manav.jpg</item>
-    <item >http://doscon18.org/images/bhavana.jpg</item>
-    <item >http://doscon18.org/images/jitendra.jpg</item>
+    <array name="img_arr_commiti">
+        <item>http://doscon18.org/images/khokhar-1.jpg</item>
+        <item>http://doscon18.org/images/rakesh-mahajan.jpg</item>
+        <item>http://doscon18.org/images/subhash-1.jpg</item>
+        <item>http://doscon18.org/images/arun.jpg</item>
+        <item>http://doscon18.org/images/manav.jpg</item>
+        <item>http://doscon18.org/images/bhavana.jpg</item>
+        <item>http://doscon18.org/images/jitendra.jpg</item>
 
-</array>
+    </array>
     <array name="img_arr_member">
-        <item >http://doscon18.org/images/member-1.jpg</item>
-        <item >http://doscon18.org/images/member-2.jpg</item>
-        <item >http://doscon18.org/images/member-3.jpg</item>
-        <item >http://doscon18.org/images/member-4.jpg</item>
-        <item >http://doscon18.org/images/member-5.jpg</item>
-        <item >http://doscon18.org/images/member-6.jpg</item>
-        <item >http://doscon18.org/images/member-7.jpg</item>
-        <item >http://doscon18.org/images/member-8.jpg</item>
+        <item>http://doscon18.org/images/member-1.jpg</item>
+        <item>http://doscon18.org/images/member-2.jpg</item>
+        <item>http://doscon18.org/images/member-3.jpg</item>
+        <item>http://doscon18.org/images/member-4.jpg</item>
+        <item>http://doscon18.org/images/member-5.jpg</item>
+        <item>http://doscon18.org/images/member-6.jpg</item>
+        <item>http://doscon18.org/images/member-7.jpg</item>
+        <item>http://doscon18.org/images/member-8.jpg</item>
 
     </array>
 
@@ -167,17 +167,17 @@
 
 
     </array>
-<array name="tabname">
-    <!--<item >INVITATION</item>
-    <item >REGISTRATION</item>-->
-    <item >HIGHLIGHTS</item>
-    <item >ABSTRACT</item>
-    <item >COMMITTEE</item>
-    <item >PROGRAM</item>
-    <item >EXHIBITION</item>
-    <item >VENUE</item>
-    <item >TOURS</item>
-    <item >ACCOMMODATION</item>
-    <item >CONTACT</item>
-</array>
+    <array name="tabname">
+        <!--<item >INVITATION</item>
+        <item >REGISTRATION</item>-->
+        <item>HIGHLIGHTS</item>
+        <item>ABSTRACT</item>
+        <item>COMMITTEE</item>
+        <item>PROGRAM</item>
+        <item>EXHIBITION</item>
+        <item>VENUE</item>
+        <item>TOURS</item>
+        <item>ACCOMMODATION</item>
+        <item>CONTACT</item>
+    </array>
 </resources>

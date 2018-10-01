@@ -29,6 +29,7 @@ class Abstract : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.web_content)
         title_name.text="ABSTRACT"
+        back.setOnClickListener { this@Abstract.finish() }
         webpagesLinear=findViewById(R.id.webpagesLinear)
         webpagesLinear.getSettings().setJavaScriptEnabled(true);
         webpagesLinear.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
@@ -39,6 +40,7 @@ class Abstract : Activity() {
         progressbar.visibility=View.VISIBLE
         webpagesLinear.setWebViewClient(AppWebViewClients(progressbar))
         webpagesLinear.loadUrl("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php");
+
 
     }
     inner class AppWebViewClients(private val progressBar: ProgressBar) : WebViewClient() {

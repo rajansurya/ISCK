@@ -5,11 +5,11 @@
     android:background="?attr/colorPrimary">
 
     <ImageView
-        android:id="@+id/drawer_click"
+        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/icons_back"
         android:layout_centerVertical="true"
-
         android:layout_marginLeft="15dp" />
 
     <TextView
@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@id/drawer_click"
+        android:layout_toRightOf="@id/back"
         android:paddingLeft="20dp"
         android:textColor="@color/white"
         android:textSize="17sp"

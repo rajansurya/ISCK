@@ -25,6 +25,7 @@ class Commitee : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.commitee)
         title_name.text="COMMITTEE"
+        back.setOnClickListener { this@Commitee.finish() }
         val displayMetrics = DisplayMetrics()
         windowManager?.defaultDisplay?.getMetrics(displayMetrics)
         val width = displayMetrics.widthPixels

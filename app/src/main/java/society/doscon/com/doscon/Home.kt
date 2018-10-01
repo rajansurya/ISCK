@@ -94,18 +94,19 @@ class Home : Fragment(), View.OnClickListener {
             if (carousal != null)
                 carousal.setCurrentItem(currentPage++, true)
         }
-
-        timer = Timer() // This will create a new Thread
-        timer!!.schedule(object : TimerTask() {
-            override fun run() {
-                handler.post(Update)
-            }
-        }, DELAY_MS, PERIOD_MS)
+        if (timer == null) {
+            timer = Timer() // This will create a new Thread
+            timer!!.schedule(object : TimerTask() {
+                override fun run() {
+                    handler.post(Update)
+                }
+            }, DELAY_MS, PERIOD_MS)
+        }
     }
 
     override fun onPause() {
         super.onPause()
-        timer = null
+
     }
 
     internal class Carousal(var context: Context, var images: IntArray) : PagerAdapter() {

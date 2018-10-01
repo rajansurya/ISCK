@@ -21,6 +21,7 @@ class Highlight:Activity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.web_content)
         title_name.text="HIGHLIGHTS"
+        back.setOnClickListener { this@Highlight.finish() }
         webpagesLinear=findViewById(R.id.webpagesLinear)
         webpagesLinear.getSettings().setJavaScriptEnabled(true);
         webpagesLinear.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
