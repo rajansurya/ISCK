@@ -25,10 +25,10 @@ class Menuitem(var context: Context,var menuitem: menuckick) : RecyclerView.Adap
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        if (position % 2 == 0)
-            holder.home_txt?.setBackgroundColor(context.resources.getColor(R.color.white))
-        else
-            holder.home_txt?.setBackgroundColor(context.resources.getColor(R.color.recycle_back))
+//        if (position % 2 == 0)
+//            holder.home_txt?.setBackgroundColor(context.resources.getColor(R.color.white))
+//        else
+//            holder.home_txt?.setBackgroundColor(context.resources.getColor(R.color.recycle_back))
         holder.grid_item?.text = ta[position]
         holder.itemView.setOnClickListener{menuitem.menuClick(position)}
     }

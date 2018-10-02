@@ -36,7 +36,7 @@
         android:layout_width="220dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/transaction_cancel">
+        android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,7 +63,7 @@
                 android:id="@+id/first"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/recycle_back" />
+                android:background="@color/colorPrimary" />
         </LinearLayout>
     </android.support.design.widget.NavigationView>
 </android.support.v4.widget.DrawerLayout>
