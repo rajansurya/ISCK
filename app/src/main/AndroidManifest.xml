@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".Splash"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +20,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Abstract"
             android:screenOrientation="portrait" />
         <activity
@@ -27,6 +30,15 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Highlight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Exhibation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Venue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contact"
             android:screenOrientation="portrait" />
     </application>
 

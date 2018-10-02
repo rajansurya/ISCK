@@ -180,4 +180,43 @@
         <item>ACCOMMODATION</item>
         <item>CONTACT</item>
     </array>
+    <string name="venue">
+        <![CDATA[
+        <html>
+ <head></head>
+ <body style="text-align:justify;color:black;font-size:17px;font-family:Georgia;">
+        <div class="sec-title">
+                    	<h2>India Habitat Centre, Lodhi Road, New Delhi</h2>
+                <div class="text">17th &amp; 18th November, 2018</div>
+                    </div>
+    </body>
+</html>
+
+]]></string>
+    <string name="contact">
+         <![CDATA[
+        <html>
+ <head></head>
+ <body style="text-align:justify;color:black;font-size:17px;font-family:Georgia;">
+ <div class="footer-widget links-widget">
+                                	<div class="footer-title">
+                                    	<h4>Address For All Correspondence:</h4>
+                                    </div>
+                                	<div class="widget-content">
+                                     <p class="text-white">
+
+                                     <strong>Prof. Subhash C. Dadeya</strong> <br>
+Secretary-Delhi Ophthalmological Society<br>
+<br>Room No 114, 1st Floor, OPD Block Guru Nanak Eye Centre, Maharaja Ranjit Singh Marg, New Delhi - 110002<br>
+<br>Phone : +91 11 23210810 <br><br> E-mail : info@doscon18.org /    dosrecords@gmail.com  <br>
+<br> Web: www.doscon18.org <br>  or www.dosonline.org</p>
+
+									</div>
+                                </div>
+    </body>
+</html>
+
+]]>
+
+    </string>
 </resources>

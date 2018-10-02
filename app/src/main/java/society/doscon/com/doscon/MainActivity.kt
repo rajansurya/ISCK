@@ -1,6 +1,7 @@
 package society.doscon.com.doscon
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
@@ -15,6 +16,7 @@ import android.view.View
 import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.header_view.*
+import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menuckick {
     override fun menuClick(position: Int) {
@@ -24,10 +26,27 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 startActivity(Intent(this,Highlight::class.java))
             }
             1->{
-                startActivity(Intent(this,Abstract::class.java))
+//                startActivity(Intent(this,Abstract::class.java))
+                var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
+                startActivity(intent)
             }
             2->{
                 startActivity(Intent(this,Commitee::class.java))
+            }
+            3->{
+                toast("Coming Soon")
+            }
+            4->{
+                startActivity(Intent(this,Exhibation::class.java))
+            }
+            5->{
+                startActivity(Intent(this,Venue::class.java))
+            }
+            7->{
+                toast("Coming Soon")
+            }
+            8->{
+                startActivity(Intent(this,Contact::class.java))
             }
         }
     }
