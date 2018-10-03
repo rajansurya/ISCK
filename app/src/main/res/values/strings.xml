@@ -12,7 +12,7 @@
  <body style="color:black;font-size:17px;font-family:ariel;">
 
  On Behalf of the Executive Committee  of Delhi Ophthalmological Society, it is our great pleasure to invite you to  the
- <strong>Winter Conference of Delhi Ophthalmological&nbsp;Society (DOS) to be held  on 17th and 18th November, 2018 at India Habitat Center, New Delhi, India</strong>
+ <h4>Winter Conference of Delhi Ophthalmological&nbsp;Society (DOS) to be held  on 17th and 18th November, 2018 at India Habitat Center, New Delhi, India</h4>
     <p>The Delhi Ophthalmological Society,  with over 9000 members across India is committed to furthering the cause of  continuing medical education and promoting&nbsp;camaraderie and fellowship  amongst ophthalmologists worldwide. The DOS conference is a much awaited,  time-honored academic fiesta, which attracts faculty, trade exhibitors and  delegates from all over the world.</p>
     <p>The conference will be a two-day  celebration of ophthalmology featuring the best works in the fields of  Cataract, Refractive Surgery, Cornea, Glaucoma, Strabismus, Neuro-ophthamology  and Occuloplasty. The diverse program will feature plenary lectures, symposia,  instruction course, wet labs and live surgery&nbsp;demonstration,  Eposter, Video and Interesting Cases. A Session for young ophthalmologist will  be a special addition to our diverse program.&nbsp;</p>
  <p>As you will venture out of the  confines of the state of the art conference hall and the world of  ophthalmology, the vibrant Delhi winters, along with its legendary&nbsp;hospitality  and bustling energy will enthrall you. After the academic extravaganza, will be  the captivating cultural program and fellowship dinner, true to DOS traditions.</p>
@@ -126,7 +126,15 @@
         <item>http://doscon18.org/images/member-8.jpg</item>
 
     </array>
-
+<array name="img_arr_represtative">
+    <item>http://doscon18.org/images/member-9.jpg</item>
+    <item>http://doscon18.org/images/member-10.jpg</item>
+</array>
+    <array name="img_arr_exofficer">
+        <item>http://doscon18.org/images/member-11.jpg</item>
+        <item>http://doscon18.org/images/member-12.jpg</item>
+        <item>http://doscon18.org/images/member-13.jpg</item>
+    </array>
     <array name="nameimg">
         <item>Prof S.K. Khokhar\nPresident, DOS</item>
         <item>Dr. Rakesh Mahajan\nVice President</item>
@@ -173,7 +181,7 @@
     <array name="tabname">
         <!--<item >INVITATION</item>
         <item >REGISTRATION</item>-->
-        <item>HIGHLIGHTS</item>
+        <item>REGISTRATION</item>
         <item>ABSTRACT</item>
         <item>COMMITTEE</item>
         <item>PROGRAM</item>

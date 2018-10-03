@@ -47,13 +47,19 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="7dp"
                 android:layout_marginTop="25dp"
-                android:background="@drawable/round_shape"
                 android:contentDescription="@string/app_name"
                 android:padding="1dp"
                 android:src="@drawable/optha" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:text="DOS Winter Conference 2018" />
             <!--<View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"

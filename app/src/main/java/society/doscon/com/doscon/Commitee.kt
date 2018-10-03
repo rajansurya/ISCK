@@ -32,16 +32,33 @@ class Commitee : Activity() {
         val height = displayMetrics.heightPixels
         fiilliste = getResources().getStringArray(R.array.img_arr_commiti);
         home_adapter = Home_Adapter(applicationContext, fiilliste.toCollection(ArrayList<String>()), width, height, "commity")
-        gridview_cyc?.layoutManager = GridLayoutManager(this, 2)
+        gridview_cyc?.layoutManager = CustomGridLayoutManager(this, 2)
         gridview_cyc?.addItemDecoration(SpacesItemDecoration(1))
         gridview_cyc?.setAdapter(home_adapter)
 
         fiilliste = getResources().getStringArray(R.array.img_arr_member);
         home_adapter = Home_Adapter(applicationContext, fiilliste.toCollection(ArrayList<String>()), width, height, "member")
 
-        gridview_cyc_member?.layoutManager = GridLayoutManager(this, 2)
+        gridview_cyc_member?.layoutManager = CustomGridLayoutManager(this, 2)
         gridview_cyc_member?.addItemDecoration(SpacesItemDecoration(1))
         gridview_cyc_member?.setAdapter(home_adapter)
+
+
+        fiilliste = getResources().getStringArray(R.array.img_arr_represtative);
+        home_adapter = Home_Adapter(applicationContext, fiilliste.toCollection(ArrayList<String>()), width, height, "member")
+
+        gridview_cyc_representive?.layoutManager = CustomGridLayoutManager(this, 2)
+        gridview_cyc_representive?.addItemDecoration(SpacesItemDecoration(1))
+        gridview_cyc_representive?.setAdapter(home_adapter)
+
+        fiilliste = getResources().getStringArray(R.array.img_arr_exofficer);
+        home_adapter = Home_Adapter(applicationContext, fiilliste.toCollection(ArrayList<String>()), width, height, "member")
+
+        gridview_cyc_exofficer?.layoutManager = CustomGridLayoutManager(this, 2)
+        gridview_cyc_exofficer?.addItemDecoration(SpacesItemDecoration(1))
+        gridview_cyc_exofficer?.setAdapter(home_adapter)
+
+
     }
 
 

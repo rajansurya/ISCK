@@ -8,12 +8,10 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
 import android.text.Html
 import android.view.Gravity
 import android.view.View
-import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.header_view.*
 import org.jetbrains.anko.toast
@@ -21,35 +19,35 @@ import org.jetbrains.anko.toast
 class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menuckick {
     override fun menuClick(position: Int) {
         drawer_layout.closeDrawer(Gravity.LEFT)
-        when(position){
-            0->{
-                startActivity(Intent(this,Highlight::class.java))
+        when (position) {
+            0 -> {
+                startActivity(Intent(this, RegistrationActivity::class.java))
             }
-            1->{
+            1 -> {
                 var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
                 startActivity(intent)
             }
-            2->{
-                startActivity(Intent(this,Commitee::class.java))
+            2 -> {
+                startActivity(Intent(this, Commitee::class.java))
             }
-            3->{
+            3 -> {
                 toast("Coming Soon")
             }
-            4->{
-                startActivity(Intent(this,Exhibation::class.java))
+            4 -> {
+                startActivity(Intent(this, Exhibation::class.java))
             }
-            5->{
-                startActivity(Intent(this,Venue::class.java))
+            5 -> {
+                startActivity(Intent(this, Venue::class.java))
             }
-            6->{
-            startActivity(Intent(this,Tour::class.java))
-        }
+            6 -> {
+                startActivity(Intent(this, Tour::class.java))
+            }
 
-            7->{
+            7 -> {
                 toast("Coming Soon")
             }
-            8->{
-                startActivity(Intent(this,Contact::class.java))
+            8 -> {
+                startActivity(Intent(this, Contact::class.java))
             }
         }
     }
@@ -79,7 +77,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         tabs.setupWithViewPager(viewpager);
         first?.layoutManager = LinearLayoutManager(this)
         first?.addItemDecoration(SpacesItemDecoration(1))
-        var adapter = Menuitem(this,this)
+        var adapter = Menuitem(this, this)
         first?.setAdapter(adapter)
         drawer_click.setOnClickListener(this)
     }
@@ -89,7 +87,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         val adapter = ViewPagerAdapter(supportFragmentManager)
         adapter.addFrag(Home.newInstance(), "HOME")
         adapter.addFrag(Invitation.newInstance(), "INVITATION")
-        adapter.addFrag(Registration.newInstance(), "REGISTRATION")
+        adapter.addFrag(Highlight.newInstance(), "HIGHLIGHT")
 //        adapter.addFrag(Home.newInstance(), "HIGHLIGHTS")
 //        adapter.addFrag(Abstract.newInstance(), "ABSTRACT")
 //        adapter.addFrag(Commitee.newInstance(), "COMMITTEE")

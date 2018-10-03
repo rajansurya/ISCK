@@ -11,6 +11,8 @@ import android.view.ViewGroup
 import android.webkit.WebView
 import kotlinx.android.synthetic.main.registration_view.*
 import android.view.MotionEvent
+import android.webkit.WebViewClient
+import kotlinx.android.synthetic.main.header_other.*
 import society.doscon.com.doscon.R.id.vScroll
 import society.doscon.com.doscon.R.id.hScroll
 import society.doscon.com.doscon.R.id.vScroll
@@ -50,7 +52,8 @@ class Registration : Fragment(){
             //inner scroll listener
             false
         }
-
+        title_name.text="REGISTRATION"
+        back.setOnClickListener { activity?.finish() }
         r1.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
         r2.text = Html.fromHtml(resources.getString(R.string.rupy) + 1200 + "*")
         r3.text = Html.fromHtml(resources.getString(R.string.rupy) + 1400 + "*")
@@ -93,6 +96,8 @@ class Registration : Fragment(){
         webpagesLinear=view.findViewById(R.id.webpagesLinear)
         webpagesLinear.getSettings().setJavaScriptEnabled(true);
         webpagesLinear.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
+        webpagesLinear.webViewClient= WebViewClient()
+        webpagesLinear   .requestFocus(View.FOCUS_DOWN or View.FOCUS_UP)
         webpagesLinear.setScrollbarFadingEnabled(true);
         webpagesLinear.getSettings().setDomStorageEnabled(true);
         webpagesLinear.getSettings().setLoadsImagesAutomatically(true);

@@ -29,7 +29,7 @@
             android:name=".Commitee"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Highlight"
+            android:name=".RegistrationActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Exhibation"
