@@ -13,10 +13,10 @@
         android:src="@drawable/menu" />
     <ImageView
         android:id="@+id/right_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="20dp"
         android:layout_centerVertical="true"
         android:src="@drawable/dos_ficty" />
 

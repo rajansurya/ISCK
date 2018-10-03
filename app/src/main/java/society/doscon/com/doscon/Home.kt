@@ -14,6 +14,9 @@ import android.widget.ImageView
 import android.widget.RelativeLayout
 import kotlinx.android.synthetic.main.home_view.*
 import java.util.*
+import java.lang.reflect.AccessibleObject.setAccessible
+import android.support.v4.view.ViewPager
+import java.lang.reflect.Field
 
 
 class Home : Fragment(), View.OnClickListener {
@@ -52,8 +55,8 @@ class Home : Fragment(), View.OnClickListener {
 
     var currentPage = 0
     var timer: Timer? = null
-    val DELAY_MS: Long = 500//delay in milliseconds before task is to be executed
-    val PERIOD_MS: Long = 3000
+    val DELAY_MS: Long = 1000//delay in milliseconds before task is to be executed
+    val PERIOD_MS: Long = 4000
     var NUM_PAGES: Int = 2
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -66,8 +69,8 @@ class Home : Fragment(), View.OnClickListener {
             abstracttx.layoutParams = params
 
             val params1 = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
-            params1.leftMargin = width / 2 + 40
-            params1.topMargin = height / 2 - registration.height / 2
+            params1.leftMargin = width / 2 + 50
+            params1.topMargin = height / 2 - registration.height
             registration.layoutParams = params1
 
             val params2 = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
@@ -102,6 +105,18 @@ class Home : Fragment(), View.OnClickListener {
                 }
             }, DELAY_MS, PERIOD_MS)
         }
+        try {
+            val mScroller: Field
+            mScroller = ViewPager::class.java.getDeclaredField("mScroller")
+            mScroller.setAccessible(true)
+            val scroller = FixedSpeedScroller(carousal.getContext())
+            // scroller.setFixedDuration(5000);
+            mScroller.set(carousal, scroller)
+        } catch (e: NoSuchFieldException) {
+        } catch (e: IllegalArgumentException) {
+        } catch (e: IllegalAccessException) {
+        }
+
     }
 
     override fun onPause() {

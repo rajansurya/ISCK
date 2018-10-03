@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 startActivity(Intent(this,Highlight::class.java))
             }
             1->{
-//                startActivity(Intent(this,Abstract::class.java))
                 var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
                 startActivity(intent)
             }
@@ -42,6 +41,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             5->{
                 startActivity(Intent(this,Venue::class.java))
             }
+            6->{
+            startActivity(Intent(this,Tour::class.java))
+        }
+
             7->{
                 toast("Coming Soon")
             }

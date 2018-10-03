@@ -28,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/abstracttx"
             android:text="ABSTRACT"
             android:textColor="@color/black" />
         <TextView
@@ -35,12 +36,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="REGISTRATION"
+            android:text="KNOW YOUR REGISTRATION"
+            android:drawableLeft="@drawable/knowyourregistration"
             android:textColor="@color/black" />
         <TextView
             android:id="@+id/notification"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableTop="@drawable/notification"
             android:layout_centerInParent="true"
             android:text="NOTIFICATION"
             android:textColor="@color/black" />
@@ -49,6 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:drawableBottom="@drawable/program"
             android:text="PROGRAM"
             android:textColor="@color/black" />
     </RelativeLayout>
