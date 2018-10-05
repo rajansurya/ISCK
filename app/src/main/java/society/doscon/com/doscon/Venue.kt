@@ -27,7 +27,7 @@ class Venue : FragmentActivity(), OnMapReadyCallback {
         googleMap = map
 
 
-        if (map != null) {
+        /*if (map != null) {
             val permission = ContextCompat.checkSelfPermission(this,
                     Manifest.permission.ACCESS_FINE_LOCATION)
 
@@ -36,17 +36,13 @@ class Venue : FragmentActivity(), OnMapReadyCallback {
             } else {
                 requestPermission(Manifest.permission.ACCESS_FINE_LOCATION, LOCATION_REQUEST_CODE)
             }
-        }
+        }*/
 
 
          val sydney = LatLng(28.589684, 77.230983)
-
  //        map?.setMyLocationEnabled(true)
          map?.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15f))
-
-         map?.addMarker(MarkerOptions()
-                 .title("INDIA HABITAT CENTRE")
-                 .position(sydney))
+         map?.addMarker(MarkerOptions().title("INDIA HABITAT CENTRE").position(sydney))
     }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
@@ -81,7 +77,7 @@ class Venue : FragmentActivity(), OnMapReadyCallback {
         webpagesLinear.loadData(resources.getString(R.string.venue), "text/html; charset=utf-8", "utf-8");
         title_name.text = "VENUE"
         back.setOnClickListener { this@Venue.finish() }
-        requestPermission(Manifest.permission.ACCESS_FINE_LOCATION, LOCATION_REQUEST_CODE)
+//        requestPermission(Manifest.permission.ACCESS_FINE_LOCATION, LOCATION_REQUEST_CODE)
     }
     private fun requestPermission(permissionType: String, requestCode: Int){
         ActivityCompat.requestPermissions(this, arrayOf(permissionType),requestCode)
