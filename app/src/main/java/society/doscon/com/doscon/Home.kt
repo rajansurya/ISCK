@@ -64,8 +64,8 @@ class Home : Fragment(), View.OnClickListener {
             var height: Int = parent_cube.height
             var width: Int = parent_cube.width
             val params = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
-            params.leftMargin = width / 2 - abstracttx.width - 40
-            params.topMargin = height / 2 - abstracttx.height / 2
+            params.leftMargin = width / 3 - abstracttx.width
+            params.topMargin = height / 2 - abstracttx.height/2
             abstracttx.layoutParams = params
 
             val params1 = RelativeLayout.LayoutParams(200, RelativeLayout.LayoutParams.WRAP_CONTENT)
@@ -75,7 +75,7 @@ class Home : Fragment(), View.OnClickListener {
 
             val params2 = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
             params2.leftMargin = width / 2 - notification.width / 2
-            params2.topMargin = height / 4
+            params2.topMargin = height / 4- abstracttx.height/2
             notification.layoutParams = params2
 
             val params3 = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)

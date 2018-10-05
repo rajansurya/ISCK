@@ -28,7 +28,7 @@ class Abstract : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.web_content)
-        title_name.text="ABSTRACT"
+        title_name.text="PROGRAM"
         back.setOnClickListener { this@Abstract.finish() }
         webpagesLinear=findViewById(R.id.webpagesLinear)
         webpagesLinear.getSettings().setJavaScriptEnabled(true);
@@ -39,7 +39,7 @@ class Abstract : Activity() {
         webpagesLinear.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         progressbar.visibility=View.VISIBLE
         webpagesLinear.setWebViewClient(AppWebViewClients(progressbar))
-        webpagesLinear.loadUrl("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php");
+        webpagesLinear.loadUrl("http://doscon18.org/program.php");
 
 
     }

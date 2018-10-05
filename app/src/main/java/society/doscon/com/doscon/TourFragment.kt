@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebSettings
 import android.webkit.WebView
 
 
@@ -31,6 +32,7 @@ class TourFragment : Fragment() {
         webpagesLinear.setScrollbarFadingEnabled(true);
         webpagesLinear.getSettings().setDomStorageEnabled(true);
         webpagesLinear.getSettings().setLoadsImagesAutomatically(true);
+//        webpagesLinear.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
         webpagesLinear.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         var st:String=""
         if (positionl == 0)

@@ -67,7 +67,7 @@
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Poster Sessions </li>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>E-Videos</li>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Early Bird Prizes</li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>An exciting Fellowship Dinner<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>An exciting Fellowship Dinner</li></li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>An exciting Fellowship Dinner</li>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Quiz</li>
 </ul>
 
@@ -233,10 +233,10 @@ Secretary-Delhi Ophthalmological Society<br>
     <string name="tour_1">
           <![CDATA[
         <html>
- <head></head>
+ <head><style>img{max-width: 100%; width:auto; height: auto;}</style></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
  <div class="text">
-<p><img src="http://doscon18.org/images/1.jpg" height="300" width="400"></p><p><strong>Lotus  Temple</strong> - It is the  Bahai house of worship and a fairly recent construction and is largely admired  for its architecture.</p>
+<p><img src="http://doscon18.org/images/1.jpg" height="300" width="300" ></p><p><strong>Lotus  Temple</strong> - It is the  Bahai house of worship and a fairly recent construction and is largely admired  for its architecture.</p>
 <p><strong>Qutub  Minar</strong> - The Minar  (tower) was built in the year 1212 A.D and stands at a height of 72.5 mtrs in  the courtyard of the Quwwat-ul-Islam masjid. This is the oldest historical  monument in Delhi and is a must see for any visitor to this city.</p>
 <p><strong>Humayun\'s  Tomb</strong> - Humayun\'s tomb  is believed to have been designed by his widow. Its plan, based on the  description of Islamic paradise gardens, is known to have inspired the TajMahal  and many later Mughal tombs.</p>
 <p><strong>Shopping </strong> - Sarojini Nagar &amp; Delhi  Haat - Sarojini Nagar  Market is very popular among the Delhi citizens because of having great bargaining  here in every product such as home furnishing, fashionable clothing, bags,  cosmetics, belts, sweaters, footwear, and other accessories. This market is a  favorite place for the students, tourists and college goings due to great  bargaining at this place <strong>Delhi Haat</strong>–It  provides the ambience of a traditional Rural Haat or village market, but one  suited for more contemporary needs. Here one sees a synthesis of crafts,  food and cultural activity.</p>
@@ -248,7 +248,7 @@ Secretary-Delhi Ophthalmological Society<br>
     <string name="tour_2">
           <![CDATA[
         <html>
- <head></head>
+ <head><style>img{max-width: 100%; width:auto; height: auto;}</style></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
 <div class="content">
 
@@ -272,7 +272,7 @@ Secretary-Delhi Ophthalmological Society<br>
     <string name="tour_3">
           <![CDATA[
         <html>
- <head></head>
+ <head><style>img{max-width: 100%; width:auto; height: auto;}</style></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
 <div class="content">
 
@@ -290,7 +290,7 @@ Secretary-Delhi Ophthalmological Society<br>
     <string name="tour_4">
           <![CDATA[
         <html>
- <head></head>
+ <head><style>img{max-width: 100%; width:auto; height: auto;}</style></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
 <div class="content">
 
@@ -307,7 +307,7 @@ Secretary-Delhi Ophthalmological Society<br>
     <string name="tour_5">
           <![CDATA[
         <html>
- <head></head>
+ <head><style>img{max-width: 100%; width:auto; height: auto;}</style></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
 <div class="content">
 
@@ -325,7 +325,7 @@ Secretary-Delhi Ophthalmological Society<br>
     <string name="tour_6">
           <![CDATA[
         <html>
- <head></head>
+ <head><style>img{max-width: 100%; width:auto; height: auto;}</style></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
 <div class="content">
 
