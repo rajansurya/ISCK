@@ -6,12 +6,13 @@
     android:layout_width="100dp"
     android:layout_height="100dp"
     app:cardBackgroundColor="@color/white"
-    card_view:cardCornerRadius="6dp"
+    card_view:cardCornerRadius="0dp"
     card_view:cardElevation="0dp">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
+        android:background="@drawable/rect_shape"
         android:layout_height="match_parent">
 
         <ImageView

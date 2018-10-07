@@ -7,7 +7,7 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/carousal"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="250dp" />
 
     <RelativeLayout
         android:id="@+id/parent_cube"
@@ -40,7 +40,6 @@
             android:layout_centerInParent="true"
             android:drawableTop="@drawable/knowyourregistration"
             android:gravity="center_horizontal"
-
             android:text="KNOW YOUR REGISTRATION"
             android:textColor="@color/black"
             android:textStyle="bold" />

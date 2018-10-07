@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         val adapter = ViewPagerAdapter(supportFragmentManager)
         adapter.addFrag(Home.newInstance(), "HOME")
         adapter.addFrag(Invitation.newInstance(), "INVITATION")
-        adapter.addFrag(Highlight.newInstance(), "HIGHLIGHT")
+        adapter.addFrag(Highlight.newInstance(), "HIGHLIGHTS")
 //        adapter.addFrag(Home.newInstance(), "HIGHLIGHTS")
 //        adapter.addFrag(Abstract.newInstance(), "ABSTRACT")
 //        adapter.addFrag(Commitee.newInstance(), "COMMITTEE")

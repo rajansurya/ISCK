@@ -27,8 +27,8 @@
                       <div class="inner-box">
                     	    <div class="image" align="center"> <img src="http://doscon18.org/images/khokhar.jpg" style="width:120px; height:130px;">  </div>
                         <div class="lower-box pt-5" align="center">
-                        	<h5> <strong>Prof S.K. Khokhar</strong>  </h5>
-                            <div class="designation"> President, DOS</div>
+                        	<h5> <strong>Prof S.K. Khokhar</strong> </br>President, DOS </h5>
+                            <div class="designation"> </div>
                         </div>
                     </div>
                     </div>
@@ -36,8 +36,8 @@
                            <div class="inner-box">
                     	    <div class="image" align="center"> <img src="http://doscon18.org/images/subhash.jpg" style="width:120px; height:130px;">  </div>
                         <div class="lower-box pt-5" align="center">
-                        	<h5> <strong>Prof. Subhash C. Dadeya</strong>  </h5>
-                            <div class="designation"> Secretary, DOS </div>
+                        	<h5> <strong>Prof. Subhash C. Dadeya</strong>  </br>Secretary, DOS</h5>
+
                         </div>
                     </div>
 
@@ -58,7 +58,7 @@
  <h4>CONFERENCE HIGHLIGHTS </h4>
  <ul class="font-15 text-left text-white ml-5 pl-15 ulli">
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Live Surgery</li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span> Scientific deliberations in Cataract &amp; Refractive Surgery, Retina, Cornea,  Glaucoma, Squint &amp; Neuro- Ophthalmology and Oculoplasty </li>
+<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Scientific deliberations in Cataract &amp; Refractive Surgery, Retina, Cornea,  Glaucoma, Squint &amp; Neuro- Ophthalmology and Oculoplasty </li>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Wet Labs</li>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Young ophthalmologist session</li>
 <li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Interesting cases</li>
@@ -126,10 +126,10 @@
         <item>http://doscon18.org/images/member-8.jpg</item>
 
     </array>
-<array name="img_arr_represtative">
-    <item>http://doscon18.org/images/member-9.jpg</item>
-    <item>http://doscon18.org/images/member-10.jpg</item>
-</array>
+    <array name="img_arr_represtative">
+        <item>http://doscon18.org/images/member-9.jpg</item>
+        <item>http://doscon18.org/images/member-10.jpg</item>
+    </array>
     <array name="img_arr_exofficer">
         <item>http://doscon18.org/images/member-11.jpg</item>
         <item>http://doscon18.org/images/member-12.jpg</item>
@@ -236,10 +236,17 @@ Secretary-Delhi Ophthalmological Society<br>
  <head><style>img{max-width: 100%; width:auto; height: auto;}</style></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
  <div class="text">
-<p><img src="http://doscon18.org/images/1.jpg" height="300" width="300" ></p><p><strong>Lotus  Temple</strong> - It is the  Bahai house of worship and a fairly recent construction and is largely admired  for its architecture.</p>
+<p><img border="1" src="http://doscon18.org/images/1.jpg" height="300" width="300" ></p><p><strong>Lotus  Temple</strong> - It is the  Bahai house of worship and a fairly recent construction and is largely admired  for its architecture.</p>
 <p><strong>Qutub  Minar</strong> - The Minar  (tower) was built in the year 1212 A.D and stands at a height of 72.5 mtrs in  the courtyard of the Quwwat-ul-Islam masjid. This is the oldest historical  monument in Delhi and is a must see for any visitor to this city.</p>
 <p><strong>Humayun\'s  Tomb</strong> - Humayun\'s tomb  is believed to have been designed by his widow. Its plan, based on the  description of Islamic paradise gardens, is known to have inspired the TajMahal  and many later Mughal tombs.</p>
 <p><strong>Shopping </strong> - Sarojini Nagar &amp; Delhi  Haat - Sarojini Nagar  Market is very popular among the Delhi citizens because of having great bargaining  here in every product such as home furnishing, fashionable clothing, bags,  cosmetics, belts, sweaters, footwear, and other accessories. This market is a  favorite place for the students, tourists and college goings due to great  bargaining at this place <strong>Delhi Haat</strong>–It  provides the ambience of a traditional Rural Haat or village market, but one  suited for more contemporary needs. Here one sees a synthesis of crafts,  food and cultural activity.</p>
+ </div>
+
+ <div>
+<h5>For any query or booking please contact</h5>
+Ms. Shivani Srivastav</br>
+Mobile: 9654800674</br>
+Email: shivani.srivastav@icegroupindia.com
  </div>
     </body>
 </html>
@@ -255,7 +262,7 @@ Secretary-Delhi Ophthalmological Society<br>
 
 
                                                     <div class="text">
-                                                    <p><img src="http://doscon18.org/images/2.jpg" height="300" width="400"></p>
+                                                    <p><img border="1" src="http://doscon18.org/images/2.jpg" height="300" width="400"></p>
                                                     <p><strong>Red  Fort</strong> - A fascinating  building, built with red sandstones is an example of the rich Mughal  architecture. Red Fort is a venue to the Independence Day parade of India.</p>
 
 <p><strong>Jama  Masjid </strong>- Is the biggest  masjid in India, built by Shahjahan in 1650 A.D.</p>
@@ -264,6 +271,12 @@ Secretary-Delhi Ophthalmological Society<br>
 <p><strong>Parliament  House</strong> -This is a huge  circular, colonnaded building where the Indian parliament meets.</p>
 <p><strong>Shopping - </strong>Sarojini Nagar &amp; Delhi  Haat - Sarojini Nagar  Market is very popular among the Delhi citizens because of having great bargaining  here in every product such as home furnishing, fashionable clothing, bags,  cosmetics, belts, sweaters, footwear, and other accessories. This market is a  favorite place for the students, tourists and college goings due to great  bargaining at this place. <strong>Delhi Haat</strong> – It provides the ambience of a traditional Rural Haat or village market, but  one suited for more contemporary needs. Here one sees a synthesis of  crafts, food and cultural activity.</p></div>
                                                 </div>
+                                                 <div>
+<h5>For any query or booking please contact</h5>
+Ms. Shivani Srivastav</br>
+Mobile: 9654800674</br>
+Email: shivani.srivastav@icegroupindia.com
+ </div>
     </body>
 </html>
 
@@ -279,9 +292,15 @@ Secretary-Delhi Ophthalmological Society<br>
 
                                                     <div class="text">
 
-                                                    <p><img src="http://doscon18.org/images/3.jpg" height="300" width="400"></p>
+                                                    <p><img border="1" src="http://doscon18.org/images/3.jpg" height="300" width="400"></p>
                                                     <p>Jaipur, known as the "<strong>Pink City</strong>", is the capital of the colourful state of Rajasthan. It has the distinction of being a well planned and laid out city. As you drive through the old part of town, you will witness a life most unlike others. Witness how the city blooms during the day in a kaleidoscope of color and sound. The capital of Rajasthan, Jaipur is not only the gateway to the state; it was laid out by Maharaja Sawai Jai Singh II of the Kachchawaha dynasty from Amber. In Jaipur, visit the magnificent Amber Fort, City Palace, Museum, The Observatory etc. Enjoy the elephant ride at Amber Fort</p></div>
                                                 </div>
+                                                 <div>
+<h5>For any query or booking please contact</h5>
+Ms. Shivani Srivastav</br>
+Mobile: 9654800674</br>
+Email: shivani.srivastav@icegroupindia.com
+ </div>
     </body>
 </html>
 
@@ -296,9 +315,15 @@ Secretary-Delhi Ophthalmological Society<br>
 
 
                                                     <div class="text">
-                                                   <p><img src="http://doscon18.org/images/4.jpg" height="300" width="400"></p>
-                                                    <p><strong> Golden Triangle</strong> tour is one of the most popular tourist circuits of India. This tour presents a true color of India with Delhi, a rich tapestry of contrasts that is characteristic of this complex land, Agra, the zenith of art &amp;an enshrined romance and Jaipur - exuberant with color for enjoying North India's fascinating cultural heritage. The combination of all the three cities presents the potpourri of India.</p></div>
+                                                   <p><img border="1" src="http://doscon18.org/images/4.jpg" height="300" width="400"></p>
+                                                    <p><strong> Golden Triangle</strong> tour is one of the most popular tourist circuits of India. This tour presents a true color of India with Delhi, a rich tapestry of contrasts that is characteristic of this complex land, Agra, the zenith of art &amp;an enshrined romance and Jaipur - exuberant with color for enjoying North India\'s fascinating cultural heritage. The combination of all the three cities presents the potpourri of India.</p></div>
                                                 </div>
+                                                 <div>
+<h5>For any query or booking please contact</h5>
+Ms. Shivani Srivastav</br>
+Mobile: 9654800674</br>
+Email: shivani.srivastav@icegroupindia.com
+ </div>
     </body>
 </html>
 
@@ -313,10 +338,16 @@ Secretary-Delhi Ophthalmological Society<br>
 
 
                                                     <div class="text">
-                                                  <p><img src="http://doscon18.org/images/5.jpg" height="300" width="400"></p>
-                                                    <p><strong>Vrindavan and Mathura</strong> are the most important places of pilgrimage for devotees of Krishna. Krishna was born in Mathura and spent his childhood in Vrindavan. A long line of picturesque ghats - with their steps leading to the water's edge, arched gateways and temple spires extending along the right bank of the River Yamuna, emphasize the sacred character of the town of Mathura. Vrindavan today, is noted for its numerous temples.</p>
+                                                  <p><img border="1" src="http://doscon18.org/images/5.jpg" height="300" width="400"></p>
+                                                    <p><strong>Vrindavan and Mathura</strong> are the most important places of pilgrimage for devotees of Krishna. Krishna was born in Mathura and spent his childhood in Vrindavan. A long line of picturesque ghats - with their steps leading to the water\'s edge, arched gateways and temple spires extending along the right bank of the River Yamuna, emphasize the sacred character of the town of Mathura. Vrindavan today, is noted for its numerous temples.</p>
  </div>
                                                 </div>
+                                                 <div>
+<h5>For any query or booking please contact</h5>
+Ms. Shivani Srivastav</br>
+Mobile: 9654800674</br>
+Email: shivani.srivastav@icegroupindia.com
+ </div>
     </body>
 </html>
 
@@ -331,12 +362,19 @@ Secretary-Delhi Ophthalmological Society<br>
 
 
                                                     <div class="text">
-                                                    <p><img src="http://doscon18.org/images/6.jpg" height="300" width="400"></p>
+                                                    <p><img border="1" src="http://doscon18.org/images/6.jpg" height="300" width="400"></p>
                                                     <p> Agra is globally renowned as the city of the Taj Mahal, visit the monument of love and imagination that represents India to the world. It is a town that lives mainly in the past. </p>
 
- <p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. The Taj Mahal was commissioned by Shah Jahan in 1631, to be built in the memory of his wife Mumtaz Mahal, a Persian princess who died giving birth to their 14th child, Gauhara Begum. Construction of the Taj Mahal began in 1632. The imperial court documenting Shah Jahan's grief after the death of Mumtaz Mahal illustrate the love story held as the inspiration for Taj Mahal. </p>
+ <p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. The Taj Mahal was commissioned by Shah Jahan in 1631, to be built in the memory of his wife Mumtaz Mahal, a Persian princess who died giving birth to their 14th child, Gauhara Begum. Construction of the Taj Mahal began in 1632. The imperial court documenting Shah Jahan\'s grief after the death of Mumtaz Mahal illustrate the love story held as the inspiration for Taj Mahal. </p>
+  <p>
+<h5>For any query or booking please contact</h5>
+Ms. Shivani Srivastav</br>
+Mobile: 9654800674</br>
+Email: shivani.srivastav@icegroupindia.com
+ </p>
  </div>
                                                 </div>
+
     </body>
 </html>
 
