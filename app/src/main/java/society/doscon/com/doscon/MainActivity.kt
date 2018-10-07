@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             }
 
             7 -> {
-                toast("Coming Soon")
+                startActivity(Intent(this, Accomodation::class.java))
             }
             8 -> {
                 startActivity(Intent(this, Contact::class.java))
