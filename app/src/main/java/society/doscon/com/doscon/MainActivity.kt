@@ -49,6 +49,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             8 -> {
                 startActivity(Intent(this, Contact::class.java))
             }
+            9 -> {
+                startActivity(Intent(this, Login::class.java))
+            }
         }
     }
 

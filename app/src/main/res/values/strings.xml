@@ -181,6 +181,7 @@
     <array name="tabname">
         <!--<item >INVITATION</item>
         <item >REGISTRATION</item>-->
+
         <item>REGISTRATION</item>
         <item>ABSTRACT</item>
         <item>COMMITTEE</item>
@@ -190,6 +191,7 @@
         <item>TOURS</item>
         <item>ACCOMMODATION</item>
         <item>CONTACT</item>
+        <item>LOGIN</item>
     </array>
     <string name="venue">
         <![CDATA[
@@ -380,5 +382,7 @@ Email: shivani.srivastav@icegroupindia.com
 
 ]]>
     </string>
+    <string name="hint_uname">Email</string>
+    <string name="hint_password">Mobile</string>
 
 </resources>

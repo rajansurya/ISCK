@@ -1,20 +1,12 @@
 package society.doscon.com.doscon
 
-import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.webkit.WebView
-import android.webkit.WebResourceError
-import android.webkit.WebResourceRequest
-import android.annotation.TargetApi
 import android.app.Activity
-import android.graphics.Bitmap
-import android.widget.Toast
+import android.os.Bundle
+import android.view.View
+import android.webkit.WebView
 import android.webkit.WebViewClient
-import kotlinx.android.synthetic.main.first_frgment_view.*
 import android.widget.ProgressBar
+import kotlinx.android.synthetic.main.first_frgment_view.*
 import kotlinx.android.synthetic.main.header_other.*
 
 
@@ -24,25 +16,27 @@ class Abstract : Activity() {
             return Abstract()
         }
     }
+
     lateinit var webpagesLinear: WebView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.web_content)
-        title_name.text="PROGRAM"
+        title_name.text = "PROGRAM"
         back.setOnClickListener { this@Abstract.finish() }
-        webpagesLinear=findViewById(R.id.webpagesLinear)
+        webpagesLinear = findViewById(R.id.webpagesLinear)
         webpagesLinear.getSettings().setJavaScriptEnabled(true);
         webpagesLinear.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
         webpagesLinear.setScrollbarFadingEnabled(true);
         webpagesLinear.getSettings().setDomStorageEnabled(true);
         webpagesLinear.getSettings().setLoadsImagesAutomatically(true);
         webpagesLinear.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-        progressbar.visibility=View.VISIBLE
+        progressbar.visibility = View.VISIBLE
         webpagesLinear.setWebViewClient(AppWebViewClients(progressbar))
         webpagesLinear.loadUrl("http://doscon18.org/program.php");
 
 
     }
+
     inner class AppWebViewClients(private val progressBar: ProgressBar) : WebViewClient() {
 
         init {
