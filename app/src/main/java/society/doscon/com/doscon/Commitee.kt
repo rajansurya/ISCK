@@ -45,14 +45,14 @@ class Commitee : Activity() {
 
 
         fiilliste = getResources().getStringArray(R.array.img_arr_represtative);
-        home_adapter = Home_Adapter(applicationContext, fiilliste.toCollection(ArrayList<String>()), width, height, "member")
+        home_adapter = Home_Adapter(applicationContext, fiilliste.toCollection(ArrayList<String>()), width, height, "representative")
 
         gridview_cyc_representive?.layoutManager = CustomGridLayoutManager(this, 2)
         gridview_cyc_representive?.addItemDecoration(SpacesItemDecoration(1))
         gridview_cyc_representive?.setAdapter(home_adapter)
 
         fiilliste = getResources().getStringArray(R.array.img_arr_exofficer);
-        home_adapter = Home_Adapter(applicationContext, fiilliste.toCollection(ArrayList<String>()), width, height, "member")
+        home_adapter = Home_Adapter(applicationContext, fiilliste.toCollection(ArrayList<String>()), width, height, "exmember")
 
         gridview_cyc_exofficer?.layoutManager = CustomGridLayoutManager(this, 2)
         gridview_cyc_exofficer?.addItemDecoration(SpacesItemDecoration(1))

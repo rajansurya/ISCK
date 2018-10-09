@@ -136,26 +136,13 @@
         <item>http://doscon18.org/images/member-13.jpg</item>
     </array>
     <array name="nameimg">
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Dr. Rakesh Mahajan\nVice President</item>
-        <item>Dr. Subhash Dadeya\nSecretary</item>
-        <item>Dr. Arun Baweja\nTreasurer</item>
-        <item>Dr. Manav Deep Singh\nJoint Secretary</item>
-        <item>Dr. Bhavana Chawala\nEditor</item>
-        <item>Dr. Jatinder Singh Bhalla\nLibrary Officer</item>
-
-
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-
-
+        <item>Prof S.K. Khokhar#President, DOS</item>
+        <item>Dr. Rakesh Mahajan#Vice President</item>
+        <item>Dr. Subhash Dadeya#Secretary</item>
+        <item>Dr. Arun Baweja#Treasurer</item>
+        <item>Dr. Manav Deep Singh#Joint Secretary</item>
+        <item>Dr. Bhavana Chawala#Editor</item>
+        <item>Dr. Jatinder Singh Bhalla#Library Officer</item>
     </array>
     <array name="namemember">
         <item>Dr. Radhika Tandon</item>
@@ -167,16 +154,16 @@
         <item>Dr. Pawan Goyal</item>
         <item>Dr. M C Aggarwal</item>
 
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
-        <item>Prof S.K. Khokhar\nPresident, DOS</item>
 
-
+    </array>
+    <array name="representative">
+        <item>Dr. Ashu Agarwal</item>
+        <item>Dr. Rohit Saxena</item>
+    </array>
+    <array name="exmember">
+        <item>Dr. Kamlesh</item>
+        <item>Dr. M. Vanathi</item>
+        <item>Dr. Vipul Nayar</item>
     </array>
     <array name="tabname">
         <!--<item >INVITATION</item>

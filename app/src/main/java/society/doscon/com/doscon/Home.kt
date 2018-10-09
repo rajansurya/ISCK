@@ -31,7 +31,7 @@ class Home : Fragment(), View.OnClickListener {
             R.id.program -> {
 //                var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
 //                startActivity(intent)
-                startActivity(Intent(activity, Abstract::class.java))
+                startActivity(Intent(activity!!, Abstract::class.java))
             }
             R.id.registration -> {
 //                var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://eventreg.icegroupindia.com/doscon18/"))
@@ -100,6 +100,7 @@ class Home : Fragment(), View.OnClickListener {
 
         registration.setOnClickListener(this)
         abstracttx.setOnClickListener(this)
+        program.setOnClickListener(this)
         var adpter = Carousal(context!!, images)
         carousal.adapter = adpter
         val handler = Handler()

@@ -8,18 +8,18 @@
     <!--  <include layout="@layout/header_other" />-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:gravity="right"
-        android:background="@color/trans"
-        android:layout_height="wrap_content">
-    <Button
-        android:id="@+id/cancel"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:textColor="@color/black"
-        android:text="CANCEL"
-        android:background="@color/white"
-         />
+        android:background="@color/trans"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/white"
+            android:src="@drawable/multiply"
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -50,8 +50,8 @@
                     android:id="@+id/indianstate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
                     android:layout_weight="1"
+                    android:gravity="center_vertical"
                     android:minHeight="35dp"
                     android:textColor="@color/black" />
             </TableRow>
@@ -73,8 +73,8 @@
                     android:id="@+id/payworldbranch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
                     android:layout_weight="1"
+                    android:gravity="center_vertical"
                     android:minHeight="35dp"
                     android:textColor="@color/black" />
             </TableRow>
@@ -143,8 +143,8 @@
                     android:id="@+id/agentcode"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_column="1"
+                    android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:textColor="@color/black" />
             </TableRow>

@@ -9,7 +9,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.RelativeLayout
 import android.widget.TextView
 import com.android.volley.Response
 import com.android.volley.toolbox.ImageRequest
@@ -19,18 +18,23 @@ import com.android.volley.toolbox.Volley
 /**
  * Created by stpl on 20-3-2017.
  */
-internal class Home_Adapter(var mContext: Context, var service: ArrayList<String>, var width: Int, var height: Int,var whichsec:String) : RecyclerView.Adapter<Home_Adapter.ViewHolder>() {
+internal class Home_Adapter(var mContext: Context, var service: ArrayList<String>, var width: Int, var height: Int, var whichsec: String) : RecyclerView.Adapter<Home_Adapter.ViewHolder>() {
     //, var adapter: AdapterClick
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val params = LinearLayout.LayoutParams(width / 2 - 3, width / 2+100)
+        val params = LinearLayout.LayoutParams(width / 2 -3, width / 2 + 100)
         holder?.grid_item?.setLayoutParams(params);
-        holder?.home_txt?.setText(colorlist[position])
+        if (whichsec.equals("commity")) {
+            holder?.home_txt?.setText(colorlist[position].split("#")[0])
+            holder?.designation?.setText(colorlist[position].split("#")[1])
+        }else{
+            holder?.home_txt?.setText(colorlist[position])
+        }
         val params1 = LinearLayout.LayoutParams(width / 2 - 3, width / 2)
         holder?.home_icon?.setLayoutParams(params1);
         val requestQueue = Volley.newRequestQueue(mContext)
         val request = ImageRequest(service.get(position),
-                Response.Listener { bitmap ->  holder?.home_icon?.setImageBitmap(bitmap) }, 0, 0, null,
-                Response.ErrorListener {  holder?.home_icon?.setImageResource(R.drawable.ic_launcher_foreground) })
+                Response.Listener { bitmap -> holder?.home_icon?.setImageBitmap(bitmap) }, 0, 0, null,
+                Response.ErrorListener { holder?.home_icon?.setImageResource(R.drawable.ic_launcher_foreground) })
         requestQueue.add(request)
     }
 
@@ -47,11 +51,15 @@ internal class Home_Adapter(var mContext: Context, var service: ArrayList<String
     }
 
     init {
-        var ta:Array<String>?=null
+        var ta: Array<String>? = null
         if (whichsec.equals("commity")) {
-             ta = mContext.getResources().getStringArray(R.array.nameimg);
-        }else   if (whichsec.equals("member")) {
-             ta = mContext.getResources().getStringArray(R.array.namemember);
+            ta = mContext.getResources().getStringArray(R.array.nameimg);
+        } else if (whichsec.equals("member")) {
+            ta = mContext.getResources().getStringArray(R.array.namemember);
+        } else if (whichsec.equals("representative")) {
+            ta = mContext.getResources().getStringArray(R.array.representative);
+        } else if (whichsec.equals("exmember")) {
+            ta = mContext.getResources().getStringArray(R.array.exmember);
         }
         colorlist.addAll(ta!!.toCollection(ArrayList()))
     }
@@ -73,11 +81,14 @@ internal class Home_Adapter(var mContext: Context, var service: ArrayList<String
         var grid_item: CardView? = null
         var home_txt: TextView? = null
         var home_icon: ImageView? = null
+        var designation: TextView? = null
+
 
         init {
             grid_item = view.findViewById(R.id.grid_item)
             home_txt = view.findViewById(R.id.home_txt)
             home_icon = view.findViewById(R.id.home_icon)
+            designation = view.findViewById(R.id.designation)
         }
     }
 }
