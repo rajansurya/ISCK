@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans"
+    android:orientation="vertical">
+
+    <!--  <include layout="@layout/header_other" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:background="@color/trans"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="@color/black"
+        android:text="CANCEL"
+        android:background="@color/white"
+         />
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:drawableRight="@drawable/colon32"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+
+                    android:text="Name "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/indianstate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:minHeight="35dp"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:drawableRight="@drawable/colon32"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Member Type"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/payworldbranch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:minHeight="35dp"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:drawableRight="@drawable/colon32"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+
+                    android:text="Sub Member Type"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/payworldbranchcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:drawableRight="@drawable/colon32"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Mobile"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bussinessname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:drawableRight="@drawable/colon32"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Registration No"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/agentcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_column="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:drawableRight="@drawable/colon32"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Email Id"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/partycode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:drawableRight="@drawable/colon32"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/loginname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:drawableRight="@drawable/colon32"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="City"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/personal_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:drawableRight="@drawable/colon32"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+
+                    android:text="Pin Code"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/assignmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <!--<TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:drawableRight="@drawable/colon32"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Business Pin Code "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bussinesspincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:gravity="center_vertical" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:drawableRight="@drawable/colon32"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Area"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:gravity="center_vertical" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:drawableRight="@drawable/colon32"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="City"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:gravity="center_vertical" />
+            </TableRow>-->
+
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

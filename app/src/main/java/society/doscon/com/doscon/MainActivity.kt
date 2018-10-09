@@ -1,6 +1,8 @@
 package society.doscon.com.doscon
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -10,11 +12,11 @@ import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.text.Html
+import android.text.TextUtils
 import android.view.Gravity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.header_view.*
-import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menuckick {
     override fun menuClick(position: Int) {
@@ -50,7 +52,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 startActivity(Intent(this, Contact::class.java))
             }
             9 -> {
-                startActivity(Intent(this, Login::class.java))
+                if (ta[9].equals("LOGOUT")) {
+                getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
+                    var intent = Intent(this, Login::class.java)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
+                    startActivity(intent)
+                }else{
+                    var intent = Intent(this, Login::class.java)
+                    startActivity(intent)
+                }
+
             }
         }
     }
@@ -67,11 +78,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         }
     }
 
+    lateinit var ta: Array<String>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-//        setSupportActionBar(toolbar);
-//        toolbar.setTitle(getResources().getString(R.string.app_name));
+//        var myretailer: String? = intent?.extras?.get("DATA") as? String
+      var prefs:  SharedPreferences  = getSharedPreferences("MY_PREFS_NAME", MODE_PRIVATE);
+        var restoredText = prefs.getString("DATA", null);
+//        if (restoredText != null) {
+        if (!TextUtils.isEmpty(restoredText)) {
+            var intent = Intent(this, TicketDetail::class.java)
+            intent.putExtra("DATA", restoredText)
+            startActivity(intent)
+            ta = getResources().getStringArray(R.array.tabname);
+            ta.set(9, "LOGOUT")
+        } else {
+            ta = getResources().getStringArray(R.array.tabname);
+        }
         title_name.text = getResources().getString(R.string.app_name)
         sub_title_name.text = Html.fromHtml("<font color='#FCAA23'>WINTER CONFERENCE</font>")
 
@@ -80,7 +103,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         tabs.setupWithViewPager(viewpager);
         first?.layoutManager = LinearLayoutManager(this)
         first?.addItemDecoration(SpacesItemDecoration(1))
-        var adapter = Menuitem(this, this)
+        var adapter = Menuitem(this, this, ta)
         first?.setAdapter(adapter)
         drawer_click.setOnClickListener(this)
     }

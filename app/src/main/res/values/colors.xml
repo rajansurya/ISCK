@@ -89,4 +89,5 @@
     <color name="theme_border">#DBDBDB</color>
     <color name="bordorcolor">#FCA723</color>
     <color name="org_color">#a5be59</color>
+    <color name="trans">#00000000</color>
 </resources>

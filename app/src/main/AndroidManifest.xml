@@ -48,6 +48,9 @@
             android:screenOrientation="portrait" />
         <activity android:name=".Login" />
         <activity android:name=".RegistrationView" />
+        <activity
+            android:name=".TicketDetail"
+            android:theme="@style/Theme.AppCompat.Dialog" />
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"

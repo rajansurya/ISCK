@@ -1,6 +1,7 @@
 package society.doscon.com.doscon
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
@@ -8,6 +9,9 @@ import android.view.View
 import kotlinx.android.synthetic.main.login_view.*
 import org.jetbrains.anko.toast
 import org.json.JSONObject
+import android.content.SharedPreferences
+
+
 
 class Login : Activity(), View.OnClickListener, SignUpAPICall.CallBackToClass {
     override fun returnDataToClass(tag: String?, data: String?) {
@@ -20,9 +24,10 @@ class Login : Activity(), View.OnClickListener, SignUpAPICall.CallBackToClass {
                         var status_api = reader.getString("status_api")
                         if (status_api.equals("true")) {
                             val requestJson = JSONObject()
-                            requestJson.put("registrationId", etUserName.text)
+                            requestJson.put("registrationId", reader.getString("Registration Id"))
                             val URL = "http://eventreg.icegroupindia.com/doscon18/api/reg-dos.php"
                             SignUpAPICall(URL, 0, "REGISTRATION", this@Login, this@Login).execute(requestJson)
+
                         } else {
                             toast(reader.getString("status_msg"))
                         }
@@ -32,9 +37,15 @@ class Login : Activity(), View.OnClickListener, SignUpAPICall.CallBackToClass {
                 }
             }
             "REGISTRATION" -> {
-                var intent = Intent(this, RegistrationView::class.java)
+                val editor = getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit()
+                editor.putString("DATA", data)
+                editor.apply()
+                this@Login.finish()
+                var intent = Intent(this, MainActivity::class.java)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                 intent.putExtra("DATA", data)
                 startActivity(intent)
+
             }
         }
     }

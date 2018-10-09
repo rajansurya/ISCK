@@ -13,16 +13,13 @@ import android.widget.TextView
 /**
  * Created by RDX on 30-09-2018.
  */
-class Menuitem(var context: Context,var menuitem: menuckick) : RecyclerView.Adapter<Menuitem.ViewHolder>() {
-    lateinit var ta: Array<String>
+class Menuitem(var context: Context,var menuitem: menuckick,var ta: Array<String>) : RecyclerView.Adapter<Menuitem.ViewHolder>() {
+
 
     interface menuckick {
         fun menuClick(position: Int);
     }
 
-    init {
-        ta = context.getResources().getStringArray(R.array.tabname);
-    }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 //        if (position % 2 == 0)
