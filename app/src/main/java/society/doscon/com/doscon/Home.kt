@@ -2,21 +2,23 @@ package society.doscon.com.doscon
 
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.support.v4.app.Fragment
 import android.support.v4.view.PagerAdapter
+import android.support.v4.view.ViewPager
+import android.support.v7.app.AppCompatActivity
+import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import kotlinx.android.synthetic.main.home_view.*
-import java.util.*
-import java.lang.reflect.AccessibleObject.setAccessible
-import android.support.v4.view.ViewPager
 import java.lang.reflect.Field
+import java.util.*
 
 
 class Home : Fragment(), View.OnClickListener {
@@ -29,10 +31,21 @@ class Home : Fragment(), View.OnClickListener {
             R.id.program -> {
 //                var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
 //                startActivity(intent)
+                startActivity(Intent(activity, Abstract::class.java))
             }
             R.id.registration -> {
-                var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://eventreg.icegroupindia.com/doscon18/"))
-                startActivity(intent)
+//                var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://eventreg.icegroupindia.com/doscon18/"))
+//                startActivity(intent)
+                var prefs: SharedPreferences = activity!!.getSharedPreferences("MY_PREFS_NAME", AppCompatActivity.MODE_PRIVATE);
+                var restoredText = prefs.getString("DATA", null);
+                if (!TextUtils.isEmpty(restoredText)) {
+                    var intent = Intent(activity, TicketDetail::class.java)
+                    intent.putExtra("DATA", restoredText)
+                    startActivity(intent)
+                }else{
+                    var intent = Intent(activity, Login::class.java)
+                    startActivity(intent)
+                }
             }
             R.id.notification -> {
 
@@ -65,17 +78,17 @@ class Home : Fragment(), View.OnClickListener {
             var width: Int = parent_cube.width
             val params = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
             params.leftMargin = width / 3 - abstracttx.width
-            params.topMargin = height / 2 - abstracttx.height/2
+            params.topMargin = height / 2 - abstracttx.height / 2
             abstracttx.layoutParams = params
 
             val params1 = RelativeLayout.LayoutParams(240, RelativeLayout.LayoutParams.WRAP_CONTENT)
-            params1.leftMargin = width / 2 + registration.width/4
+            params1.leftMargin = width / 2 + registration.width / 4
             params1.topMargin = height / 2 - registration.height
             registration.layoutParams = params1
 
             val params2 = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
             params2.leftMargin = width / 2 - notification.width / 2
-            params2.topMargin = height / 4- abstracttx.height/2
+            params2.topMargin = height / 4 - abstracttx.height / 2
             notification.layoutParams = params2
 
             val params3 = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)

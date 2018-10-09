@@ -46,10 +46,15 @@
         <activity
             android:name=".Accomodation"
             android:screenOrientation="portrait" />
-        <activity android:name=".Login" />
-        <activity android:name=".RegistrationView" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistrationView"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TicketDetail"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Dialog" />
 
         <meta-data

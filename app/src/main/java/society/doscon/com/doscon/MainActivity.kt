@@ -23,36 +23,39 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         drawer_layout.closeDrawer(Gravity.LEFT)
         when (position) {
             0 -> {
-                startActivity(Intent(this, RegistrationActivity::class.java))
+                drawer_layout.closeDrawer(Gravity.LEFT)
             }
             1 -> {
+                startActivity(Intent(this, RegistrationActivity::class.java))
+            }
+            2 -> {
                 var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
                 startActivity(intent)
             }
-            2 -> {
+            3 -> {
                 startActivity(Intent(this, Commitee::class.java))
             }
-            3 -> {
+            4 -> {
                 startActivity(Intent(this, Abstract::class.java))
             }
-            4 -> {
+            5 -> {
                 startActivity(Intent(this, Exhibation::class.java))
             }
-            5 -> {
+            6 -> {
                 startActivity(Intent(this, Venue::class.java))
             }
-            6 -> {
+            7 -> {
                 startActivity(Intent(this, Tour::class.java))
             }
 
-            7 -> {
+            8 -> {
                 startActivity(Intent(this, Accomodation::class.java))
             }
-            8 -> {
+            9 -> {
                 startActivity(Intent(this, Contact::class.java))
             }
-            9 -> {
-                if (ta[9].equals("LOGOUT")) {
+            10 -> {
+                if (ta[10].equals("LOGOUT")) {
                 getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
                     var intent = Intent(this, Login::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -91,7 +94,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             intent.putExtra("DATA", restoredText)
             startActivity(intent)
             ta = getResources().getStringArray(R.array.tabname);
-            ta.set(9, "LOGOUT")
+            ta.set(10, "LOGOUT")
         } else {
             ta = getResources().getStringArray(R.array.tabname);
         }

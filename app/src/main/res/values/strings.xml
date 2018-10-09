@@ -181,7 +181,7 @@
     <array name="tabname">
         <!--<item >INVITATION</item>
         <item >REGISTRATION</item>-->
-
+        <item>HOME</item>
         <item>REGISTRATION</item>
         <item>ABSTRACT</item>
         <item>COMMITTEE</item>
