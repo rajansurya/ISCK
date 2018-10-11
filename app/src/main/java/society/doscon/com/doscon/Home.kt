@@ -48,7 +48,7 @@ class Home : Fragment(), View.OnClickListener {
                 }
             }
             R.id.notification -> {
-
+                startActivity(Intent(activity!!, NotificationAPI::class.java))
             }
 
         }
@@ -101,6 +101,7 @@ class Home : Fragment(), View.OnClickListener {
         registration.setOnClickListener(this)
         abstracttx.setOnClickListener(this)
         program.setOnClickListener(this)
+        notification.setOnClickListener(this)
         var adpter = Carousal(context!!, images)
         carousal.adapter = adpter
         val handler = Handler()
