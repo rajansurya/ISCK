@@ -31,7 +31,7 @@
             android:drawableTop="@drawable/abstracttx"
             android:text="ABSTRACT"
             android:textColor="@color/black"
-            android:textSize="15sp" />
+           />
 
         <TextView
             android:id="@+id/registration"
@@ -42,7 +42,7 @@
             android:gravity="center_horizontal"
             android:text="KNOW YOUR REGISTRATION"
             android:textColor="@color/black"
-            android:textSize="15sp" />
+            />
 
         <TextView
             android:id="@+id/notification"
@@ -52,7 +52,7 @@
             android:drawableTop="@drawable/notification"
             android:text="NOTIFICATION"
             android:textColor="@color/black"
-            android:textSize="15sp" />
+           />
 
         <TextView
             android:id="@+id/program"
@@ -62,6 +62,6 @@
             android:drawableTop="@drawable/program"
             android:text="PROGRAM"
             android:textColor="@color/black"
-            android:textSize="15sp" />
+           />
     </RelativeLayout>
 </LinearLayout>

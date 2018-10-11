@@ -81,7 +81,7 @@ class Home : Fragment(), View.OnClickListener {
             params.topMargin = height / 2 - abstracttx.height / 2
             abstracttx.layoutParams = params
 
-            val params1 = RelativeLayout.LayoutParams(240, RelativeLayout.LayoutParams.WRAP_CONTENT)
+            val params1 = RelativeLayout.LayoutParams(250, RelativeLayout.LayoutParams.WRAP_CONTENT)
             params1.leftMargin = width / 2 + registration.width / 4
             params1.topMargin = height / 2 - registration.height
             registration.layoutParams = params1
