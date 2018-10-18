@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.login_view.*
 import org.jetbrains.anko.toast
 import org.json.JSONObject
 import android.content.SharedPreferences
-
+import kotlinx.android.synthetic.main.header_other.*
 
 
 class Login : Activity(), View.OnClickListener, SignUpAPICall.CallBackToClass {
@@ -69,6 +69,8 @@ class Login : Activity(), View.OnClickListener, SignUpAPICall.CallBackToClass {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login_view)
         tv_loginbtn.setOnClickListener(this)
+        title_name.text="LOGIN"
+        back.setOnClickListener { this@Login.finish() }
     }
 
     fun validation(): Boolean {
