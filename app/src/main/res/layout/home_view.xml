@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:drawableTop="@drawable/abstracttx"
-            android:text="ABSTRACT"
+            android:text="VENUE"
             android:textColor="@color/black"
            />
 
