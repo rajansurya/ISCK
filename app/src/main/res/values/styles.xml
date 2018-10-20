@@ -9,9 +9,7 @@
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
     </style>
-    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textSize">20sp</item>
-    </style>
+
     <style name="edttext_style" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
