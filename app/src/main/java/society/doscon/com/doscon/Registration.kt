@@ -18,12 +18,7 @@ import society.doscon.com.doscon.R.id.hScroll
 import society.doscon.com.doscon.R.id.vScroll
 
 
-
-
-
-
-
-class Registration : Fragment(){
+class Registration : Fragment() {
 
 
     companion object {
@@ -52,7 +47,7 @@ class Registration : Fragment(){
             //inner scroll listener
             false
         }
-        title_name.text="REGISTRATION"
+        title_name.text = "REGISTRATION"
         back.setOnClickListener { activity?.finish() }
         r1.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
         r2.text = Html.fromHtml(resources.getString(R.string.rupy) + 1200 + "*")
@@ -93,11 +88,11 @@ class Registration : Fragment(){
 
 
 
-        webpagesLinear=view.findViewById(R.id.webpagesLinear)
+        webpagesLinear = view.findViewById(R.id.webpagesLinear)
         webpagesLinear.getSettings().setJavaScriptEnabled(true);
         webpagesLinear.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
-        webpagesLinear.webViewClient= WebViewClient()
-        webpagesLinear   .requestFocus(View.FOCUS_DOWN or View.FOCUS_UP)
+        webpagesLinear.webViewClient = WebViewClient()
+        webpagesLinear.requestFocus(View.FOCUS_DOWN or View.FOCUS_UP)
         webpagesLinear.setScrollbarFadingEnabled(true);
         webpagesLinear.getSettings().setDomStorageEnabled(true);
         webpagesLinear.getSettings().setLoadsImagesAutomatically(true);
