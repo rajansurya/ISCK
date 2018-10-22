@@ -28,33 +28,33 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             1 -> {
                 startActivity(Intent(this, RegistrationActivity::class.java))
             }
-            2 -> {
+           /* 2 -> {
                 var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
                 startActivity(intent)
-            }
-            3 -> {
+            }*/
+            2 -> {
                 startActivity(Intent(this, Commitee::class.java))
             }
-            4 -> {
+            3 -> {
                 startActivity(Intent(this, Abstract::class.java))
             }
-            5 -> {
+            4 -> {
                 startActivity(Intent(this, Exhibation::class.java))
             }
-            6 -> {
+            5 -> {
                 startActivity(Intent(this, Venue::class.java))
             }
-            7 -> {
+            6 -> {
                 startActivity(Intent(this, Tour::class.java))
             }
 
-            8 -> {
+            7 -> {
                 startActivity(Intent(this, Accomodation::class.java))
             }
-            9 -> {
+            8 -> {
                 startActivity(Intent(this, Contact::class.java))
             }
-            10 -> {
+            9 -> {
                 if (ta[10].equals("LOGOUT")) {
                 getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
                     var intent = Intent(this, Login::class.java)
@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             intent.putExtra("DATA", restoredText)
             startActivity(intent)
             ta = getResources().getStringArray(R.array.tabname);
-            ta.set(10, "LOGOUT")
+            ta.set(9, "LOGOUT")
         } else {
             ta = getResources().getStringArray(R.array.tabname);
         }
