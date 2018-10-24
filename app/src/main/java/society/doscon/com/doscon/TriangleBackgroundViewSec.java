@@ -9,7 +9,7 @@ import android.view.View;
 
 public class TriangleBackgroundViewSec extends View {
     Paint paint;
-    Paint bgPaint;
+//    Paint bgPaint;
 
     public TriangleBackgroundViewSec(Context context) {
         super(context);
@@ -34,9 +34,9 @@ public class TriangleBackgroundViewSec extends View {
         paint.setStyle(Paint.Style.FILL);
         paint.setColor(getResources().getColor(R.color.success_flexi));
 
-        bgPaint= new Paint();
-        bgPaint.setStyle(Paint.Style.FILL);
-        bgPaint.setColor(getResources().getColor(R.color.dark_blue_background));
+//        bgPaint= new Paint();
+//        bgPaint.setStyle(Paint.Style.FILL);
+//        bgPaint.setColor(getResources().getColor(R.color.dark_blue_background));
     }
 
     @Override
@@ -52,7 +52,7 @@ public class TriangleBackgroundViewSec extends View {
         int w = getMeasuredWidth();
 
         Path path = new Path();
-        path.moveTo(w/2, h/2);
+        path.moveTo(0, h/2);
         path.lineTo(0, h/2);
         path.lineTo(w/2, 0);
         path.lineTo(w, h/2);
@@ -61,23 +61,6 @@ public class TriangleBackgroundViewSec extends View {
         path.close();
         canvas.drawPath(path,paint);
 
-//        canvas.save();
-//        canvas.rotate(45,0,0);
-//        canvas.drawRect(0,0,w/2,h/2,bgPaint);
-//        canvas.restore();
 
-//        canvas.save();
-
-
-//        super.onDraw(canvas);
-//        canvas.restore();
-//        canvas.drawRect(0,0,w,h,bgPaint);
-     /*   Path path = new Path();
-        path.moveTo(0, h);
-        path.lineTo(w, 0);
-        path.lineTo(0, 0);
-        path.lineTo(0, h);
-        path.close();
-        canvas.drawPath(path,paint);*/
     }
 }

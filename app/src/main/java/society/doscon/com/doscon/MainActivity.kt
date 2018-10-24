@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 startActivity(Intent(this, Contact::class.java))
             }
             9 -> {
-                if (ta[10].equals("LOGOUT")) {
+                if (ta[9].equals("LOGOUT")) {
                 getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
                     var intent = Intent(this, Login::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)

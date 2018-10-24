@@ -70,22 +70,22 @@ public class TriangleBackgroundView extends View {
         Path path = new Path();
         path.moveTo(0, h);
         path.lineTo(w, h);
-        path.lineTo(0, 0);
+        path.lineTo(w/2, h/2);
         path.lineTo(0, h);
         path.close();
         canvas.drawPath(path,paint);
 
         Path path1 = new Path();
-        path1.moveTo(0, h);
+        path1.moveTo(0, 0);
+        path1.lineTo(w/2, h/2);
+//        path1.lineTo(0, 0);
         path1.lineTo(w, 0);
-        path1.lineTo(0, 0);
-        path1.lineTo(0, h);
         path1.close();
         canvas.drawPath(path1,paint1);
 
         Path path2 = new Path();
         path2.moveTo(0, 0);
-        path2.lineTo(w, h);
+//        path2.lineTo(w, h);
         path2.lineTo(w/2, h/2);
         path2.lineTo(0, h);
         path2.close();
