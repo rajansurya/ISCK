@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             ta = getResources().getStringArray(R.array.tabname);
         }
         title_name.text = getResources().getString(R.string.app_name)
-        sub_title_name.text = Html.fromHtml("<font color='#FCAA23'>WINTER CONFERENCE</font>")
+        sub_title_name.text = Html.fromHtml("<font color='#FCAA23'>MEET 2019</font>")
 
 //        getSupportActionBar()!!.setDisplayHomeAsUpEnabled(true);
         setupViewPager(viewpager);

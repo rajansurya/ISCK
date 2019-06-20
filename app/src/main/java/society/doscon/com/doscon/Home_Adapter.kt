@@ -20,15 +20,30 @@ import com.android.volley.toolbox.Volley
  */
 internal class Home_Adapter(var mContext: Context, var service: ArrayList<String>, var width: Int, var height: Int, var whichsec: String) : RecyclerView.Adapter<Home_Adapter.ViewHolder>() {
     //, var adapter: AdapterClick
+    init {
+        println("service "+service.size)
+    }
+
+    override fun getItemCount(): Int {
+        print("sinz "+service.size)
+        return service.size
+    }
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
+
         val params = LinearLayout.LayoutParams(width / 2 -3, width / 2 + 100)
         holder?.grid_item?.setLayoutParams(params);
-        if (whichsec.equals("commity")) {
+       /* if (whichsec.equals("commity")) {
             holder?.home_txt?.setText(colorlist[position].split("#")[0])
             holder?.designation?.setText(colorlist[position].split("#")[1])
         }else{
             holder?.home_txt?.setText(colorlist[position])
-        }
+        }*/
+
+
+
+
         val params1 = LinearLayout.LayoutParams(width / 2 - 3, width / 2)
         holder?.home_icon?.setLayoutParams(params1);
         val requestQueue = Volley.newRequestQueue(mContext)
@@ -36,15 +51,15 @@ internal class Home_Adapter(var mContext: Context, var service: ArrayList<String
                 Response.Listener { bitmap -> holder?.home_icon?.setImageBitmap(bitmap) }, 0, 0, null,
                 Response.ErrorListener { holder?.home_icon?.setImageResource(R.drawable.ic_launcher_foreground) })
         requestQueue.add(request)
+        println("POS  "+position)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val itemView = LayoutInflater.from(mContext)
-                .inflate(R.layout.home_adapter_view, parent, false)
+        val itemView = LayoutInflater.from(mContext).inflate(R.layout.home_adapter_view, parent, false)
         return ViewHolder(itemView)
     }
 
-    var colorlist = ArrayList<String>()
+//    var colorlist = ArrayList<String>()
 
     interface AdapterClick {
         fun clickAdapter(positionL: Int)
@@ -61,13 +76,11 @@ internal class Home_Adapter(var mContext: Context, var service: ArrayList<String
         } else if (whichsec.equals("exmember")) {
             ta = mContext.getResources().getStringArray(R.array.exmember);
         }
-        colorlist.addAll(ta!!.toCollection(ArrayList()))
+//        colorlist.addAll(ta!!.toCollection(ArrayList()))
     }
 
 
-    override fun getItemCount(): Int {
-        return service.size
-    }
+
 
 
     fun updateView(service: ArrayList<String>) {

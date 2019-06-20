@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"> DOS</string>
+    <string name="app_name"> ISCKRS</string>
 
     <string name="invitation">
 <![CDATA[
@@ -79,21 +79,24 @@
 <html>
  <head></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
-<h3 class="text-white text-left"> Important Notes \n </h3>
-<ul class="font-15 text-left text-white ml-5 pl-15 ulli">
- <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> *Inclusive Taxes</li>
- <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> **Proof of residency required from HOD along with the registration form of the conference. </li>
- <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> ***Registration for Spouse/child must be done separately for each person.</li>
- <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> Bank charge as applicable on all online transaction.</li>
- <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> For Spot Registrants: Complete Kit subject to availability.</li>
- <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span>  Wearing of identity badge is mandatory at all times </li>
- <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> Entry to Scientific Sessions, Exhibition Area, Felicitation Ceremony will be Restricted to Registered Delegates only.  </li>
- <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span>  Lost badge will be replaced at the registration counter for a fee of Rs. 300/- </li>
- <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span>  Pre-Registration closes on 30th October, 2018. Past Presidents of DOS or AIOS and Senior Member (&gt;70 years) will be registered complimentary provided their registration form is received till 30th September.</li>
- <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span>  DOS life members Senior Citizen above &gt;70 years are requested to send the registration form along with a proof of age.</li>
- <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span>  Cancellation &amp; Refunds: Cancellation is permitted upto 30th October, 2018 only against a written request submitted to the conference secretariat and 50% of the registration fee would be deducted as processing charges. No Cancellation requests  will beaccepted thereafter.</li>
- <li><span class="icon flaticon-arrows-4 text-white font-20 pr-10"></span> Attendance certificate will not be issued to associate delegates, trade delegates and optometrists.</li>
-
+<h4>Please read below before proceeding:</h4>
+<ul class="ml-20">
+  <li><i class="fa fa-angle-right"></i> For Spot Registration: Complete kit will be subject to availability.<br>
+    </li>
+  <li><i class="fa fa-angle-right"></i> Photo I-Card will be required at the time of collection of registration kit.<br>
+    </li>
+  <li><i class="fa fa-angle-right"></i> **Proof of residency required from HOD along with the registration form.<br>
+    </li>
+  <li><i class="fa fa-angle-right"></i> There will be no refund on cancellation of registration.<br>
+    </li>
+  <li><i class="fa fa-angle-right"></i> Wearing of identity badge is mandatory at all times.<br>
+    </li>
+  <li><i class="fa fa-angle-right"></i> Entry to Scientific Sessions &amp; Exhibition<br>
+    </li>
+  <li><i class="fa fa-angle-right"></i> Area will be Restricted to Registered Delegates only.</li>
+  <li><i class="fa fa-angle-right"></i> Lost badge will be replaced at the registration counter for a fee Rs. 200/-.<br>
+    </li>
+  <li><i class="fa fa-angle-right"></i> Pre-Registration will be closed on 30th June 2019.</li>
 </ul>
 
 
@@ -103,14 +106,33 @@
 ]]></string>
 
     <array name="img_arr_commiti">
-        <item>http://doscon18.org/images/khokhar-1.jpg</item>
-        <item>http://doscon18.org/images/rakesh-mahajan.jpg</item>
-        <item>http://doscon18.org/images/subhash-1.jpg</item>
-        <item>http://doscon18.org/images/arun.jpg</item>
-        <item>http://doscon18.org/images/manav.jpg</item>
-        <item>http://doscon18.org/images/bhavana.jpg</item>
-        <item>http://doscon18.org/images/jitendra.jpg</item>
+        <item>http://isckrs.com/images/MadanMohan.jpg</item>
+        <item>http://isckrs.com/images/titiyal.jpg</item>
+        <item>http://isckrs.com/images/RishiMohan.jpg</item>
+        <item>http://isckrs.com/images/sinha.jpg</item>
+        <item>http://isckrs.com/images/RajibMukherjee.jpg</item>
+        <item>http://isckrs.com/images/NamrataSharma.jpg</item>
+        <item>http://isckrs.com/images/RitikaSachdev.jpg</item>
+        <item>http://isckrs.com/images/GMukherjee.jpg</item>
+        <item>http://isckrs.com/images/AjayDave.jpg</item>
+        <item>http://isckrs.com/images/Sangwan.jpg</item>
+        <item>http://isckrs.com/images/DrSamarBasak.jpg</item>
+        <item>http://isckrs.com/images/ArunJain.jpg</item>
+        <item>http://isckrs.com/images/MSrinivasan.jpg</item>
+        <item>http://isckrs.com/images/AnilKulkarni.jpg</item>
+        <item>http://isckrs.com/images/AyanMohanta.jpg</item>
+        <item>http://isckrs.com/images/PoonamKishore.jpg</item>
 
+        <item>http://isckrs.com/images/HarminderDua.jpg</item>
+        <item>http://isckrs.com/images/MVanathi.jpg</item>
+        <item>http://isckrs.com/images/RadhikaTandon.jpg</item>
+        <item>http://isckrs.com/images/RituArora.jpg</item>
+        <item>http://isckrs.com/images/IndiraMohan.jpg</item>
+
+        <item>http://isckrs.com/images/HarshulTak.jpg</item>
+        <item>http://isckrs.com/images/AmbarishDarak.jpg</item>
+        <item>http://isckrs.com/images/NileshMohan.jpg</item>
+        <item>http://isckrs.com/images/PurinderBhasin.jpg</item>
     </array>
     <array name="img_arr_member">
         <item>http://doscon18.org/images/member-1.jpg</item>

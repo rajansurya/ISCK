@@ -94,6 +94,7 @@
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
+                        android:visibility="gone"
                         android:minHeight="40dp">
 
                         <TextView
@@ -161,7 +162,7 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Member Delegate-Ophthalmologist"
+                            android:text="Member Delegate"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -226,7 +227,7 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Member Resident-Ophthalmologist**"
+                            android:text="Member Spouse"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -280,7 +281,6 @@
 
 
                     </TableRow>
-
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
@@ -291,67 +291,7 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Non Member"
-                            android:textColor="@color/bordorcolor"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
-                            android:visibility="gone"
-                            android:textColor="@color/white"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:visibility="gone"
-                            android:paddingRight="10dp"
-                            android:textColor="@color/white"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
-                            android:textColor="@color/white"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
-                            android:textColor="@color/white"
-                            android:textStyle="bold" />
-
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:minHeight="40dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:text="Non Member-Ophthalmologist"
+                            android:text="Member Resident**"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -416,7 +356,69 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Resident/Trainees in Ophthalmology"
+                            android:text=""
+                            android:textColor="@color/bordorcolor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:visibility="gone"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:visibility="gone"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:minHeight="40dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:text="Non Member Delegate"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -481,7 +483,7 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Optometrist"
+                            android:text="Non Member Spouse"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -546,7 +548,7 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Spouse/Child***"
+                            android:text="Non Member Resident **"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -611,7 +613,7 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Trade Delegate"
+                            android:text="Exhibitor Delegates"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -669,6 +671,7 @@
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
+                        android:visibility="gone"
                         android:minHeight="40dp">
 
                         <TextView
@@ -736,7 +739,7 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Past President (DOS or AIOS)"
+                            android:text="Foreign Delegates/Spouse/Resident"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -800,7 +803,7 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Senior Citizen >70 years"
+                            android:text="*Inclusive of GST"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
