@@ -38,23 +38,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             3 -> {
                 startActivity(Intent(this, Abstract::class.java))
             }
-            4 -> {
+            /*3 -> {
                 startActivity(Intent(this, Exhibation::class.java))
-            }
-            5 -> {
+            }*/
+            4 -> {
                 startActivity(Intent(this, Venue::class.java))
             }
-            6 -> {
+            /*6 -> {
                 startActivity(Intent(this, Tour::class.java))
-            }
+            }*/
 
-            7 -> {
+           /* 7 -> {
                 startActivity(Intent(this, Accomodation::class.java))
-            }
-            8 -> {
+            }*/
+            5 -> {
                 startActivity(Intent(this, Contact::class.java))
             }
-            9 -> {
+            6 -> {
                 if (ta[9].equals("LOGOUT")) {
                 getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
                     var intent = Intent(this, Login::class.java)
@@ -116,7 +116,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         val adapter = ViewPagerAdapter(supportFragmentManager)
         adapter.addFrag(Home.newInstance(), "HOME")
         adapter.addFrag(Invitation.newInstance(), "INVITATION")
-        adapter.addFrag(Highlight.newInstance(), "HIGHLIGHTS")
+        adapter.addFrag(Highlight.newInstance(), "KERASIGHT")
 //        adapter.addFrag(Home.newInstance(), "HIGHLIGHTS")
 //        adapter.addFrag(Abstract.newInstance(), "ABSTRACT")
 //        adapter.addFrag(Commitee.newInstance(), "COMMITTEE")

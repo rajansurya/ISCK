@@ -51,21 +51,19 @@
 <html>
  <head></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
- <h4>CONFERENCE HIGHLIGHTS </h4>
- <ul class="font-15 text-left text-white ml-5 pl-15 ulli">
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Live Surgery</li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Scientific deliberations in Cataract &amp; Refractive Surgery, Retina, Cornea,  Glaucoma, Squint &amp; Neuro- Ophthalmology and Oculoplasty </li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Wet Labs</li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Young ophthalmologist session</li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Interesting cases</li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Free paper</li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Debates </li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Poster Sessions </li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>E-Videos</li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Early Bird Prizes</li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>An exciting Fellowship Dinner</li>
-<li><span class="icon flaticon-arrows-4 text-blue font-20 pr-10"></span>Quiz</li>
-</ul>
+ <h3>KeraSight</h3>
+ <p align="justify">
+
+
+The Indian Society of Cornea &amp; Kerato-refractive Surgeons (ISCKRS) in an attempt to actively interact with it members, is proud to bring forth "KeraSight", where one can exclusively enjoy the Members Only benefits of
+ </p>
+ <ul class="list ml-50">
+            <li>KeraSight Newsletter</li>
+            <li>KeraSight Online Discussion Group </li>
+            <li>KeraSight Photo Gallery  </li>
+            <li>KeraSight Video Gallery</li>
+
+       </ul>
 
 </body>
 </html>
@@ -135,14 +133,14 @@
         <item>http://isckrs.com/images/PurinderBhasin.jpg</item>
     </array>
     <array name="img_arr_member">
-        <item>http://doscon18.org/images/member-1.jpg</item>
-        <item>http://doscon18.org/images/member-2.jpg</item>
-        <item>http://doscon18.org/images/member-3.jpg</item>
-        <item>http://doscon18.org/images/member-4.jpg</item>
-        <item>http://doscon18.org/images/member-5.jpg</item>
-        <item>http://doscon18.org/images/member-6.jpg</item>
-        <item>http://doscon18.org/images/member-7.jpg</item>
-        <item>http://doscon18.org/images/member-8.jpg</item>
+        <item>http://isckrs.com/images/titiyal.jpg</item>
+        <item>http://isckrs.com/images/RishiMohan.jpg</item>
+        <item>http://isckrs.com/images/sinha.jpg</item>
+        <item>http://isckrs.com/images/RajibMukherjee.jpg</item>
+        <item>http://isckrs.com/images/NamrataSharma.jpg</item>
+        <item>http://isckrs.com/images/RitikaSachdev.jpg</item>
+        <item>http://isckrs.com/images/GMukherjee.jpg</item>
+        <item>http://isckrs.com/images/AjayDave.jpg</item>
 
     </array>
     <array name="img_arr_represtative">
@@ -189,13 +187,13 @@
         <item >REGISTRATION</item>-->
         <item>HOME</item>
         <item>REGISTRATION</item>
-       <!-- <item>ABSTRACT</item>-->
+        <!-- <item>ABSTRACT</item>-->
         <item>COMMITTEE</item>
-        <item>PROGRAM</item>
+        <!--<item>PROGRAM</item>-->
         <item>EXHIBITION</item>
-        <item>VENUE</item>
-        <item>TOURS</item>
-        <item>ACCOMMODATION</item>
+        <item>MEETING GALLERY</item>
+     <!--   <item>TOURS</item>-->
+        <!--<item>ACCOMMODATION</item>-->
         <item>CONTACT</item>
         <item>LOGIN</item>
     </array>
@@ -204,10 +202,57 @@
         <html>
  <head></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
-        <div class="sec-title">
-                    	<h2>India Habitat Centre, Lodhi Road, New Delhi</h2>
-                <div class="text">17th &amp; 18th November, 2018</div>
-                    </div>
+       <h3>Activities Gallery </h3>
+       <div class="row pt-40">
+            <div class="col-md-12 col-sm-12">
+            <img border="1" src="http://isckrs.com/images/gallery/1.jpg" height="150" width="45%" >
+                <img border="1" src="http://isckrs.com/images/gallery/2.jpg" height="150" width="45%" >
+                   <img border="1" src="http://isckrs.com/images/gallery/3.jpg" height="150" width="45%" >
+                      <img border="1" src="http://isckrs.com/images/gallery/4.jpg" height="150" width="45%" >
+                       <img border="1" src="http://isckrs.com/images/gallery/5.jpg" height="150" width="45%" >
+                          <img border="1" src="http://isckrs.com/images/gallery/6.jpg" height="150" width="45%" >
+                             <img border="1" src="http://isckrs.com/images/gallery/7.jpg" height="150" width="45%" >
+                                <img border="1" src="http://isckrs.com/images/gallery/8.jpg" height="150" width="45%" >
+                                   <img border="1" src="http://isckrs.com/images/gallery/9.jpg" height="150" width="45%" >
+                                      <img border="1" src="http://isckrs.com/images/gallery/10.jpg" height="150" width="45%" >
+
+
+
+
+
+
+
+              <br>
+<ul class="list-border bold list angle-double-right">
+               <li><a href="https://photos.app.goo.gl/7CcMfYD7QADY4b1m8" target="_blank"><strong>ISCKRS Meet 2019, New Delhi (4th Aug 2018)</strong></a>
+
+               <ul class="list-border bold list angle-double-right">
+               <li><a href="https://photos.app.goo.gl/8LasMvi4xaKRDXP8A" target="_blank"> HALL - A </a></li>
+                <li><a href="https://photos.app.goo.gl/iEUwBKSgQoT2fvgQ8" target="_blank"> HALL - B </a></li>
+               <li><a href="https://photos.app.goo.gl/89CZSjM8gnopWa6e9" target="_blank"> INAUGURAL CEREMONY  </a></li>
+               </ul>
+                </li>
+
+                <li><a href="https://photos.app.goo.gl/FU5EkRu5sryfc7hB8" target="_blank"><strong>ISCKRS Meet 2019, New Delhi (5th Aug 2018)</strong></a>
+                <ul class="list-border bold list angle-double-right">
+               <li><a href="https://photos.app.goo.gl/WnV9frH6hu5sN9ha9" target="_blank"> DESIRE HALL </a></li>
+                <li><a href="https://photos.app.goo.gl/qMZedCBgX4SWS2SDA" target="_blank"> OPTHA QUIZ </a></li>
+               <li><a href="https://photos.app.goo.gl/FPZPBLTgYnBwzcGf6" target="_blank"> HALL - B  </a></li>
+               <li><a href="https://photos.app.goo.gl/nAcjd1fRdp8Tvrwr5" target="_blank"> GBM  </a></li>
+               </ul>
+
+                <br>
+                </li>
+
+              <li><a href="https://photos.app.goo.gl/92iEKj15eKGjhKe99" target="_blank">ISCKRS East Zone Meet 2018, Patna</a></li>
+              <li><a href="https://photos.app.goo.gl/RJmFU416ZEvVGaKd2" target="_blank">ISCKRS Central Zone Meet 2018, Lucknow</a></li>
+              <li><a href="https://photos.app.goo.gl/ZlU3lq2i683uNScC2" target="_blank">ISCKRS West Zone Meet 2018, Khandala</a></li>
+
+              <li><a href="https://photos.app.goo.gl/gY0ByYzbqVO5qog52" target="_blank">ISCKRS Meet 2017</a></li>
+
+            </ul><br><br>
+               </div>
+          </div>
     </body>
 </html>
 
@@ -217,21 +262,16 @@
         <html>
  <head></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
- <div class="footer-widget links-widget">
-                                	<div class="footer-title">
-                                    	<h4>Address For All Correspondence:</h4>
-                                    </div>
-                                	<div class="widget-content">
-                                     <p class="text-white">
+ <div class="col-xs-12 col-sm-4 col-md-10 text-center text-white">
+          <h3 class="mb-0 mt-10 font-30 text-white">Indian Society of Cornea &amp;
+            Keratorefractive Surgeons </h3>
+            <p><em>Furtherance of knowledge of Cornea, Corneal diseases &amp; Kerato-Refractive surgery</em></p>
 
-                                     <strong>Prof. Subhash C. Dadeya</strong> <br>
-Secretary-Delhi Ophthalmological Society<br>
-<br>Room No 114, 1st Floor, OPD Block Guru Nanak Eye Centre, Maharaja Ranjit Singh Marg, New Delhi - 110002<br>
-<br>Phone : +91 11 23210810 <br><br> E-mail : info@doscon18.org /    dosrecords@gmail.com  <br>
-<br> Web: www.doscon18.org <br>  or www.dosonline.org</p>
-
-									</div>
-                                </div>
+            <ul class="list-inline text-center mb-5">
+            <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone"></i> <a class="text-black" href="#">+91-9650688803, +91-9650268007</a> </li>
+            <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o"></i> <a class="text-black" href="#">isckrs@gmail.com</a> </li>
+          </ul>
+        </div>
     </body>
 </html>
 
@@ -247,7 +287,9 @@ Secretary-Delhi Ophthalmological Society<br>
 <p><img border="1" src="http://doscon18.org/images/1.jpg" height="300" width="300" ></p><p><strong>Lotus  Temple</strong> - It is the  Bahai house of worship and a fairly recent construction and is largely admired  for its architecture.</p>
 <p><strong>Qutub  Minar</strong> - The Minar  (tower) was built in the year 1212 A.D and stands at a height of 72.5 mtrs in  the courtyard of the Quwwat-ul-Islam masjid. This is the oldest historical  monument in Delhi and is a must see for any visitor to this city.</p>
 <p><strong>Humayun\'s  Tomb</strong> - Humayun\'s tomb  is believed to have been designed by his widow. Its plan, based on the  description of Islamic paradise gardens, is known to have inspired the TajMahal  and many later Mughal tombs.</p>
-<p><strong>Shopping </strong> - Sarojini Nagar &amp; Delhi  Haat - Sarojini Nagar  Market is very popular among the Delhi citizens because of having great bargaining  here in every product such as home furnishing, fashionable clothing, bags,  cosmetics, belts, sweaters, footwear, and other accessories. This market is a  favorite place for the students, tourists and college goings due to great  bargaining at this place <strong>Delhi Haat</strong>–It  provides the ambience of a traditional Rural Haat or village market, but one  suited for more contemporary needs. Here one sees a synthesis of crafts,  food and cultural activity.</p>
+<p><strong>Shopping </strong> - Sarojini Nagar &amp; Delhi  Haat - Sarojini Nagar  Market is very popular among the Delhi citizens because of having great bargaining  here in every product such as home furnishing, fashionable clothing, bags,  cosmetics, belts, sweaters, footwear,
+ and other accessories. This market is a  favorite place for the students, tourists and
+ college goings due to great  bargaining at this place <strong>Delhi Haat</strong>–It  provides the ambience of a traditional Rural Haat or village market, but one  suited for more contemporary needs. Here one sees a synthesis of crafts,  food and cultural activity.</p>
  </div>
 
  <div>

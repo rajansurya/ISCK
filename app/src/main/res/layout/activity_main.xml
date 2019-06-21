@@ -51,7 +51,7 @@
                 android:layout_marginTop="25dp"
                 android:contentDescription="@string/app_name"
                 android:padding="1dp"
-                android:src="@drawable/optha" />
+                android:src="@mipmap/appicon" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:gravity="center_horizontal"
-                android:text="DOS Winter Conference 2018" />
+                android:text="ISCKRS MEET 2018" />
             <!--<View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"

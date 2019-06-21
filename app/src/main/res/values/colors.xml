@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#08518F</color>
+    <color name="colorPrimary">#2f6899</color>
     <color name="colorPrimaryDark">#08518F</color>
     <color name="white">#ffffff</color>
     <color name="colorAccent">#004d99</color>
     <color name="colorText">#80191919</color>
     <color name="colorSelText">#333333</color>
-    <color name="colorBtnSubmit">#f8b131</color>
+    <color name="colorBtnSubmit">#31f8e7</color>
 
     <color name="dark_blue_background">#193F88</color>
     <color name="success_flexi">#4073C289</color>
@@ -14,6 +14,6 @@
     <color name="black">#000000</color>
     <color name="theme_border">#DBDBDB</color>
     <color name="bordorcolor">#FCA723</color>
-    <color name="org_color">#a5be59</color>
+    <color name="org_color">#bbda5d</color>
     <color name="trans">#00000000</color>
 </resources>

@@ -52,22 +52,22 @@ class Venue : FragmentActivity(), OnMapReadyCallback {
                 if (grantResults.isEmpty() || grantResults[0] != PackageManager.PERMISSION_GRANTED) {
                     Toast.makeText(this, "Unable to show location - permission required", Toast.LENGTH_LONG).show()
                 }else{
-                    val mapFragment = supportFragmentManager.findFragmentById(R.id.googleMap) as SupportMapFragment
-                    mapFragment.getMapAsync(this)
+//                    val mapFragment = supportFragmentManager.findFragmentById(R.id.googleMap) as SupportMapFragment
+//                    mapFragment.getMapAsync(this)
                 }
             }
         }
     }
 
     lateinit var webpagesLinear: WebView
-    var mapFragment: SupportMapFragment? = null
+//    var mapFragment: SupportMapFragment? = null
     var googleMap: GoogleMap? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.venue)
         webpagesLinear = findViewById(R.id.venue)
-        mapFragment = supportFragmentManager.findFragmentById(R.id.googleMap) as SupportMapFragment?
-        mapFragment?.getMapAsync(this);
+//        mapFragment = supportFragmentManager.findFragmentById(R.id.googleMap) as SupportMapFragment?
+//        mapFragment?.getMapAsync(this);
         webpagesLinear.getSettings().setJavaScriptEnabled(true);
         webpagesLinear.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
         webpagesLinear.setScrollbarFadingEnabled(true);
