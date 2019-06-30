@@ -19,6 +19,30 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.header_view.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menuckick {
+    public  fun onClickitem(view: View){
+        when (view?.id) {
+            R.id.officebear -> {
+                startActivity(Intent(this, Commitee::class.java))
+            }
+            R.id.officebear2 -> {
+                startActivity(Intent(this, RegistrationActivity::class.java))
+            }
+            R.id.officebear3 -> {
+                startActivity(Intent(this, Highlight::class.java))
+            }
+            R.id.officebear4 -> {
+                startActivity(Intent(this, Abstract::class.java))
+            }
+            R.id.officebear5 -> {
+
+            }
+            R.id.officebear6 -> {
+                startActivity(Intent(this, Venue::class.java))
+            }
+
+        }
+    }
+
     override fun menuClick(position: Int) {
         drawer_layout.closeDrawer(Gravity.LEFT)
         when (position) {

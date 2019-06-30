@@ -24,6 +24,7 @@ import java.util.*
 
 
 class Home : Fragment(), View.OnClickListener {
+
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.abstracttx -> {

@@ -77,6 +77,8 @@
             android:weightSum="3">
 
             <LinearLayout
+                android:id="@+id/officebear"
+                android:onClick="onClickitem"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -99,6 +101,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:id="@+id/officebear2"
+                android:onClick="onClickitem"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -118,6 +122,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:id="@+id/officebear3"
+                android:onClick="onClickitem"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -145,6 +151,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:id="@+id/officebear4"
+                android:onClick="onClickitem"
                 android:orientation="vertical">
 
                 <ImageView
@@ -163,6 +171,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:id="@+id/officebear5"
+                android:onClick="onClickitem"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -181,6 +191,8 @@
 
             <LinearLayout
                 android:layout_width="0dp"
+                android:id="@+id/officebear6"
+                android:onClick="onClickitem"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
