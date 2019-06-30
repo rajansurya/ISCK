@@ -98,8 +98,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         } else {
             ta = getResources().getStringArray(R.array.tabname);
         }
-        title_name.text = getResources().getString(R.string.app_name)
-        sub_title_name.text = Html.fromHtml("<font color='#FCAA23'>MEET 2019</font>")
+        title_name.text = "INDIAN SOCIETY OF CORNEA & KERATOREFRATIVE SURGEONS";
+//        sub_title_name.text = Html.fromHtml("<font color='#FCAA23'>MEET 2019</font>")
 
 //        getSupportActionBar()!!.setDisplayHomeAsUpEnabled(true);
         setupViewPager(viewpager);
@@ -115,8 +115,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
     private fun setupViewPager(viewPager: ViewPager) {
         val adapter = ViewPagerAdapter(supportFragmentManager)
         adapter.addFrag(Home.newInstance(), "HOME")
-        adapter.addFrag(Invitation.newInstance(), "INVITATION")
-        adapter.addFrag(Highlight.newInstance(), "KERASIGHT")
+//        adapter.addFrag(Invitation.newInstance(), "INVITATION")
+//        adapter.addFrag(Highlight.newInstance(), "KERASIGHT")
 //        adapter.addFrag(Home.newInstance(), "HIGHLIGHTS")
 //        adapter.addFrag(Abstract.newInstance(), "ABSTRACT")
 //        adapter.addFrag(Commitee.newInstance(), "COMMITTEE")

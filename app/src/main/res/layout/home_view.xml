@@ -7,12 +7,13 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/carousal"
         android:layout_width="match_parent"
-        android:layout_height="250dp" />
+        android:layout_height="210dp" />
 
     <RelativeLayout
         android:id="@+id/parent_cube"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:visibility="gone">
 
         <society.doscon.com.doscon.TriangleBackgroundView
             android:layout_width="match_parent"
@@ -30,8 +31,7 @@
             android:layout_centerInParent="true"
             android:drawableTop="@drawable/maplocation"
             android:text="VENUE"
-            android:textColor="@color/black"
-           />
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/registration"
@@ -41,19 +41,17 @@
             android:drawableTop="@drawable/knowyourregistration"
             android:gravity="center_horizontal"
             android:text="KNOW YOUR REGISTRATION"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/notification"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:visibility="gone"
             android:drawableTop="@drawable/notification"
             android:text="NOTIFICATION"
             android:textColor="@color/black"
-           />
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/program"
@@ -62,8 +60,143 @@
             android:layout_centerInParent="true"
             android:drawableTop="@drawable/program"
             android:text="PROGRAM"
-            android:visibility="gone"
             android:textColor="@color/black"
-           />
+            android:visibility="gone" />
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OFFICE BEARER" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REGISTRATION" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HEIGHTLIGHTS" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROGRAM" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/kwonyourregis" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VENUE" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bottombanner"
+        android:src="@drawable/image_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
