@@ -72,8 +72,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginTop="10dp"
+            android:gravity="center"
             android:weightSum="3">
 
             <LinearLayout
@@ -86,12 +86,13 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/circle_shape" />
+                    android:src="@drawable/home_2" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="OFFICE BEARER" />
+                    android:text="OFFICE BEARER"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -104,12 +105,13 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/circle_shape" />
+                    android:src="@drawable/home_3" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="REGISTRATION" />
+                    android:text="REGISTRATION"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -122,12 +124,13 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/circle_shape" />
+                    android:src="@drawable/home_4" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="HEIGHTLIGHTS" />
+                    android:text="HEIGHTLIGHTS"
+                    android:textColor="@color/black" />
             </LinearLayout>
         </LinearLayout>
 
@@ -147,12 +150,13 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/circle_shape" />
+                    android:src="@drawable/home_5" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="PROGRAM" />
+                    android:text="PROGRAM"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -165,13 +169,14 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/circle_shape" />
+                    android:src="@drawable/home_6" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/kwonyourregis" />
+                    android:text="@string/kwonyourregis"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -184,19 +189,36 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/circle_shape" />
+                    android:src="@drawable/home_6" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="VENUE" />
+                    android:text="VENUE"
+                    android:textColor="@color/black" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/bottombanner"
-        android:src="@drawable/image_4"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/bottombanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_8" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/expadv"
+            android:textColor="#032A41"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
 </LinearLayout>

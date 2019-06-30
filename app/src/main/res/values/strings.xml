@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name"> ISCKRS</string>
 <string name="kwonyourregis">KNOW YOUR \n REGISTRATION</string>
+    <string name="expadv">.Exploring Recent \nAdvances\u2022</string>
+    <string name="homebanner_text">ISCKRS MEET 2019</string>
     <string name="invitation">
 <![CDATA[
 <html>

@@ -10,12 +10,14 @@ import android.support.v4.app.Fragment
 import android.support.v4.view.PagerAdapter
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
+import android.text.Html
 import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RelativeLayout
+import android.widget.TextView
 import kotlinx.android.synthetic.main.home_view.*
 import java.lang.reflect.Field
 import java.util.*
@@ -61,7 +63,7 @@ class Home : Fragment(), View.OnClickListener {
         }
     }
 
-    var images: IntArray = intArrayOf(R.drawable.image_1, R.drawable.image_4)
+    var images: IntArray = intArrayOf(R.drawable.home_1, R.drawable.image_4)
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         var view = inflater.inflate(R.layout.home_view, container, false)
         return view
@@ -152,14 +154,16 @@ class Home : Fragment(), View.OnClickListener {
             val itemView = layoutInflater.inflate(R.layout.item, container, false)
 
             val imageView = itemView.findViewById<ImageView>(R.id.imageView) as ImageView
+            val banner_text = itemView.findViewById<TextView>(R.id.banner_text) as TextView
             imageView.setImageResource(images[position])
-
+            if (position==0)
+            banner_text .text = Html.fromHtml("<h1 color='#FCAA23'>ISCKRS MEET 2019</h1> <br> 03rd & 04 Aug 2019.<br> LeMeridien New Delhi")
             container.addView(itemView)
             return itemView
         }
 
         override fun isViewFromObject(view: View, `object`: Any): Boolean {
-            return view === `object` as ImageView
+            return view === `object` as RelativeLayout
         }
 
         override fun getCount(): Int {
