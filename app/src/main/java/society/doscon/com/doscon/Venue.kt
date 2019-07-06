@@ -1,17 +1,14 @@
 package society.doscon.com.doscon
 
-import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.app.FragmentActivity
-import android.support.v4.content.ContextCompat
 import android.webkit.WebView
 import android.widget.Toast
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
-import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import kotlinx.android.synthetic.main.header_other.*
@@ -24,7 +21,7 @@ class Venue : FragmentActivity(), OnMapReadyCallback {
     private val LOCATION_REQUEST_CODE = 101
 
     override fun onMapReady(map: GoogleMap?) {
-        googleMap = map
+//        googleMap = map
 
 
         /*if (map != null) {
@@ -61,7 +58,7 @@ class Venue : FragmentActivity(), OnMapReadyCallback {
 
     lateinit var webpagesLinear: WebView
 //    var mapFragment: SupportMapFragment? = null
-    var googleMap: GoogleMap? = null
+//    var googleMap: GoogleMap? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.venue)
@@ -74,7 +71,7 @@ class Venue : FragmentActivity(), OnMapReadyCallback {
         webpagesLinear.getSettings().setDomStorageEnabled(true);
         webpagesLinear.getSettings().setLoadsImagesAutomatically(true);
         webpagesLinear.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-        webpagesLinear.loadData(resources.getString(R.string.venue), "text/html; charset=utf-8", "utf-8");
+//        webpagesLinear.loadData(resources.getString(R.string.venue), "text/html; charset=utf-8", "utf-8");
         title_name.text = "VENUE"
         back.setOnClickListener { this@Venue.finish() }
 //        requestPermission(Manifest.permission.ACCESS_FINE_LOCATION, LOCATION_REQUEST_CODE)

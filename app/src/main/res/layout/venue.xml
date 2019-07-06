@@ -15,11 +15,19 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/conference_venue"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
             <WebView
                 android:id="@+id/venue"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
 
             <!-- <ImageView
                  android:layout_width="match_parent"
@@ -37,29 +45,27 @@
                 android:layout_height="300dp"/>-->
 
             <ImageView
-                android:layout_width="235dp"
-                android:layout_height="320dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="10dp"
+                android:layout_margin="5dp"
                 android:padding="1dp"
-                android:visibility="gone"
-                android:background="@drawable/rect_shape"
                 android:scaleType="fitXY"
-                android:src="@drawable/img_1" />
+                android:src="@drawable/lemeridien" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:visibility="gone"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <ImageView
                     android:layout_width="264dp"
                     android:layout_height="175dp"
-                    android:padding="1dp"
-                    android:background="@drawable/rect_shape"
                     android:layout_margin="10dp"
+                    android:background="@drawable/rect_shape"
+                    android:padding="1dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_2" />
 
@@ -67,8 +73,8 @@
                     android:layout_width="264dp"
                     android:layout_height="175dp"
                     android:layout_margin="10dp"
-                    android:padding="1dp"
                     android:background="@drawable/rect_shape"
+                    android:padding="1dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_3" />
             </LinearLayout>

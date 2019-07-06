@@ -18,6 +18,6 @@ class Splash : Activity() {
                 this@Splash.finish()
             }
 
-        }, 3000)
+        }, 2500)
     }
 }

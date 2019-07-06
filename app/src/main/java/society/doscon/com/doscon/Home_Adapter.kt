@@ -34,12 +34,12 @@ internal class Home_Adapter(var mContext: Context, var service: ArrayList<String
 
         val params = LinearLayout.LayoutParams(width / 2 -3, width / 2 + 100)
         holder?.grid_item?.setLayoutParams(params);
-       /* if (whichsec.equals("commity")) {
+        if (whichsec.equals("commity")) {
             holder?.home_txt?.setText(colorlist[position].split("#")[0])
             holder?.designation?.setText(colorlist[position].split("#")[1])
         }else{
             holder?.home_txt?.setText(colorlist[position])
-        }*/
+        }
 
 
 
@@ -59,7 +59,7 @@ internal class Home_Adapter(var mContext: Context, var service: ArrayList<String
         return ViewHolder(itemView)
     }
 
-//    var colorlist = ArrayList<String>()
+    var colorlist = ArrayList<String>()
 
     interface AdapterClick {
         fun clickAdapter(positionL: Int)
@@ -76,7 +76,7 @@ internal class Home_Adapter(var mContext: Context, var service: ArrayList<String
         } else if (whichsec.equals("exmember")) {
             ta = mContext.getResources().getStringArray(R.array.exmember);
         }
-//        colorlist.addAll(ta!!.toCollection(ArrayList()))
+        colorlist.addAll(ta!!.toCollection(ArrayList()))
     }
 
 

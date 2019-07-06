@@ -64,7 +64,7 @@ class Home : Fragment(), View.OnClickListener {
         }
     }
 
-    var images: IntArray = intArrayOf(R.drawable.home_1, R.drawable.image_4)
+    var images: IntArray = intArrayOf(R.drawable.copy1, R.drawable.copy2,R.drawable.copy3)
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         var view = inflater.inflate(R.layout.home_view, container, false)
         return view
@@ -74,7 +74,7 @@ class Home : Fragment(), View.OnClickListener {
     var timer: Timer? = null
     val DELAY_MS: Long = 1000//delay in milliseconds before task is to be executed
     val PERIOD_MS: Long = 4000
-    var NUM_PAGES: Int = 2
+    var NUM_PAGES: Int = 3
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Handler().postDelayed(Runnable {
@@ -155,14 +155,18 @@ class Home : Fragment(), View.OnClickListener {
             val itemView = layoutInflater.inflate(R.layout.item, container, false)
 
             val imageView = itemView.findViewById<ImageView>(R.id.imageView) as ImageView
-            val banner_text = itemView.findViewById<TextView>(R.id.banner_text) as TextView
+//            val banner_text = itemView.findViewById<TextView>(R.id.banner_text) as TextView
             imageView.setImageResource(images[position])
-            if (position==0)
-            banner_text .text = Html.fromHtml("<h1 color='#FCAA23'>ISCKRS MEET 2019</h1> <br> 03rd & 04 Aug 2019.<br> LeMeridien New Delhi")
+//            if (position==0)
+//            banner_text .text = Html.fromHtml("<h1 color='#FCAA23'>ISCKRS MEET 2019</h1> <br> 03rd & 04 Aug 2019.<br> LeMeridien New Delhi")
             container.addView(itemView)
             return itemView
         }
 
+        override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
+           // super.destroyItem(container, position, `object`)
+            (container as ViewPager).removeView(`object` as View)
+        }
         override fun isViewFromObject(view: View, `object`: Any): Boolean {
             return view === `object` as RelativeLayout
         }

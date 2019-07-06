@@ -32,7 +32,7 @@
                 android:layout_height="110dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="45dp"
-                android:src="@drawable/optha" />
+                android:src="@mipmap/appicon" />
 
             <TextView
                 android:layout_width="wrap_content"

@@ -50,7 +50,18 @@
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
                             android:text="Till 30.09.18"
-                            android:visibility="gone"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="30.06.2019"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
 
@@ -61,19 +72,7 @@
                             android:gravity="center"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:visibility="gone"
-                            android:text="Till 15.10.18"
-                            android:textColor="@color/white"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rectangle_shape"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
-                            android:text="Till 30.10.18"
+                            android:text="28.07.2019"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
 
@@ -94,8 +93,8 @@
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:visibility="gone"
-                        android:minHeight="40dp">
+                        android:minHeight="40dp"
+                        android:visibility="gone">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -113,10 +112,10 @@
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
                             android:paddingLeft="10dp"
-                            android:visibility="gone"
                             android:paddingRight="10dp"
                             android:textColor="@color/white"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:visibility="gone" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -124,10 +123,10 @@
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
                             android:paddingLeft="10dp"
-                            android:visibility="gone"
                             android:paddingRight="10dp"
                             android:textColor="@color/white"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:visibility="gone" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -174,11 +173,12 @@
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
                             android:paddingLeft="10dp"
-                            android:visibility="gone"
                             android:paddingRight="10dp"
                             android:textColor="@color/white"
                             android:textSize="15sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
 
                         <TextView
                             android:id="@+id/r2"
@@ -186,7 +186,6 @@
                             android:layout_height="match_parent"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:visibility="gone"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
                             android:textColor="@color/white"
@@ -232,6 +231,19 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
+
+                        <TextView
+                            android:id="@+id/r22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
                         <TextView
                             android:id="@+id/r21"
                             android:layout_width="wrap_content"
@@ -240,21 +252,8 @@
                             android:gravity="center"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:visibility="gone"
                             android:textColor="@color/white"
                             android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/r22"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:visibility="gone"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
-                            android:textColor="@color/white"
                             android:textStyle="bold" />
 
                         <TextView
@@ -281,6 +280,7 @@
 
 
                     </TableRow>
+
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
@@ -296,18 +296,6 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/r31"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:visibility="gone"
-                            android:paddingRight="10dp"
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/r32"
@@ -317,8 +305,20 @@
                             android:gravity="center"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:visibility="gone"
                             android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/r31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -361,16 +361,6 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
-                            android:visibility="gone"
-                            android:textColor="@color/white"
-                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -378,7 +368,17 @@
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
                             android:paddingLeft="10dp"
-                            android:visibility="gone"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
                             android:paddingRight="10dp"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
@@ -407,7 +407,6 @@
                     </TableRow>
 
 
-
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
@@ -423,18 +422,6 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/r41"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:visibility="gone"
-                            android:paddingRight="10dp"
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/r42"
@@ -443,10 +430,23 @@
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
                             android:paddingLeft="10dp"
-                            android:visibility="gone"
                             android:paddingRight="10dp"
                             android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/r41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
+
 
                         <TextView
                             android:id="@+id/r43"
@@ -488,18 +488,6 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/r51"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:visibility="gone"
-                            android:paddingRight="10dp"
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/r52"
@@ -509,8 +497,20 @@
                             android:gravity="center"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:visibility="gone"
                             android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/r51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -553,18 +553,6 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/r61"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
-                            android:visibility="gone"
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/r62"
@@ -573,10 +561,23 @@
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
                             android:paddingLeft="10dp"
-                            android:visibility="gone"
                             android:paddingRight="10dp"
                             android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/r61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
+
 
                         <TextView
                             android:id="@+id/r63"
@@ -618,18 +619,6 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/r71"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
-                            android:visibility="gone"
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/r72"
@@ -638,10 +627,24 @@
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
                             android:paddingLeft="10dp"
-                            android:paddingRight="10dp"  android:visibility="gone"
-
+                            android:paddingRight="10dp"
                             android:textColor="@color/white"
+
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/r71"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
+
 
                         <TextView
                             android:id="@+id/r73"
@@ -671,8 +674,8 @@
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:visibility="gone"
-                        android:minHeight="40dp">
+                        android:minHeight="40dp"
+                        android:visibility="gone">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -689,11 +692,11 @@
                             android:layout_height="match_parent"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:visibility="gone"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
                             android:textColor="@color/white"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:visibility="gone" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -702,9 +705,9 @@
                             android:gravity="center"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:visibility="gone"
                             android:textColor="@color/white"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:visibility="gone" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -744,49 +747,51 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
+
                         <TextView
+                            android:id="@+id/r82"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
                             android:paddingLeft="10dp"
-                            android:visibility="gone"
                             android:paddingRight="10dp"
-                            android:text="-"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/r81"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/r83"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:visibility="gone"
-                            android:paddingRight="10dp"
-                            android:text="-"
-                            android:textColor="@color/white"
-                            android:textStyle="bold" />
+
 
                         <TextView
+                            android:id="@+id/r84"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:text="-"
-                            android:textColor="@color/white"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
-                            android:text="-"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
 
@@ -808,17 +813,6 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/rect_blue"
-                            android:gravity="center"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
-                            android:visibility="gone"
-                            android:text="-"
-                            android:textColor="@color/white"
-                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -827,7 +821,18 @@
                             android:gravity="center"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:visibility="gone"
+                            android:text="-"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rect_blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
                             android:text="-"
                             android:textColor="@color/white"
                             android:textStyle="bold" />

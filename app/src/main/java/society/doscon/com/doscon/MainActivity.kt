@@ -34,7 +34,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 startActivity(Intent(this, Abstract::class.java))
             }
             R.id.officebear5 -> {
-
+                if (ta[5].equals("LOGOUT")) {
+                    getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
+                    var intent = Intent(this, Login::class.java)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
+                    startActivity(intent)
+                }else{
+                    var intent = Intent(this, Login::class.java)
+                    startActivity(intent)
+                }
             }
             R.id.officebear6 -> {
                 startActivity(Intent(this, Venue::class.java))
@@ -59,13 +67,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             2 -> {
                 startActivity(Intent(this, Commitee::class.java))
             }
-            3 -> {
-                startActivity(Intent(this, Abstract::class.java))
-            }
-            /*3 -> {
+                        /*3 -> {
                 startActivity(Intent(this, Exhibation::class.java))
             }*/
-            4 -> {
+            3 -> {
                 startActivity(Intent(this, Venue::class.java))
             }
             /*6 -> {
@@ -75,12 +80,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
            /* 7 -> {
                 startActivity(Intent(this, Accomodation::class.java))
             }*/
-            5 -> {
+            4 -> {
                 startActivity(Intent(this, Contact::class.java))
             }
-            6 -> {
-                if (ta[9].equals("LOGOUT")) {
-                getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
+            5 -> {
+                if (ta[5].equals("LOGOUT")) {
+                    getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
                     var intent = Intent(this, Login::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
@@ -118,7 +123,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             intent.putExtra("DATA", restoredText)
             startActivity(intent)
             ta = getResources().getStringArray(R.array.tabname);
-            ta.set(9, "LOGOUT")
+            ta.set(7, "LOGOUT")
         } else {
             ta = getResources().getStringArray(R.array.tabname);
         }

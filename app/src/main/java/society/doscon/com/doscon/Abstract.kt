@@ -32,7 +32,7 @@ class Abstract : Activity() {
         webpagesLinear.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         progressbar.visibility = View.VISIBLE
         webpagesLinear.setWebViewClient(AppWebViewClients(progressbar))
-        webpagesLinear.loadUrl("http://isckrs.com/meet-welcome.php#abstract");
+        webpagesLinear.loadUrl("http://isckrs.com/scientific-programme.php");
 
 
     }

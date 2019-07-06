@@ -24,7 +24,7 @@ class Commitee : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.commitee)
-        title_name.text="COMMITTEE"
+        title_name.text="FACULTY"
         back.setOnClickListener { this@Commitee.finish() }
         val displayMetrics = DisplayMetrics()
         windowManager?.defaultDisplay?.getMetrics(displayMetrics)
@@ -36,12 +36,12 @@ class Commitee : Activity() {
         gridview_cyc?.addItemDecoration(SpacesItemDecoration(1))
         gridview_cyc?.setAdapter(home_adapter)
 
-        fiilliste = getResources().getStringArray(R.array.img_arr_member);
-        home_adapter = Home_Adapter(applicationContext, fiilliste.toCollection(ArrayList<String>()), width, height, "member")
+//        fiilliste = getResources().getStringArray(R.array.img_arr_member);
+//        home_adapter = Home_Adapter(applicationContext, fiilliste.toCollection(ArrayList<String>()), width, height, "member")
 //
-        gridview_cyc_member?.layoutManager = CustomGridLayoutManager(this, 2)
-        gridview_cyc_member?.addItemDecoration(SpacesItemDecoration(1))
-        gridview_cyc_member?.setAdapter(home_adapter)
+//        gridview_cyc_member?.layoutManager = CustomGridLayoutManager(this, 2)
+//        gridview_cyc_member?.addItemDecoration(SpacesItemDecoration(1))
+//        gridview_cyc_member?.setAdapter(home_adapter)
 //
 //
 //        fiilliste = getResources().getStringArray(R.array.img_arr_represtative);

@@ -36,18 +36,15 @@
  <head></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
  <h3>KeraSight</h3>
- <p align="justify">
-
-
-The Indian Society of Cornea &amp; Kerato-refractive Surgeons (ISCKRS) in an attempt to actively interact with it members, is proud to bring forth "KeraSight", where one can exclusively enjoy the Members Only benefits of
- </p>
- <ul class="list ml-50">
-            <li>KeraSight Newsletter</li>
-            <li>KeraSight Online Discussion Group </li>
-            <li>KeraSight Photo Gallery  </li>
-            <li>KeraSight Video Gallery</li>
-
-       </ul>
+ <h4>
+• Live Surgery Demonstration</br>
+• Skill Development Wetlabs</br>
+• Video Assisted Courses</br>
+• Certification of Trainees</br>
+• Yo Sessions</br>
+• Interesting Case Presentation</br>
+• Clinical Debates</br>
+</h4>
 
 </body>
 </html>
@@ -55,6 +52,7 @@ The Indian Society of Cornea &amp; Kerato-refractive Surgeons (ISCKRS) in an att
 </string>
 
     <string name="rupy"><![CDATA[ <font color=#FCA723>₹</font> ]]></string>
+    <string name="doller"><![CDATA[ <font color=#FCA723>US$</font> ]]></string>
 
     <string name="imp_note">
         <![CDATA[
@@ -88,33 +86,20 @@ The Indian Society of Cornea &amp; Kerato-refractive Surgeons (ISCKRS) in an att
 ]]></string>
 
     <array name="img_arr_commiti">
-        <item>http://isckrs.com/images/MadanMohan.jpg</item>
-        <item>http://isckrs.com/images/titiyal.jpg</item>
-        <item>http://isckrs.com/images/RishiMohan.jpg</item>
-        <item>http://isckrs.com/images/sinha.jpg</item>
-        <item>http://isckrs.com/images/RajibMukherjee.jpg</item>
-        <item>http://isckrs.com/images/NamrataSharma.jpg</item>
-        <item>http://isckrs.com/images/RitikaSachdev.jpg</item>
-        <item>http://isckrs.com/images/GMukherjee.jpg</item>
-        <item>http://isckrs.com/images/AjayDave.jpg</item>
-        <item>http://isckrs.com/images/Sangwan.jpg</item>
-        <item>http://isckrs.com/images/DrSamarBasak.jpg</item>
-        <item>http://isckrs.com/images/ArunJain.jpg</item>
-        <item>http://isckrs.com/images/MSrinivasan.jpg</item>
-        <item>http://isckrs.com/images/AnilKulkarni.jpg</item>
-        <item>http://isckrs.com/images/AyanMohanta.jpg</item>
-        <item>http://isckrs.com/images/PoonamKishore.jpg</item>
+        <item>http://isckrs.com/images/team/team1.jpg</item>
+        <item>http://isckrs.com/images/team/team2.jpg</item>
+        <item>http://isckrs.com/images/team/team3.jpg</item>
+        <item>http://isckrs.com/images/team/team4.jpg</item>
+        <item>http://isckrs.com/images/team/team5.jpg</item>
 
-        <item>http://isckrs.com/images/HarminderDua.jpg</item>
-        <item>http://isckrs.com/images/MVanathi.jpg</item>
-        <item>http://isckrs.com/images/RadhikaTandon.jpg</item>
-        <item>http://isckrs.com/images/RituArora.jpg</item>
-        <item>http://isckrs.com/images/IndiraMohan.jpg</item>
 
-        <item>http://isckrs.com/images/HarshulTak.jpg</item>
-        <item>http://isckrs.com/images/AmbarishDarak.jpg</item>
-        <item>http://isckrs.com/images/NileshMohan.jpg</item>
-        <item>http://isckrs.com/images/PurinderBhasin.jpg</item>
+        <item>http://isckrs.com/images/team/team6.jpg</item>
+        <item>http://isckrs.com/images/team/team7.jpg</item>
+        <item>http://isckrs.com/images/team/team8.jpg</item>
+        <item>http://isckrs.com/images/team/team9.jpg</item>
+        <item>http://isckrs.com/images/team/team10.jpg</item>
+        <item>http://isckrs.com/images/team/team11.jpg</item>
+        <item>http://isckrs.com/images/team/team12.jpg</item>
     </array>
     <array name="img_arr_member">
         <item>http://isckrs.com/images/titiyal.jpg</item>
@@ -137,13 +122,19 @@ The Indian Society of Cornea &amp; Kerato-refractive Surgeons (ISCKRS) in an att
         <item>http://doscon18.org/images/member-13.jpg</item>
     </array>
     <array name="nameimg">
-        <item>Prof S.K. Khokhar#President, DOS</item>
-        <item>Dr. Rakesh Mahajan#Vice President</item>
-        <item>Dr. Subhash Dadeya#Secretary</item>
-        <item>Dr. Arun Baweja#Treasurer</item>
-        <item>Dr. Manav Deep Singh#Joint Secretary</item>
-        <item>Dr. Bhavana Chawala#Editor</item>
-        <item>Dr. Jatinder Singh Bhalla#Library Officer</item>
+        <item>Dr. Michael Belin#USA</item>
+        <item>Dr. Harminder S Dua#UK</item>
+        <item>Dr. Jodhbir Mehta#Singapore</item>
+        <item>Dr. Tarek Katamish#Egypt</item>
+        <item>Dr. Avi Solomon#Bril</item>
+        <item>Dr. Ahmad Khalil#Egypt</item>
+        <item>Dr. Leonardo Torquetti#Brazil</item>
+
+        <item>Dr. V K Raju#USA</item>
+        <item>Dr. Kamran M. Riaz#USA</item>
+        <item>Dr. Daya Sharma#Australia</item>
+        <item>Dr. Pichit Naripyhaphan#Thailand</item>
+        <item>Dr. Hozzam Ziada#Egypt</item>
     </array>
     <array name="namemember">
         <item>Dr. Radhika Tandon</item>
@@ -172,10 +163,10 @@ The Indian Society of Cornea &amp; Kerato-refractive Surgeons (ISCKRS) in an att
         <item>HOME</item>
         <item>REGISTRATION</item>
         <!-- <item>ABSTRACT</item>-->
-        <item>OFFICE BEARERS </item>
+        <item>FACULTY</item>
         <!--<item>PROGRAM</item>-->
-        <item>EXHIBITION</item>
-        <item>MEETING GALLERY</item>
+        <!--<item>EXHIBITION</item>-->
+        <item>VENUE</item>
      <!--   <item>TOURS</item>-->
         <!--<item>ACCOMMODATION</item>-->
         <item>CONTACT</item>
@@ -416,5 +407,5 @@ Email: shivani.srivastav@icegroupindia.com
     </string>
     <string name="hint_uname">Email</string>
     <string name="hint_password">Mobile</string>
-
+<string name="conference_venue"><h2 class="text-uppercase">Conference Venue</h2></string>
 </resources>
