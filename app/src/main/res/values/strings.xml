@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name"> ISCKRS</string>
-<string name="kwonyourregis">KNOW YOUR \n REGISTRATION</string>
+    <string name="kwonyourregis">KNOW YOUR \n REGISTRATION</string>
     <string name="expadv">.Exploring Recent \nAdvances\u2022</string>
     <string name="homebanner_text">ISCKRS MEET 2019</string>
     <string name="invitation">
@@ -35,15 +35,14 @@
 <html>
  <head></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
- <h3>KeraSight</h3>
  <h4>
-• Live Surgery Demonstration</br>
-• Skill Development Wetlabs</br>
-• Video Assisted Courses</br>
-• Certification of Trainees</br>
-• Yo Sessions</br>
-• Interesting Case Presentation</br>
-• Clinical Debates</br>
+     &nbsp;&nbsp;&nbsp; • Live Surgery Demonstration</br>
+     &nbsp;&nbsp;&nbsp; • Skill Development Wetlabs</br>
+     &nbsp;&nbsp;&nbsp; • Video Assisted Courses</br>
+     &nbsp;&nbsp;&nbsp; • Certification of Trainees</br>
+     &nbsp;&nbsp;&nbsp; • Yo Sessions</br>
+     &nbsp;&nbsp;&nbsp; • Interesting Case Presentation</br>
+     &nbsp;&nbsp;&nbsp; • Clinical Debates</br>
 </h4>
 
 </body>
@@ -167,7 +166,7 @@
         <!--<item>PROGRAM</item>-->
         <!--<item>EXHIBITION</item>-->
         <item>VENUE</item>
-     <!--   <item>TOURS</item>-->
+        <!--   <item>TOURS</item>-->
         <!--<item>ACCOMMODATION</item>-->
         <item>CONTACT</item>
         <item>LOGIN</item>
@@ -176,62 +175,35 @@
         <![CDATA[
         <html>
  <head></head>
- <body style="color:black;font-size:16px;font-family:ariel;">
-       <h3>Activities Gallery </h3>
-       <div class="row pt-40">
-            <div class="col-md-12 col-sm-12">
-            <img border="1" src="http://isckrs.com/images/gallery/1.jpg" height="150" width="45%" >
-                <img border="1" src="http://isckrs.com/images/gallery/2.jpg" height="150" width="45%" >
-                   <img border="1" src="http://isckrs.com/images/gallery/3.jpg" height="150" width="45%" >
-                      <img border="1" src="http://isckrs.com/images/gallery/4.jpg" height="150" width="45%" >
-                       <img border="1" src="http://isckrs.com/images/gallery/5.jpg" height="150" width="45%" >
-                          <img border="1" src="http://isckrs.com/images/gallery/6.jpg" height="150" width="45%" >
-                             <img border="1" src="http://isckrs.com/images/gallery/7.jpg" height="150" width="45%" >
-                                <img border="1" src="http://isckrs.com/images/gallery/8.jpg" height="150" width="45%" >
-                                   <img border="1" src="http://isckrs.com/images/gallery/9.jpg" height="150" width="45%" >
-                                      <img border="1" src="http://isckrs.com/images/gallery/10.jpg" height="150" width="45%" >
+ <body >
+       <h3>About Delhi</h3>
+       <div style="text-align:left">
 
+          New Delhi, the capital of India, is a bustling metropolis that
+          has an amazing mix of modernisation and carefully preserved antiquity.
+          Sprawled over the west bank of the river Yamuna, it is one of the fastest
+          growing cities in India. New Delhi was built by a British architect Edward Lutyens
+          in 1912 as the new capital of the British Raj. The Victorian architecture
+          now intermingles with the city\'s high rise buildings. Concrete flyovers built
+          to ease the growing traffic are interspersed with well laid gardens, Mughal tombs,
+          forts and monuments.</br>
+          </br>
 
-
-
-
-
-
-              <br>
-<ul class="list-border bold list angle-double-right">
-               <li><a href="https://photos.app.goo.gl/7CcMfYD7QADY4b1m8" target="_blank"><strong>ISCKRS Meet 2019, New Delhi (4th Aug 2018)</strong></a>
-
-               <ul class="list-border bold list angle-double-right">
-               <li><a href="https://photos.app.goo.gl/8LasMvi4xaKRDXP8A" target="_blank"> HALL - A </a></li>
-                <li><a href="https://photos.app.goo.gl/iEUwBKSgQoT2fvgQ8" target="_blank"> HALL - B </a></li>
-               <li><a href="https://photos.app.goo.gl/89CZSjM8gnopWa6e9" target="_blank"> INAUGURAL CEREMONY  </a></li>
-               </ul>
-                </li>
-
-                <li><a href="https://photos.app.goo.gl/FU5EkRu5sryfc7hB8" target="_blank"><strong>ISCKRS Meet 2019, New Delhi (5th Aug 2018)</strong></a>
-                <ul class="list-border bold list angle-double-right">
-               <li><a href="https://photos.app.goo.gl/WnV9frH6hu5sN9ha9" target="_blank"> DESIRE HALL </a></li>
-                <li><a href="https://photos.app.goo.gl/qMZedCBgX4SWS2SDA" target="_blank"> OPTHA QUIZ </a></li>
-               <li><a href="https://photos.app.goo.gl/FPZPBLTgYnBwzcGf6" target="_blank"> HALL - B  </a></li>
-               <li><a href="https://photos.app.goo.gl/nAcjd1fRdp8Tvrwr5" target="_blank"> GBM  </a></li>
-               </ul>
-
-                <br>
-                </li>
-
-              <li><a href="https://photos.app.goo.gl/92iEKj15eKGjhKe99" target="_blank">ISCKRS East Zone Meet 2018, Patna</a></li>
-              <li><a href="https://photos.app.goo.gl/RJmFU416ZEvVGaKd2" target="_blank">ISCKRS Central Zone Meet 2018, Lucknow</a></li>
-              <li><a href="https://photos.app.goo.gl/ZlU3lq2i683uNScC2" target="_blank">ISCKRS West Zone Meet 2018, Khandala</a></li>
-
-              <li><a href="https://photos.app.goo.gl/gY0ByYzbqVO5qog52" target="_blank">ISCKRS Meet 2017</a></li>
-
-            </ul><br><br>
-               </div>
+Places to Visit in Delhi</br>
+Red Fort</br>
+Jama Masjid</br>
+Chandni Chowk</br>
+Swaminarayan Akshardham</br>
+Humayun's Tomb</br>
+Qutab Minar</br>
+India Gate</br>
+Lotus Temple</br>
           </div>
     </body>
 </html>
 
 ]]></string>
+
     <string name="contact">
          <![CDATA[
         <html>
@@ -407,5 +379,5 @@ Email: shivani.srivastav@icegroupindia.com
     </string>
     <string name="hint_uname">Email</string>
     <string name="hint_password">Mobile</string>
-<string name="conference_venue"><h2 class="text-uppercase">Conference Venue</h2></string>
+    <string name="conference_venue"><h2 class="text-uppercase">Conference Venue</h2></string>
 </resources>

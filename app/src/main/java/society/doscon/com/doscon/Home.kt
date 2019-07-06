@@ -64,7 +64,7 @@ class Home : Fragment(), View.OnClickListener {
         }
     }
 
-    var images: IntArray = intArrayOf(R.drawable.copy1, R.drawable.copy2,R.drawable.copy3)
+    var images: IntArray = intArrayOf( R.drawable.copy2,R.drawable.copy3)
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         var view = inflater.inflate(R.layout.home_view, container, false)
         return view
@@ -74,7 +74,7 @@ class Home : Fragment(), View.OnClickListener {
     var timer: Timer? = null
     val DELAY_MS: Long = 1000//delay in milliseconds before task is to be executed
     val PERIOD_MS: Long = 4000
-    var NUM_PAGES: Int = 3
+    var NUM_PAGES: Int = 2
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Handler().postDelayed(Runnable {
