@@ -34,10 +34,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 startActivity(Intent(this, Abstract::class.java))
             }
             R.id.officebear5 -> {
-                if (ta[5].equals("LOGOUT")) {
-                    getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
-                    var intent = Intent(this, Login::class.java)
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
+                var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", AppCompatActivity.MODE_PRIVATE);
+                var restoredText = prefs.getString("DATA", null);
+                if (!TextUtils.isEmpty(restoredText)) {
+                    var intent = Intent(this, TicketDetail::class.java)
+                    intent.putExtra("DATA", restoredText)
                     startActivity(intent)
                 }else{
                     var intent = Intent(this, Login::class.java)
@@ -123,7 +124,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             intent.putExtra("DATA", restoredText)
             startActivity(intent)
             ta = getResources().getStringArray(R.array.tabname);
-            ta.set(7, "LOGOUT")
+            ta.set(5, "LOGOUT")
         } else {
             ta = getResources().getStringArray(R.array.tabname);
         }

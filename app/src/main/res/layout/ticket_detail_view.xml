@@ -79,7 +79,7 @@
                     android:textColor="@color/black" />
             </TableRow>
 
-            <TableRow android:gravity="center_vertical">
+            <TableRow android:gravity="center_vertical" android:visibility="gone">
 
                 <TextView
                     android:layout_width="140dp"

@@ -19,12 +19,12 @@ class TicketDetail : Activity() {
         val reader = JSONObject(myretailer).getJSONArray("Data").getJSONObject(0)
         indianstate.text = reader.getString("Name")
         payworldbranch.text = reader.getString("Member Type")
-        payworldbranchcode.text = reader.getString("Sub Member Type")
+//        payworldbranchcode.text = reader.getString("Sub Member Type")
         bussinessname.text = reader.getString("Mobile No.")
         agentcode.text = reader.getString("Registration ID")
         partycode.text = reader.getString("Email ID")
         loginname.text = reader.getString("Address")
-        personal_name.text = reader.getString("City") + "," + reader.getString("State") + "," + reader.getString("Country")
+        personal_name.text = reader.getString("City") + "," + reader.getString("State") //+ "," + reader.getString("Country")
         assignmark.text = reader.getString("Pin Code")
 
     }
