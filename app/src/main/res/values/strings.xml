@@ -157,17 +157,12 @@
         <item>Dr. Vipul Nayar</item>
     </array>
     <array name="tabname">
-        <!--<item >INVITATION</item>
-        <item >REGISTRATION</item>-->
         <item>HOME</item>
         <item>REGISTRATION</item>
-        <!-- <item>ABSTRACT</item>-->
         <item>FACULTY</item>
-        <!--<item>PROGRAM</item>-->
-        <!--<item>EXHIBITION</item>-->
         <item>VENUE</item>
         <item>OFFICE BEARERS</item>
-        <!--<item>ACCOMMODATION</item>-->
+        <item>JOIN ISCKRS</item>
         <item>CONTACT</item>
         <item>LOGIN</item>
     </array>

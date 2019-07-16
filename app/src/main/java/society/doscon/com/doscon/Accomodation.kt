@@ -18,7 +18,7 @@ class Accomodation : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.accomodation)
-        title_name.text = "OFFICE BEARERS"
+
         back.setOnClickListener { this@Accomodation.finish() }
         webpagesLinear = findViewById(R.id.webpagesLinear)
         webpagesLinear.getSettings().setJavaScriptEnabled(true);
@@ -29,10 +29,14 @@ class Accomodation : Activity() {
         webpagesLinear.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         progressbar.visibility = View.VISIBLE
         webpagesLinear.setWebViewClient(AppWebViewClients(progressbar))
-        if (intent.getStringExtra("which").equals("bearer"))
+        if (intent.getStringExtra("which").equals("bearer")){
             webpagesLinear.loadUrl("http://isckrs.com/office-bearers.php#officebr");
-        else
+            title_name.text = "OFFICE BEARERS"
+            }
+        else{
             webpagesLinear.loadUrl("http://isckrs.com/join-isckrs.php#joinisckrs");
+            title_name.text = "JOIN ISCKRS"
+            }
     }
 
     inner class AppWebViewClients(private val progressBar: ProgressBar) : WebViewClient() {
