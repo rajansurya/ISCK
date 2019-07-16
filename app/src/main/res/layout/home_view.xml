@@ -66,9 +66,9 @@
 
     <LinearLayout
         android:id="@+id/middle"
-        android:layout_below="@+id/carousal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/carousal"
         android:orientation="vertical">
 
         <LinearLayout
@@ -80,11 +80,11 @@
 
             <LinearLayout
                 android:id="@+id/officebear"
-                android:onClick="onClickitem"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:onClick="onClickitem"
                 android:orientation="vertical">
 
                 <ImageView
@@ -100,12 +100,12 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/officebear2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/officebear2"
-                android:onClick="onClickitem"
                 android:gravity="center"
+                android:onClick="onClickitem"
                 android:orientation="vertical">
 
                 <ImageView
@@ -121,12 +121,12 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/officebear3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/officebear3"
-                android:onClick="onClickitem"
                 android:gravity="center"
+                android:onClick="onClickitem"
                 android:orientation="vertical">
 
                 <ImageView
@@ -145,16 +145,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:gravity="center"
-            android:layout_marginTop="10dp"
             android:weightSum="3">
 
             <LinearLayout
+                android:id="@+id/officebear4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:id="@+id/officebear4"
                 android:onClick="onClickitem"
                 android:orientation="vertical">
 
@@ -171,34 +171,42 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/officebear5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/officebear5"
                 android:onClick="onClickitem"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/reg"
+                    android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
                     android:src="@drawable/home_6" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/reg"
+                    android:layout_centerHorizontal="true"
+                    android:minLines="2"
                     android:gravity="center"
+                    android:textSize="12sp"
                     android:text="@string/kwonyourregis"
                     android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="0dp"
                 android:id="@+id/officebear6"
-                android:onClick="onClickitem"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:onClick="onClickitem"
                 android:orientation="vertical">
 
                 <ImageView
@@ -216,9 +224,9 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
 
 
         <ImageView
@@ -226,14 +234,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/home_8" />
+
         <TextView
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
             android:text="@string/expadv"
             android:textColor="#032A41"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp"
             android:textSize="16sp"
-            android:layout_height="wrap_content"
             android:textStyle="italic" />
 
     </RelativeLayout>

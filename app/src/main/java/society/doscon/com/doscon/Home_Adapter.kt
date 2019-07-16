@@ -36,7 +36,7 @@ internal class Home_Adapter(var mContext: Context, var service: ArrayList<String
         holder?.grid_item?.setLayoutParams(params);
         if (whichsec.equals("commity")) {
             holder?.home_txt?.setText(colorlist[position].split("#")[0])
-            holder?.designation?.setText(colorlist[position].split("#")[1])
+//            holder?.designation?.setText(colorlist[position].split("#")[1])
         }else{
             holder?.home_txt?.setText(colorlist[position])
         }

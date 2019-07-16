@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name"> ISCKRS</string>
-    <string name="kwonyourregis">KNOW YOUR \n REGISTRATION</string>
+    <string name="kwonyourregis">K/W YOUR REGISTRATION</string>
     <string name="expadv">.Exploring Recent \nAdvances\u2022</string>
     <string name="homebanner_text">ISCKRS MEET 2019</string>
     <string name="invitation">
@@ -166,7 +166,7 @@
         <!--<item>PROGRAM</item>-->
         <!--<item>EXHIBITION</item>-->
         <item>VENUE</item>
-        <!--   <item>TOURS</item>-->
+        <item>OFFICE BEARERS</item>
         <!--<item>ACCOMMODATION</item>-->
         <item>CONTACT</item>
         <item>LOGIN</item>
@@ -177,7 +177,7 @@
  <head></head>
  <body >
        <h3>About Delhi</h3>
-       <div style="text-align:left">
+       <div style="text-align:justify">
 
           New Delhi, the capital of India, is a bustling metropolis that
           has an amazing mix of modernisation and carefully preserved antiquity.
@@ -189,7 +189,7 @@
           forts and monuments.</br>
           </br>
 
-Places to Visit in Delhi</br>
+<font size="4"><h3>Places to Visit in Delhi</h3></font></br>
 Red Fort</br>
 Jama Masjid</br>
 Chandni Chowk</br>

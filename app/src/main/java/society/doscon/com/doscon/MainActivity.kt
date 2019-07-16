@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.header_view.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menuckick {
-    public  fun onClickitem(view: View){
+    public fun onClickitem(view: View) {
         when (view?.id) {
             R.id.officebear -> {
                 startActivity(Intent(this, Commitee::class.java))
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                     var intent = Intent(this, TicketDetail::class.java)
                     intent.putExtra("DATA", restoredText)
                     startActivity(intent)
-                }else{
+                } else {
                     var intent = Intent(this, Login::class.java)
                     startActivity(intent)
                 }
@@ -61,36 +61,43 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             1 -> {
                 startActivity(Intent(this, RegistrationActivity::class.java))
             }
-           /* 2 -> {
-                var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
-                startActivity(intent)
-            }*/
+        /* 2 -> {
+             var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
+             startActivity(intent)
+         }*/
             2 -> {
                 startActivity(Intent(this, Commitee::class.java))
             }
-                        /*3 -> {
-                startActivity(Intent(this, Exhibation::class.java))
-            }*/
+        /*3 -> {
+startActivity(Intent(this, Exhibation::class.java))
+}*/
             3 -> {
                 startActivity(Intent(this, Venue::class.java))
             }
-            /*6 -> {
-                startActivity(Intent(this, Tour::class.java))
-            }*/
+        /*6 -> {
+            startActivity(Intent(this, Tour::class.java))
+        }*/
 
-           /* 7 -> {
-                startActivity(Intent(this, Accomodation::class.java))
-            }*/
             4 -> {
-                startActivity(Intent(this, Contact::class.java))
+                var inyeny: Intent = Intent(this, Accomodation::class.java)
+                inyeny.putExtra("which", "bearer")
+                startActivity(inyeny)
             }
             5 -> {
-                if (ta[5].equals("LOGOUT")) {
+                var inyeny: Intent = Intent(this, Accomodation::class.java)
+                inyeny.putExtra("which", "join")
+                startActivity(inyeny)
+            }
+            6 -> {
+                startActivity(Intent(this, Contact::class.java))
+            }
+            7 -> {
+                if (menuposition[7].equals("LOGOUT")) {
                     getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
                     var intent = Intent(this, Login::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
-                }else{
+                } else {
                     var intent = Intent(this, Login::class.java)
                     startActivity(intent)
                 }
@@ -111,22 +118,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         }
     }
 
-    lateinit var ta: Array<String>
+    lateinit var menuposition: Array<String>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //        var myretailer: String? = intent?.extras?.get("DATA") as? String
-      var prefs:  SharedPreferences  = getSharedPreferences("MY_PREFS_NAME", MODE_PRIVATE);
+        var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", MODE_PRIVATE);
         var restoredText = prefs.getString("DATA", null);
 //        if (restoredText != null) {
         if (!TextUtils.isEmpty(restoredText)) {
             var intent = Intent(this, TicketDetail::class.java)
             intent.putExtra("DATA", restoredText)
             startActivity(intent)
-            ta = getResources().getStringArray(R.array.tabname);
-            ta.set(5, "LOGOUT")
+            menuposition = getResources().getStringArray(R.array.tabname);
+            menuposition.set(7, "LOGOUT")
         } else {
-            ta = getResources().getStringArray(R.array.tabname);
+            menuposition = getResources().getStringArray(R.array.tabname);
         }
         title_name.text = "INDIAN SOCIETY OF CORNEA & KERATOREFRATIVE SURGEONS";
 //        sub_title_name.text = Html.fromHtml("<font color='#FCAA23'>MEET 2019</font>")
@@ -136,7 +143,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         tabs.setupWithViewPager(viewpager);
         first?.layoutManager = LinearLayoutManager(this)
         first?.addItemDecoration(SpacesItemDecoration(1))
-        var adapter = Menuitem(this, this, ta)
+        var adapter = Menuitem(this, this, menuposition)
         first?.setAdapter(adapter)
         drawer_click.setOnClickListener(this)
     }

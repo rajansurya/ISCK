@@ -2,13 +2,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <include layout="@layout/header_other" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@drawable/banner_2" />
+
     <WebView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/webpagesLinear"
         android:layout_width="match_parent"
-        android:scrollbars="none"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_height="wrap_content" />
+        android:scrollbars="none" />
 
     <ProgressBar
         android:id="@+id/progressbar"
