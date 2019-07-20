@@ -77,7 +77,7 @@ class Home : Fragment(), View.OnClickListener {
     var NUM_PAGES: Int = 2
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Handler().postDelayed(Runnable {
+      /*  Handler().postDelayed(Runnable {
             var height: Int = parent_cube.height
             var width: Int = parent_cube.width
             val params = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
@@ -100,7 +100,7 @@ class Home : Fragment(), View.OnClickListener {
             params3.topMargin = (height / 3) * 2
             program.layoutParams = params3
 
-        }, 200)
+        }, 200)*/
 
         registration.setOnClickListener(this)
         abstracttx.setOnClickListener(this)

@@ -11,32 +11,49 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="15dp"
         android:src="@drawable/menu" />
-    <ImageView
-        android:id="@+id/right_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
+
+    <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignParentRight="true"
+
         android:layout_marginRight="20dp"
-        android:layout_centerVertical="true"
-        android:src="@drawable/l50" />
+        app:rb_color="#e63acfb4"
+        app:rb_duration="3000"
+        app:rb_radius="2dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="6">
+
+        <ImageView
+            android:id="@+id/right_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/notifi"
+            android:layout_marginRight="20dp"
+             />
+    </com.skyfishjy.library.RippleBackground>
 
     <TextView
         android:id="@+id/title_name"
         android:layout_width="wrap_content"
-        android:textStyle="bold"
-        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@id/drawer_click"
         android:paddingLeft="20dp"
-        android:textSize="15sp" />
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/sub_title_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
         android:layout_below="@+id/title_name"
+        android:layout_centerVertical="true"
         android:layout_toRightOf="@id/drawer_click"
         android:paddingLeft="20dp"
 

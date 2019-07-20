@@ -1,14 +1,14 @@
 package society.doscon.com.doscon
 
+import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
+import android.support.v4.app.*
 import android.support.v4.view.ViewPager
+import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.text.Html
@@ -17,6 +17,17 @@ import android.view.Gravity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.header_view.*
+import org.json.JSONObject
+import android.view.animation.AnimationSet
+import android.view.animation.AlphaAnimation
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
+import com.skyfishjy.library.RippleBackground
+import android.content.DialogInterface
+import android.view.LayoutInflater
+import android.view.ViewGroup
+
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menuckick {
     public fun onClickitem(view: View) {
@@ -92,7 +103,10 @@ startActivity(Intent(this, Exhibation::class.java))
                 startActivity(Intent(this, Contact::class.java))
             }
             7 -> {
-                if (menuposition[7].equals("LOGOUT")) {
+                startActivity(Intent(this, NotificationAPI::class.java))
+            }
+            8 -> {
+                if (menuposition[8].equals("LOGOUT")) {
                     getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
                     var intent = Intent(this, Login::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -127,11 +141,13 @@ startActivity(Intent(this, Exhibation::class.java))
         var restoredText = prefs.getString("DATA", null);
 //        if (restoredText != null) {
         if (!TextUtils.isEmpty(restoredText)) {
+            val reader = JSONObject(restoredText).getJSONArray("Data").getJSONObject(0)
+            var schedule = reader.getString("schedule")
             var intent = Intent(this, TicketDetail::class.java)
             intent.putExtra("DATA", restoredText)
             startActivity(intent)
             menuposition = getResources().getStringArray(R.array.tabname);
-            menuposition.set(7, "LOGOUT")
+            menuposition.set(8, "LOGOUT")
         } else {
             menuposition = getResources().getStringArray(R.array.tabname);
         }
@@ -146,8 +162,34 @@ startActivity(Intent(this, Exhibation::class.java))
         var adapter = Menuitem(this, this, menuposition)
         first?.setAdapter(adapter)
         drawer_click.setOnClickListener(this)
+        // blinkAnim()
+        val rippleBackground = findViewById<View>(R.id.content) as RippleBackground
+        val imageView = findViewById<ImageView>(R.id.right_icon) as ImageView
+        imageView.setOnClickListener {
+            rippleBackground.stopRippleAnimation()
+            var dd = Diao()
+            dd.show(supportFragmentManager,"")
+        }
+        rippleBackground.startRippleAnimation()
     }
 
+    private fun blinkAnim() {
+        val shake: Animation
+        shake = AnimationUtils.loadAnimation(applicationContext, R.anim.shake)
+
+        val image: ImageView
+        image = findViewById<ImageView>(R.id.right_icon) as ImageView
+
+        image.startAnimation(shake)
+    }
+
+    class Diao : DialogFragment() {
+        override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+            val v = inflater.inflate(R.layout.cust, container, false)
+            return v
+        }
+
+    }
 
     private fun setupViewPager(viewPager: ViewPager) {
         val adapter = ViewPagerAdapter(supportFragmentManager)

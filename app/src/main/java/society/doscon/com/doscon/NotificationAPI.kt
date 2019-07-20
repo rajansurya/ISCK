@@ -51,7 +51,7 @@ try {
 
         val requestJson = JSONObject()
         requestJson.put("registrationId", "")
-        val URL = "http://eventreg.icegroupindia.com/doscon18/api/notification-dos.php"
+        val URL = "http://isckrs.com/api/notification-isckrs.php"
         SignUpAPICall(URL, 0, "NOTIFICATION", this@NotificationAPI, this@NotificationAPI).execute(requestJson)
     }
 }
