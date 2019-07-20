@@ -27,9 +27,12 @@ import com.skyfishjy.library.RippleBackground
 import android.content.DialogInterface
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.TextView
 
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menuckick {
+    var schedule: String = ""
+
     public fun onClickitem(view: View) {
         when (view?.id) {
             R.id.officebear -> {
@@ -142,7 +145,7 @@ startActivity(Intent(this, Exhibation::class.java))
 //        if (restoredText != null) {
         if (!TextUtils.isEmpty(restoredText)) {
             val reader = JSONObject(restoredText).getJSONArray("Data").getJSONObject(0)
-            var schedule = reader.getString("schedule")
+            schedule = reader.getString("schedule")
             var intent = Intent(this, TicketDetail::class.java)
             intent.putExtra("DATA", restoredText)
             startActivity(intent)
@@ -167,8 +170,9 @@ startActivity(Intent(this, Exhibation::class.java))
         val imageView = findViewById<ImageView>(R.id.right_icon) as ImageView
         imageView.setOnClickListener {
             rippleBackground.stopRippleAnimation()
-            var dd = Diao()
-            dd.show(supportFragmentManager,"")
+            var dd = Diao().getInstance(schedule)
+
+            dd.show(supportFragmentManager, "")
         }
         rippleBackground.startRippleAnimation()
     }
@@ -184,10 +188,21 @@ startActivity(Intent(this, Exhibation::class.java))
     }
 
     class Diao : DialogFragment() {
+
+        fun getInstance(text: String): Diao {
+            this.text=text
+            return Diao()
+        }
+        var text: String=""
+        lateinit var messge: TextView
         override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
             val v = inflater.inflate(R.layout.cust, container, false)
+            messge = v.findViewById<TextView>(R.id.messge)
+
             return v
         }
+
+
 
     }
 

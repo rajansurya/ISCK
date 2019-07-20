@@ -1,13 +1,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="wrap_content"
+    android:layout_width="200dp"
     android:layout_height="wrap_content">
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:scaleType="center"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:text="SCHEDULED MEET"
+        android:background="#FFFFBB33"
+         />
+    <TextView
+        android:id="@+id/messge"
+        android:layout_width="match_parent"
         android:layout_height="44dp"
+        android:gravity="center"
         android:scaleType="center"
         android:text="Message"
-        android:background="#FFFFBB33"
         android:contentDescription="@string/app_name" />
 
 </LinearLayout>
