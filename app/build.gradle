@@ -8,7 +8,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         multiDexEnabled true
-        applicationId "society.doscon.com.doscon"
+        applicationId "com.society.isckrs"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 4
