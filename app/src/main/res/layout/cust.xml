@@ -4,10 +4,10 @@
     android:layout_height="wrap_content">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:gravity="center"
         android:scaleType="center"
-        android:padding="10dp"
+        android:padding="7dp"
         android:textColor="@color/white"
         android:text="SCHEDULED MEET"
         android:background="#FFFFBB33"
@@ -15,9 +15,9 @@
     <TextView
         android:id="@+id/messge"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:gravity="center"
-        android:scaleType="center"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
         android:text="Message"
         android:contentDescription="@string/app_name" />
 

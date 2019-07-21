@@ -28,10 +28,55 @@ import android.content.DialogInterface
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
+import org.json.JSONArray
 
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menuckick {
-    var schedule: String = ""
+    lateinit var schedule: JSONArray
+
+
+    lateinit var menuposition: Array<String>
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+//        var myretailer: String? = intent?.extras?.get("DATA") as? String
+        var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", MODE_PRIVATE);
+        var restoredText = prefs.getString("DATA", null);
+//        if (restoredText != null) {
+        if (!TextUtils.isEmpty(restoredText)) {
+            val reader = JSONObject(restoredText).getJSONArray("Data").getJSONObject(0)
+            schedule = reader.getJSONArray("schedule")
+            var intent = Intent(this, TicketDetail::class.java)
+            intent.putExtra("DATA", restoredText)
+            startActivity(intent)
+            menuposition = getResources().getStringArray(R.array.tabname);
+            menuposition.set(8, "LOGOUT")
+        } else {
+            menuposition = getResources().getStringArray(R.array.tabname);
+        }
+        title_name.text = "INDIAN SOCIETY OF CORNEA & KERATOREFRATIVE SURGEONS";
+//        sub_title_name.text = Html.fromHtml("<font color='#FCAA23'>MEET 2019</font>")
+
+//        getSupportActionBar()!!.setDisplayHomeAsUpEnabled(true);
+        setupViewPager(viewpager);
+        tabs.setupWithViewPager(viewpager);
+        first?.layoutManager = LinearLayoutManager(this)
+        first?.addItemDecoration(SpacesItemDecoration(1))
+        var adapter = Menuitem(this, this, menuposition)
+        first?.setAdapter(adapter)
+        drawer_click.setOnClickListener(this)
+        // blinkAnim()
+        val rippleBackground = findViewById<View>(R.id.content) as RippleBackground
+        val imageView = findViewById<ImageView>(R.id.right_icon) as ImageView
+        imageView.setOnClickListener {
+            rippleBackground.stopRippleAnimation()
+            var dd = Diao().getInstance(schedule.toString())
+
+            dd.show(supportFragmentManager, "")
+        }
+        rippleBackground.startRippleAnimation()
+    }
+
 
     public fun onClickitem(view: View) {
         when (view?.id) {
@@ -135,47 +180,6 @@ startActivity(Intent(this, Exhibation::class.java))
         }
     }
 
-    lateinit var menuposition: Array<String>
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-//        var myretailer: String? = intent?.extras?.get("DATA") as? String
-        var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", MODE_PRIVATE);
-        var restoredText = prefs.getString("DATA", null);
-//        if (restoredText != null) {
-        if (!TextUtils.isEmpty(restoredText)) {
-            val reader = JSONObject(restoredText).getJSONArray("Data").getJSONObject(0)
-            schedule = reader.getString("schedule")
-            var intent = Intent(this, TicketDetail::class.java)
-            intent.putExtra("DATA", restoredText)
-            startActivity(intent)
-            menuposition = getResources().getStringArray(R.array.tabname);
-            menuposition.set(8, "LOGOUT")
-        } else {
-            menuposition = getResources().getStringArray(R.array.tabname);
-        }
-        title_name.text = "INDIAN SOCIETY OF CORNEA & KERATOREFRATIVE SURGEONS";
-//        sub_title_name.text = Html.fromHtml("<font color='#FCAA23'>MEET 2019</font>")
-
-//        getSupportActionBar()!!.setDisplayHomeAsUpEnabled(true);
-        setupViewPager(viewpager);
-        tabs.setupWithViewPager(viewpager);
-        first?.layoutManager = LinearLayoutManager(this)
-        first?.addItemDecoration(SpacesItemDecoration(1))
-        var adapter = Menuitem(this, this, menuposition)
-        first?.setAdapter(adapter)
-        drawer_click.setOnClickListener(this)
-        // blinkAnim()
-        val rippleBackground = findViewById<View>(R.id.content) as RippleBackground
-        val imageView = findViewById<ImageView>(R.id.right_icon) as ImageView
-        imageView.setOnClickListener {
-            rippleBackground.stopRippleAnimation()
-            var dd = Diao().getInstance(schedule)
-
-            dd.show(supportFragmentManager, "")
-        }
-        rippleBackground.startRippleAnimation()
-    }
 
     private fun blinkAnim() {
         val shake: Animation
@@ -190,18 +194,39 @@ startActivity(Intent(this, Exhibation::class.java))
     class Diao : DialogFragment() {
 
         fun getInstance(text: String): Diao {
-            this.text=text
-            return Diao()
+            this.text = text
+            var bundle: Bundle = Bundle()
+            bundle.putString("dataT", text)
+            var intent = Diao()
+            intent.arguments = bundle
+            return intent
         }
-        var text: String=""
+
+        var text: String? = ""
         lateinit var messge: TextView
         override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
             val v = inflater.inflate(R.layout.cust, container, false)
             messge = v.findViewById<TextView>(R.id.messge)
+            var bundle = arguments
 
+            var data: String = ""
+            text = bundle?.getString("dataT")
+            try {
+                var json: JSONArray = JSONArray(text)
+                var jsnarray: JSONObject = json.getJSONObject(0)
+                var iterate = jsnarray.keys()
+
+                while (iterate.hasNext()) {
+                    var key: String = iterate.next()
+                    var value: String = jsnarray.getString(key)
+                    data = data + "<br>" +" <b>" +key +": "+" </b>"+ value
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+            messge.setText(Html.fromHtml(data))
             return v
         }
-
 
 
     }
