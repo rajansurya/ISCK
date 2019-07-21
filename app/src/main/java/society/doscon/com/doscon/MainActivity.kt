@@ -25,6 +25,7 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import com.skyfishjy.library.RippleBackground
 import android.content.DialogInterface
+import android.opengl.Visibility
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
@@ -32,7 +33,7 @@ import org.json.JSONArray
 
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menuckick {
-    lateinit var schedule: JSONArray
+    var schedule: JSONArray? = null
 
 
     lateinit var menuposition: Array<String>
@@ -45,7 +46,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
 //        if (restoredText != null) {
         if (!TextUtils.isEmpty(restoredText)) {
             val reader = JSONObject(restoredText).getJSONArray("Data").getJSONObject(0)
-            schedule = reader.getJSONArray("schedule")
+            if (reader.optJSONArray("schedule") != null)
+                schedule = reader.getJSONArray("schedule")
             var intent = Intent(this, TicketDetail::class.java)
             intent.putExtra("DATA", restoredText)
             startActivity(intent)
@@ -66,15 +68,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         first?.setAdapter(adapter)
         drawer_click.setOnClickListener(this)
         // blinkAnim()
-        val rippleBackground = findViewById<View>(R.id.content) as RippleBackground
         val imageView = findViewById<ImageView>(R.id.right_icon) as ImageView
-        imageView.setOnClickListener {
-            rippleBackground.stopRippleAnimation()
-            var dd = Diao().getInstance(schedule.toString())
+        if (schedule != null && !TextUtils.isEmpty(schedule.toString())) {
+            val rippleBackground = findViewById<View>(R.id.content) as RippleBackground
 
-            dd.show(supportFragmentManager, "")
+            imageView.setOnClickListener {
+                rippleBackground.stopRippleAnimation()
+                var dd = Diao().getInstance(schedule.toString())
+
+                dd.show(supportFragmentManager, "")
+            }
+            rippleBackground.startRippleAnimation()
+        } else {
+            imageView.visibility = View.GONE
         }
-        rippleBackground.startRippleAnimation()
     }
 
 
@@ -219,7 +226,7 @@ startActivity(Intent(this, Exhibation::class.java))
                 while (iterate.hasNext()) {
                     var key: String = iterate.next()
                     var value: String = jsnarray.getString(key)
-                    data = data + "<br>" +" <b>" +key +": "+" </b>"+ value
+                    data = data + "<br>" + " <b>" + key + ": " + " </b>" + value
                 }
             } catch (e: Exception) {
                 e.printStackTrace()
