@@ -243,7 +243,6 @@
             </TableRow>
 
             <!--<TableRow android:gravity="center_vertical">
-
                 <TextView
                     android:layout_width="140dp"
                     android:layout_height="wrap_content"
@@ -253,7 +252,6 @@
                     android:padding="10dp"
                     android:text="Business Pin Code "
                     android:textStyle="bold" />
-
                 <TextView
                     android:id="@+id/bussinesspincode"
                     android:layout_width="wrap_content"
@@ -261,9 +259,7 @@
                     android:layout_column="1"
                     android:gravity="center_vertical" />
             </TableRow>
-
             <TableRow android:gravity="center_vertical">
-
                 <TextView
                     android:layout_width="140dp"
                     android:layout_height="wrap_content"
@@ -273,7 +269,6 @@
                     android:padding="10dp"
                     android:text="Area"
                     android:textStyle="bold" />
-
                 <TextView
                     android:id="@+id/area"
                     android:layout_width="wrap_content"
@@ -281,10 +276,8 @@
                     android:layout_column="1"
                     android:gravity="center_vertical" />
             </TableRow>
-
             <TableRow android:gravity="center_vertical"
                 >
-
                 <TextView
                     android:layout_width="140dp"
                     android:layout_height="wrap_content"
@@ -294,7 +287,6 @@
                     android:padding="10dp"
                     android:text="City"
                     android:textStyle="bold" />
-
                 <TextView
                     android:id="@+id/city"
                     android:layout_width="wrap_content"

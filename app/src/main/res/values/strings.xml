@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">ISCKRS</string>
     <string name="kwonyourregis">K/W YOUR REGISTRATION</string>
+    <string name="schedule">MY SCHEDULE</string>
     <string name="expadv">.Exploring Recent \nAdvances\u2022</string>
-    <string name="homebanner_text">ISCKRS MEET 2019</string>
     <string name="invitation">
 <![CDATA[
 <html>
@@ -100,26 +100,6 @@
         <item>http://isckrs.com/images/team/team11.jpg</item>
         <item>http://isckrs.com/images/team/team12.jpg</item>
     </array>
-    <array name="img_arr_member">
-        <item>http://isckrs.com/images/titiyal.jpg</item>
-        <item>http://isckrs.com/images/RishiMohan.jpg</item>
-        <item>http://isckrs.com/images/sinha.jpg</item>
-        <item>http://isckrs.com/images/RajibMukherjee.jpg</item>
-        <item>http://isckrs.com/images/NamrataSharma.jpg</item>
-        <item>http://isckrs.com/images/RitikaSachdev.jpg</item>
-        <item>http://isckrs.com/images/GMukherjee.jpg</item>
-        <item>http://isckrs.com/images/AjayDave.jpg</item>
-
-    </array>
-    <array name="img_arr_represtative">
-        <item>http://doscon18.org/images/member-9.jpg</item>
-        <item>http://doscon18.org/images/member-10.jpg</item>
-    </array>
-    <array name="img_arr_exofficer">
-        <item>http://doscon18.org/images/member-11.jpg</item>
-        <item>http://doscon18.org/images/member-12.jpg</item>
-        <item>http://doscon18.org/images/member-13.jpg</item>
-    </array>
     <array name="nameimg">
         <item>Dr. Michael Belin#USA</item>
         <item>Dr. Harminder S Dua#UK</item>
@@ -162,6 +142,7 @@
         <item>FACULTY</item>
         <item>VENUE</item>
         <item>OFFICE BEARERS</item>
+        <item>K/W YOUR REGISTRATION</item>
         <item>JOIN ISCKRS</item>
         <item>CONTACT</item>
         <item>NOTIFICATION</item>

@@ -186,7 +186,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/home_6" />
+                    android:src="@drawable/noti82" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -196,7 +196,7 @@
                     android:minLines="2"
                     android:gravity="center"
                     android:textSize="12sp"
-                    android:text="@string/kwonyourregis"
+                    android:text="@string/schedule"
                     android:textColor="@color/black" />
             </LinearLayout>
 

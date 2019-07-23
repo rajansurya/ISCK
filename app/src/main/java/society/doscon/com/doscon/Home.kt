@@ -102,10 +102,10 @@ class Home : Fragment(), View.OnClickListener {
 
         }, 200)*/
 
-        registration.setOnClickListener(this)
-        abstracttx.setOnClickListener(this)
-        program.setOnClickListener(this)
-        notification.setOnClickListener(this)
+//        registration.setOnClickListener(this)
+//        abstracttx.setOnClickListener(this)
+//        program.setOnClickListener(this)
+//        notification.setOnClickListener(this)
         var adpter = Carousal(context!!, images)
         carousal.adapter = adpter
         val handler = Handler()

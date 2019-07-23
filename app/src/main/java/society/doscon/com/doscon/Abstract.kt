@@ -8,6 +8,7 @@ import android.webkit.WebViewClient
 import android.widget.ProgressBar
 import kotlinx.android.synthetic.main.first_frgment_view.*
 import kotlinx.android.synthetic.main.header_other.*
+import kotlinx.android.synthetic.main.web_content.*
 
 
 class Abstract : Activity() {

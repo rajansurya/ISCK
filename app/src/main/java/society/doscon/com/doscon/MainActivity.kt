@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             intent.putExtra("DATA", restoredText)
             startActivity(intent)
             menuposition = getResources().getStringArray(R.array.tabname);
-            menuposition.set(8, "LOGOUT")
+            menuposition.set(9, "LOGOUT")
         } else {
             menuposition = getResources().getStringArray(R.array.tabname);
         }
@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         first?.setAdapter(adapter)
         drawer_click.setOnClickListener(this)
         // blinkAnim()
-        val imageView = findViewById<ImageView>(R.id.right_icon) as ImageView
+        /*val imageView = findViewById<ImageView>(R.id.right_icon) as ImageView
         if (schedule != null && !TextUtils.isEmpty(schedule.toString())) {
             val rippleBackground = findViewById<View>(R.id.content) as RippleBackground
 
@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             rippleBackground.startRippleAnimation()
         } else {
             imageView.visibility = View.GONE
-        }
+        }*/
     }
 
 
@@ -100,16 +100,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 startActivity(Intent(this, Abstract::class.java))
             }
             R.id.officebear5 -> {
-                var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", AppCompatActivity.MODE_PRIVATE);
-                var restoredText = prefs.getString("DATA", null);
-                if (!TextUtils.isEmpty(restoredText)) {
-                    var intent = Intent(this, TicketDetail::class.java)
-                    intent.putExtra("DATA", restoredText)
-                    startActivity(intent)
-                } else {
-                    var intent = Intent(this, Login::class.java)
-                    startActivity(intent)
-                }
+
             }
             R.id.officebear6 -> {
                 startActivity(Intent(this, Venue::class.java))
@@ -149,19 +140,31 @@ startActivity(Intent(this, Exhibation::class.java))
                 inyeny.putExtra("which", "bearer")
                 startActivity(inyeny)
             }
-            5 -> {
+            5->{
+                var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", AppCompatActivity.MODE_PRIVATE);
+                var restoredText = prefs.getString("DATA", null);
+                if (!TextUtils.isEmpty(restoredText)) {
+                    var intent = Intent(this, TicketDetail::class.java)
+                    intent.putExtra("DATA", restoredText)
+                    startActivity(intent)
+                } else {
+                    var intent = Intent(this, Login::class.java)
+                    startActivity(intent)
+                }
+            }
+            6 -> {
                 var inyeny: Intent = Intent(this, Accomodation::class.java)
                 inyeny.putExtra("which", "join")
                 startActivity(inyeny)
             }
-            6 -> {
+            7 -> {
                 startActivity(Intent(this, Contact::class.java))
             }
-            7 -> {
+            8 -> {
                 startActivity(Intent(this, NotificationAPI::class.java))
             }
-            8 -> {
-                if (menuposition[8].equals("LOGOUT")) {
+            9 -> {
+                if (menuposition[9].equals("LOGOUT")) {
                     getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
                     var intent = Intent(this, Login::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)

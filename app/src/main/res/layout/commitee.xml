@@ -51,7 +51,6 @@
                     android:textStyle="bold" />
 
                 <android.support.v7.widget.RecyclerView
-                    android:id="@+id/gridview_cyc_member"
                     android:layout_width="match_parent"
                     android:layout_margin="2dp"
                     android:layout_height="wrap_content"
@@ -70,7 +69,6 @@
                     android:textStyle="bold" />
 
                 <android.support.v7.widget.RecyclerView
-                    android:id="@+id/gridview_cyc_representive"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
@@ -89,7 +87,6 @@
                     android:textStyle="bold" />
 
                 <android.support.v7.widget.RecyclerView
-                    android:id="@+id/gridview_cyc_exofficer"
                     android:layout_width="match_parent"
                     android:layout_margin="2dp"
                     android:layout_height="wrap_content"
