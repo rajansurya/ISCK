@@ -26,14 +26,17 @@ class Scheduled_Meeting : Activity() {
             while (i<json.length()) {
                 var jsnarray: JSONObject = json.getJSONObject(0)
                 var iterate = jsnarray.keys()
-
+                var count:Int=0
                 while (iterate.hasNext()) {
                     var key: String = iterate.next()
                     var value: String = jsnarray.getString(key)
                     data = data + "<br>" + " <b>" + key + ": " + " </b>" + value
+                    count++
+                    if (count>=5)
+                        break
                 }
                 i++
-                data = data + "<br>"
+                data = data + "<br> ———— <br>"
             }
         } catch (e: Exception) {
             e.printStackTrace()
