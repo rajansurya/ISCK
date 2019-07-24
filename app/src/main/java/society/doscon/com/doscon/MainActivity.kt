@@ -100,7 +100,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 startActivity(Intent(this, Abstract::class.java))
             }
             R.id.officebear5 -> {
-
+                var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", AppCompatActivity.MODE_PRIVATE);
+                var restoredText = prefs.getString("DATA", null);
+                if (!TextUtils.isEmpty(restoredText)) {
+                    if (schedule != null && !TextUtils.isEmpty(schedule.toString())) {
+                        var intent = Intent(this, Scheduled_Meeting::class.java)
+                        intent.putExtra("dataT", schedule.toString())
+                        startActivity(intent)
+                    }
+                } else {
+                    var intent = Intent(this, Login::class.java)
+                    startActivity(intent)
+                }
             }
             R.id.officebear6 -> {
                 startActivity(Intent(this, Venue::class.java))
@@ -118,29 +129,29 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             1 -> {
                 startActivity(Intent(this, RegistrationActivity::class.java))
             }
-        /* 2 -> {
-             var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
-             startActivity(intent)
-         }*/
+            /* 2 -> {
+                 var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
+                 startActivity(intent)
+             }*/
             2 -> {
                 startActivity(Intent(this, Commitee::class.java))
             }
-        /*3 -> {
-startActivity(Intent(this, Exhibation::class.java))
-}*/
+            /*3 -> {
+    startActivity(Intent(this, Exhibation::class.java))
+    }*/
             3 -> {
                 startActivity(Intent(this, Venue::class.java))
             }
-        /*6 -> {
-            startActivity(Intent(this, Tour::class.java))
-        }*/
+            /*6 -> {
+                startActivity(Intent(this, Tour::class.java))
+            }*/
 
             4 -> {
                 var inyeny: Intent = Intent(this, Accomodation::class.java)
                 inyeny.putExtra("which", "bearer")
                 startActivity(inyeny)
             }
-            5->{
+            5 -> {
                 var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", AppCompatActivity.MODE_PRIVATE);
                 var restoredText = prefs.getString("DATA", null);
                 if (!TextUtils.isEmpty(restoredText)) {

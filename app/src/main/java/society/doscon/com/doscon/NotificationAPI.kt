@@ -12,26 +12,24 @@ import org.json.JSONObject
 import android.support.v7.widget.DividerItemDecoration
 
 
-
-
 class NotificationAPI : Activity(), SignUpAPICall.CallBackToClass {
     var retailerList = ArrayList<NotificationData>()
     override fun returnDataToClass(tag: String?, data: String?) {
         println(data)
-try {
-    var json = JSONObject(data)
-    if (json.has("Data") && (json.getJSONArray("Data") is JSONArray)) {
+        try {
+            var json = JSONObject(data)
+            if (json.has("Data") && (json.getJSONArray("Data") is JSONArray)) {
 
-        var gson = Gson()
-        var retalerListLOC: ArrayList<NotificationData> = gson.fromJson(json.getJSONArray("Data").toString(), object : TypeToken<ArrayList<NotificationData>>() {}.type)
-        retailerList.clear()
-        retailerList.addAll(retalerListLOC)
-        if (retailerList.size > 0)
-            generateticket?.updateView(retailerList)
-    }
-}catch (e:Exception){
-    e.printStackTrace()
-}
+                var gson = Gson()
+                var retalerListLOC: ArrayList<NotificationData> = gson.fromJson(json.getJSONArray("Data").toString(), object : TypeToken<ArrayList<NotificationData>>() {}.type)
+                retailerList.clear()
+                retailerList.addAll(retalerListLOC)
+                if (retailerList.size > 0)
+                    generateticket?.updateView(retailerList)
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
     var generateticket: GenerateTicketAdapter? = null

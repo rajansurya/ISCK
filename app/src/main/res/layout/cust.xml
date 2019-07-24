@@ -1,24 +1,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="200dp"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:gravity="center"
-        android:scaleType="center"
-        android:padding="7dp"
-        android:textColor="@color/white"
-        android:text="SCHEDULED MEET"
         android:background="#FFFFBB33"
-         />
-    <TextView
-        android:id="@+id/messge"
+        android:gravity="center"
+        android:padding="7dp"
+        android:scaleType="center"
+        android:text="SCHEDULED MEET"
+        android:textColor="@color/white" />
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:padding="10dp"
-        android:text="Message"
-        android:contentDescription="@string/app_name" />
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:id="@+id/messge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="Message" />
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>
