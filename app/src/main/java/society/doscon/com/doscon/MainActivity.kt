@@ -28,6 +28,8 @@ import android.content.DialogInterface
 import android.opengl.Visibility
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.webkit.WebChromeClient
+import android.webkit.WebView
 import android.widget.TextView
 import org.json.JSONArray
 
@@ -97,7 +99,27 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 startActivity(Intent(this, Highlight::class.java))
             }
             R.id.officebear4 -> {
-                startActivity(Intent(this, Abstract::class.java))
+//                startActivity(Intent(this, Abstract::class.java))
+//                val path = Uri.fromFile(file)
+//                val pdf = "http://isckrs.com/Scientific-Programme.pdf"
+//                val browserIntent = Intent(Intent.ACTION_VIEW)
+//                browserIntent.data = Uri.parse(pdf)
+//                startActivity(browserIntent)
+               var webpagesLinear: WebView =WebView(this)
+                webpagesLinear.getSettings().setJavaScriptEnabled(true);
+                webpagesLinear.getSettings().setSupportMultipleWindows(true)
+                webpagesLinear.setWebChromeClient(object : WebChromeClient() {
+                    override fun onCreateWindow(view: WebView, dialog: Boolean, userGesture: Boolean, resultMsg: android.os.Message): Boolean {
+                        val result = view.hitTestResult
+                        val data = result.extra
+                        val context = view.context
+                        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(data))
+                        context.startActivity(browserIntent)
+                        return false
+                    }
+                })
+                val pdf = "http://isckrs.com/Scientific-Programme.pdf"
+                webpagesLinear.loadUrl("http://drive.google.com/viewerng/viewer?embedded=true&url="+pdf)
             }
             R.id.officebear5 -> {
                 var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", AppCompatActivity.MODE_PRIVATE);

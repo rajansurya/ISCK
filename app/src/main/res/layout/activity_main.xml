@@ -58,6 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
+                android:visibility="gone"
                 android:textColor="@color/black"
                 android:gravity="center_horizontal"
                 android:text="ISCKRS MEET 2018" />

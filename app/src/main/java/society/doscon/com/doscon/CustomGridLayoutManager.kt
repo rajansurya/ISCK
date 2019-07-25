@@ -4,7 +4,7 @@ import android.content.Context
 import android.support.v7.widget.GridLayoutManager
 
 class CustomGridLayoutManager : GridLayoutManager {
-    private var isScrollEnabled = false
+    private var isScrollEnabled = true
     constructor(context: Context, spancount: Int) : super(context, spancount) {
 
     }
