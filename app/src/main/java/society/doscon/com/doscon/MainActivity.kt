@@ -100,11 +100,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             }
             R.id.officebear4 -> {
 //                startActivity(Intent(this, Abstract::class.java))
-//                val path = Uri.fromFile(file)
-//                val pdf = "http://isckrs.com/Scientific-Programme.pdf"
-//                val browserIntent = Intent(Intent.ACTION_VIEW)
-//                browserIntent.data = Uri.parse(pdf)
-//                startActivity(browserIntent)
                var webpagesLinear: WebView =WebView(this)
                 webpagesLinear.getSettings().setJavaScriptEnabled(true);
                 webpagesLinear.getSettings().setSupportMultipleWindows(true)
