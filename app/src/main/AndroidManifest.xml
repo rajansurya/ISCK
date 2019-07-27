@@ -54,7 +54,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".TicketDetail"
-            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Dialog" />
         <activity
             android:name=".NotificationAPI"
@@ -70,6 +69,9 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
     </application>
 
 </manifest>
