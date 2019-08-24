@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         } else {
             menuposition = getResources().getStringArray(R.array.tabname);
         }
-        title_name.text = "INDIAN SOCIETY OF CORNEA & KERATOREFRATIVE SURGEONS";
+        title_name.text = "GLAUCOMA SOCIETY OF INDIA";
 //        sub_title_name.text = Html.fromHtml("<font color='#FCAA23'>MEET 2019</font>")
 
 //        getSupportActionBar()!!.setDisplayHomeAsUpEnabled(true);
@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 startActivity(Intent(this, Commitee::class.java))
             }
             R.id.officebear2 -> {
-                startActivity(Intent(this, RegistrationActivity::class.java))
+//                startActivity(Intent(this, RegistrationActivity::class.java))
             }
             R.id.officebear3 -> {
                 startActivity(Intent(this, Highlight::class.java))
@@ -114,7 +114,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                     }
                 })
                 val pdf = "http://isckrs.com/Scientific-Programme.pdf"
-                webpagesLinear.loadUrl("http://drive.google.com/viewerng/viewer?embedded=true&url="+pdf)
+                webpagesLinear.loadUrl("https://www.glaucomasociety.in/program-schedule.php")
             }
             R.id.officebear5 -> {
                 var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", AppCompatActivity.MODE_PRIVATE);

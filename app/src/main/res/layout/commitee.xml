@@ -27,6 +27,7 @@
                     android:background="@color/colorPrimary"
                     android:gravity="center"
                     android:padding="5dp"
+                    android:visibility="gone"
                     android:text="INTERNATIONAL"
                     android:textColor="@color/white"
                     android:textSize="17sp"

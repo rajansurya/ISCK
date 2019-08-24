@@ -4,10 +4,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <society.doscon.com.doscon.Custom_ViewPager
-        android:id="@+id/carousal"
+    <RelativeLayout
+        android:id="@+id/crou"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="220dp">
+
+        <society.doscon.com.doscon.Custom_ViewPager
+            android:id="@+id/carousal"
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorbanner"
+            android:padding="3dp"
+            android:text="GLAUCOKNOW 2019"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/parent_cube"
@@ -68,7 +87,7 @@
         android:id="@+id/middle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/carousal"
+        android:layout_below="@+id/crou"
         android:orientation="vertical">
 
         <LinearLayout
@@ -174,18 +193,18 @@
                 android:id="@+id/officebear5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="onClickitem"
-                android:gravity="center"
                 android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onClickitem"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/reg"
-                    android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/noti82" />
 
                 <TextView
@@ -193,11 +212,11 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/reg"
                     android:layout_centerHorizontal="true"
-                    android:minLines="2"
                     android:gravity="center"
-                    android:textSize="12sp"
+                    android:minLines="2"
                     android:text="@string/schedule"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -225,25 +244,57 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="170dp"
         android:layout_alignParentBottom="true">
 
 
-        <ImageView
-            android:id="@+id/bottombanner"
-            android:layout_width="match_parent"
+        <!-- <ImageView
+             android:id="@+id/bottombanner"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/home_8" />-->
+
+        <TextView
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/home_8" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorAccent"
+            android:padding="3dp"
+            android:text="Latest update"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/dot"
+            android:drawablePadding="5dp"
+            android:padding="3dp"
+            android:text="Annual Meeting of the Glaucoma Society of Indian is scheduled for 20-22 September,2019 at Lucknow "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/two"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
-            android:text="@string/expadv"
-            android:textColor="#032A41"
-            android:textSize="16sp"
-            android:textStyle="italic" />
+            android:drawableLeft="@drawable/dot"
+            android:drawablePadding="5dp"
+            android:padding="3dp"
+            android:text="Online Registration Open Now"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
 
     </RelativeLayout>
 </RelativeLayout>

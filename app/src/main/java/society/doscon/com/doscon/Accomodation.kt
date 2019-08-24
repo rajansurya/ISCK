@@ -31,12 +31,12 @@ class Accomodation : Activity() {
         progressbar.visibility = View.VISIBLE
         webpagesLinear.setWebViewClient(AppWebViewClients(progressbar))
         if (intent.getStringExtra("which").equals("bearer")){
-            webpagesLinear.loadUrl("http://isckrs.com/office-bearers.php#officebr");
+            webpagesLinear.loadUrl("https://www.glaucomasociety.in/article-3-current-office-bearers.php");
             title_name.text = "OFFICE BEARERS"
             }
         else{
-            webpagesLinear.loadUrl("http://isckrs.com/join-isckrs.php#joinisckrs");
-            title_name.text = "JOIN ISCKRS"
+            webpagesLinear.loadUrl("https://www.glaucomasociety.in/membership-registration.php");
+            title_name.text = "JOIN GSI"
             }
     }
 

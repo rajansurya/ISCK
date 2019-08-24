@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ISCKRS</string>
+    <string name="app_name">GSI</string>
     <string name="kwonyourregis">K/W YOUR REGISTRATION</string>
     <string name="schedule">MY SCHEDULED</string>
     <string name="expadv">.Exploring Recent \nAdvances\u2022</string>
@@ -85,25 +85,19 @@
 ]]></string>
 
     <array name="img_arr_commiti">
-        <item>http://isckrs.com/images/team/team1.jpg</item>
-        <item>http://isckrs.com/images/team/team2.jpg</item>
-        <item>http://isckrs.com/images/team/team3.jpg</item>
-        <item>http://isckrs.com/images/team/team4.jpg</item>
-        <item>http://isckrs.com/images/team/team5.jpg</item>
+        <item>https://glaucomasociety.in/images/8.jpg</item>
+        <item>https://glaucomasociety.in/images/9.jpg</item>
+        <item>https://glaucomasociety.in/images/10.jpg</item>
+        <item>https://glaucomasociety.in/images/team1.jpg</item>
+        <item>https://glaucomasociety.in/images/team2.jpg</item>
 
 
-        <item>http://isckrs.com/images/team/team6.jpg</item>
-        <item>http://isckrs.com/images/team/team7.jpg</item>
-        <item>http://isckrs.com/images/team/team8.jpg</item>
-        <item>http://isckrs.com/images/team/team9.jpg</item>
-        <item>http://isckrs.com/images/team/team10.jpg</item>
-        <item>http://isckrs.com/images/team/team11.jpg</item>
-        <item>http://isckrs.com/images/team/team12.jpg</item>
+
     </array>
     <array name="nameimg">
-        <item>Dr. Michael Belin#USA</item>
-        <item>Dr. Harminder S Dua#UK</item>
-        <item>Dr. Jodhbir Mehta#Singapore</item>
+        <item>Devindra Sood</item>
+        <item>Barun Kumar Nayak</item>
+        <item>Manav Deep Singh</item>
         <item>Dr. Tarek Katamish#Egypt</item>
         <item>Dr. Avi Solomon#Bril</item>
         <item>Dr. Ahmad Khalil#Egypt</item>
@@ -143,7 +137,7 @@
         <item>VENUE</item>
         <item>OFFICE BEARERS</item>
         <item>K/W YOUR REGISTRATION</item>
-        <item>JOIN ISCKRS</item>
+        <item>JOIN GSI</item>
         <item>CONTACT</item>
         <item>NOTIFICATION</item>
         <item>LOGIN</item>
@@ -153,29 +147,21 @@
         <html>
  <head></head>
  <body >
-       <h3>About Delhi</h3>
-       <div style="text-align:justify">
+     <div class="col-md-12 text-justify">
+                  <h3 class="Bold-Title"> Welcome</h3>
 
-          New Delhi, the capital of India, is a bustling metropolis that
-          has an amazing mix of modernisation and carefully preserved antiquity.
-          Sprawled over the west bank of the river Yamuna, it is one of the fastest
-          growing cities in India. New Delhi was built by a British architect Edward Lutyens
-          in 1912 as the new capital of the British Raj. The Victorian architecture
-          now intermingles with the city\'s high rise buildings. Concrete flyovers built
-          to ease the growing traffic are interspersed with well laid gardens, Mughal tombs,
-          forts and monuments.</br>
-          </br>
+<p>Dear  Colleague,</p>
+<p>Awadhi cuisine like  glaucoma is more of an art that is perfected by practice with scope for  improvisation and innovation. </p>
+<p>Lucknow, the land of awadhi cuisine is hosting GLAUCOKNOW, the XXIX  Annual Meeting of the Glaucoma Society of India in September 2019.</p>
+<p>We look forward to welcoming at Lucknow.</p>
+<p>Each annual meeting of the GSI builds  on past successes: newly established standards, a diverse and motivating  scientific programme and a wide range of instructional courses to meet the  varying needs of the delegates. </p>
+<p>This scientific gathering attracts  trainees, general ophthalmologists and glaucomatologists from India providing  an informal, multi-cultural environment encouraging networking, sharing and  exchange of intricacies involved in glaucoma care in India.</p>
+<p>Lucknow, the city of  Adab, Tehzeeb and Kathak, is also the capital of Uttar Pradesh, the cultural  region of Awadh which flourishes along the banks of the Gomti river, is the ideal location to host the event. </p>
+<p>GLAUCOKNOW should be another exciting meeting that you  should not miss. Your active participation will make it worth your while.</p>
+<p>We  hope to see you in Lucknow,&nbsp; the city of <em>Nawab</em>, <em>Aadaab</em>, <em>Kebab</em> and <em>Shabab</em>.</p>
 
-<font size="4"><h3>Places to Visit in Delhi</h3></font>
-Red Fort</br>
-Jama Masjid</br>
-Chandni Chowk</br>
-Swaminarayan Akshardham</br>
-Humayun's Tomb</br>
-Qutab Minar</br>
-India Gate</br>
-Lotus Temple</br>
-          </div>
+
+                </div>
     </body>
 </html>
 
@@ -186,16 +172,11 @@ Lotus Temple</br>
         <html>
  <head></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
- <div class="col-xs-12 col-sm-4 col-md-10 text-center text-white">
-          <h3 class="mb-0 mt-10 font-30 text-white">Indian Society of Cornea &amp;
-            Keratorefractive Surgeons </h3>
-            <p><em>Furtherance of knowledge of Cornea, Corneal diseases &amp; Kerato-Refractive surgery</em></p>
-
-            <ul class="list-inline text-center mb-5">
-            <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone"></i> <a class="text-black" href="#">+91-9650688803, +91-9650268007</a> </li>
-            <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o"></i> <a class="text-black" href="#">isckrs@gmail.com</a> </li>
-          </ul>
-        </div>
+Contact Us
+Glaucoma Society of India
+P D Hinduja National Hospital& MRCVeer Savarkar Marg, Mahim Mumbai 400016 (India)
+Tel: (022) 24447165 /7131)
+Email: secretary@glaucomasociety.in / office@glaucomasociety.in
     </body>
 </html>
 
